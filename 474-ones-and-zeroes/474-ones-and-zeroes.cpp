@@ -2,9 +2,8 @@ class Solution {
 public:
     int findMaxForm(vector<string>& strs, int m, int n) 
     {
-        vector<vector<int>> memo(m+1, vector<int>(n+1, 0));
+  vector<vector<int>> memo(m+1, vector<int>(n+1, 0));
   int numZeroes, numOnes;
-
   for (auto &s : strs) 
   {
     numZeroes = numOnes = 0;
