@@ -15,10 +15,12 @@ public:
         left[0] = -1;
         
         int sum = 0, res = INT_MIN;
-        for (int i = 0; i < n; ++i) {
+        for (int i = 0; i < n; ++i)
+        {
             sum += nums[i];
-            if (left.find(sum - target) != left.end()) {
-                // cout << i << " " << sum << " " << left[sum-target] << endl;
+            if (left.find(sum - target) != left.end()) 
+            {
+                 //cout << i << " " << sum << " " << left[sum-target] << endl;
                 res = max(res, i - left[sum-target]);
             }
             left[sum] = i;
