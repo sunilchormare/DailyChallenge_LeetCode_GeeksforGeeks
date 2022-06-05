@@ -20,8 +20,9 @@ public:
             sum += nums[i];
             if (left.find(sum - target) != left.end()) 
             {
-                 //cout << i << " " << sum << " " << left[sum-target] << endl;
+                // cout << "i = "<<i << "  " << sum << " " << left[sum-target] << endl;
                 res = max(res, i - left[sum-target]);
+                //cout<<"res = "<<res<<endl;
             }
             left[sum] = i;
         }
