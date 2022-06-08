@@ -1,6 +1,7 @@
 class Solution {
 public:
-    int removePalindromeSub(string s) {
+    int removePalindromeSub(string s) 
+    {
         if(s.size()==0) return 0;
       int st=0,end=s.size()-1;
       while(st<end){
