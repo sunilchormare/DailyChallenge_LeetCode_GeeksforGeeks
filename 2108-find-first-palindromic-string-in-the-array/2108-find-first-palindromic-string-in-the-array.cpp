@@ -7,8 +7,7 @@ public:
         for(int i=0;i<words.size();++i)
         {
         if (words[i]== string(words[i].rbegin(), words[i].rend())) 
-             return words[i];
-        
+             return words[i];  
         }
         return "";
     }
