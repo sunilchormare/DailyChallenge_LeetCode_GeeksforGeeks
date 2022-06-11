@@ -1,13 +1,30 @@
 class Solution {
-    public String mergeAlternately(String w1, String w2) {
-       int n = w1.length(), m = w2.length(), i = 0, j = 0;
-        StringBuilder res = new StringBuilder();
+public:
+    string mergeAlternately(string w1, string w2) {
+        
+//      string s="";
+//         int i=0,j=0;
+        
+//         while(i<w1.length() && j<w2.length())
+//             s=s+w1[i++]+w2[j++];
+        
+//         while(i<w1.length())
+//             s+=w1[i++];
+        
+//         while(j<w2.length())
+//             s+=w2[j++];
+        
+//         return s;
+        
+        
+        int n = w1.size(), m = w2.size(), i = 0, j = 0;
+        string res = "";
         while (i < n || j < m) {
-            if (i < w1.length())
-                res.append(w1.charAt(i++));
-            if (j < w2.length())
-                res.append(w2.charAt(j++));
+            if (i < n)
+                res.push_back(w1[i++]);
+            if (j < m)
+                res.push_back(w2[j++]);
         }
-        return res.toString();
+        return res;
     }
-}
+};
