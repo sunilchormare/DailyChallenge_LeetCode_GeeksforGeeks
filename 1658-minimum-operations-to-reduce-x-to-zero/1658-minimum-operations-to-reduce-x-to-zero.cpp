@@ -1,14 +1,14 @@
 class Solution {
 public:
     int minOperations(vector<int>& nums, int x) {
-     
+      
      int target = -x;
         for (auto num : nums)
             target += num;
         int n = nums.size();
         if (target == 0) return n;
         
-        // cout << target  << endl;
+       // cout << target  << endl;
         
         unordered_map<int, int> left; // left[Sum(0..i)] = i
         
@@ -20,14 +20,13 @@ public:
             sum += nums[i];
             if (left.find(sum - target) != left.end()) 
             {
-                // cout << "i = "<<i << "  " << sum << " " << left[sum-target] << endl;
+                 //cout << "i = "<<i << "  " << sum << " " << left[sum-target] << endl;
                 res = max(res, i - left[sum-target]);
                 //cout<<"res = "<<res<<endl;
             }
             left[sum] = i;
         }
         return (res == INT_MIN ? -1 : n - res);
-   
         
     }
 };
