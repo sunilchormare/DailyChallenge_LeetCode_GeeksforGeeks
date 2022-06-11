@@ -1,6 +1,6 @@
 class Solution {
     public int minOperations(int[] nums, int x) {
-       int target = -x;
+         int target = -x;
 for (int num : nums) target += num;
 
 if (target == 0) return nums.length;  // since all elements are positive, we have to take all of them
