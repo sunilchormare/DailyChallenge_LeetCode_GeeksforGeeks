@@ -19,7 +19,6 @@ class Solution {
                 set.remove(nums[i++]);
             }
         }
-
         return ans; 
     }
 }
