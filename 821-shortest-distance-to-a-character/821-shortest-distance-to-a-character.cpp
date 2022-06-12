@@ -9,7 +9,7 @@ public:
             res[i] = i - pos;
         }
         
-        for (int i = pos - 1; i >= 0; --i) {
+        for (int i = pos - 1; i >=0; --i) {
             if (S[i] == C)  pos = i;
             res[i] = min(res[i], pos - i);
         }
