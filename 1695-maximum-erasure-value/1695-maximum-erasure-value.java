@@ -6,14 +6,18 @@ class Solution {
         
         int i = 0;
         
-        while(i<nums.length && j<nums.length){
+        while(i<nums.length && j<nums.length)
+        {
             
-            if(!set.contains(nums[j])){
+            if(!set.contains(nums[j]))
+            {
                 
                 sum+=nums[j];
                 ans = Math.max(sum,ans);
                 set.add(nums[j++]);
-            }else{
+            }
+            else
+            {
                 
                 sum = sum-nums[i];
                 set.remove(nums[i++]);
