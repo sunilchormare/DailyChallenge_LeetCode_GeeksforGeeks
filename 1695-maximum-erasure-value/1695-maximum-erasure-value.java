@@ -1,7 +1,6 @@
 class Solution {
     public int maximumUniqueSubarray(int[] nums) {
         Set<Integer> set =  new HashSet();
-        
       int sum =0, ans =0;
         int j = 0;
         
