@@ -3,7 +3,7 @@ class Solution {
         int[] res = new int[A.length];
         int j = 0, k = 1;
        
-        for(int i = 0; i < A.length; i++) 
+        for(int i = 0; i <A.length; i++) 
         {
             if(A[i] % 2 == 0)
             {
