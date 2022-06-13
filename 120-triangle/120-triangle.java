@@ -13,6 +13,7 @@ class Solution {
             List<Integer> cur = triangle.get(i);
             for(int j = 0; j < cur.size(); j++){
                 M[j] = Math.min(M[j], M[j + 1]) + cur.get(j);
+                
             }
         }
         
