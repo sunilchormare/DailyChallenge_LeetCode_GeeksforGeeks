@@ -1,16 +1,11 @@
-
-// Time Complexity: O(N)
-//Space Complexity: O(1)
-
 class Solution {
-public:
-    int countBinarySubstrings(string s) {
+    public int countBinarySubstrings(String s) {
         int count=0,i=1,prev=0,cur=1;
-        while(i<s.size())
+        while(i<s.length())
         {
-            if(s[i-1]!=s[i])
+            if(s.charAt(i-1)!=s.charAt(i))
             {
-                count+=min(prev,cur);
+                count+=Math.min(prev,cur);
                 prev=cur;
                 cur=1;
             }
@@ -18,7 +13,7 @@ public:
                 cur++; 
             i++;
         }
-        count+=min(prev,cur);
+        count+=Math.min(prev,cur);
         return count;
     }
-};
+}
