@@ -1,3 +1,7 @@
+
+// Time Complexity: O(N)
+//Space Complexity: O(1)
+
 class Solution {
 public:
     int countBinarySubstrings(string s) {
