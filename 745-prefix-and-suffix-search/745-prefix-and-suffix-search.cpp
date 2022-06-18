@@ -1,3 +1,6 @@
+//Time complexity : O(n*k)
+//Space Complexity : O(TrieSize)
+
 class WordFilter {
 
 private:
