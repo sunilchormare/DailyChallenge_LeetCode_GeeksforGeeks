@@ -10,6 +10,6 @@ class Solution {
             if (bricks < 0)
                 return i;
         }
-        return A.length - 1;
+        return A.length-1;
     }
 }
