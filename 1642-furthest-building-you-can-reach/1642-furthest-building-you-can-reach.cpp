@@ -13,6 +13,6 @@ public:
             if (bricks < 0)
                 return i;
         }
-        return A.size() - 1;
+        return A.size()-1;
     }
 };
