@@ -1,14 +1,18 @@
 class Solution {
-    public boolean isLongPressedName(String name, String typed) {
-         int i=0,j=0;
-        while(j<typed.length())
+public:
+    bool isLongPressedName(string name, string typed) {
+        // if(name.size()==typed.size()) return true;
+        // if(name.size()>typed.size()) return false;
+        
+        int i=0,j=0;
+        while(j<typed.size())
         {
-            if(i<name.length()&&name.charAt(i)==typed.charAt(j))
+            if(i<name.size()&&name[i]==typed[j])
                 i++;
-            else if(j==0 || typed.charAt(j)!=typed.charAt(j-1))
+            else if(j==0 || typed[j]!=typed[j-1])
                 return false;
               j++;  
         }
-        return i==name.length();
+        return i==name.size();
     }
-}
+};
