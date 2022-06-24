@@ -1,51 +1,32 @@
 /**
  * Definition for singly-linked list.
- * public class ListNode {
+ * struct ListNode {
  *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
  */
 class Solution {
-    public int pairSum(ListNode head) {
-     if (head == null) {
-            return 0;
+public:
+    int pairSum(ListNode* head) {
+       vector<int> vec;
+        
+        ListNode *curr = head;
+        
+        while(curr)
+        {
+            vec.push_back(curr->val);
+            curr = curr->next;
         }
-        if (head.next == null) {
-            return head.val;
-        }
-        ListNode slow = head;
-        ListNode fast = head;
-        while (fast != null && fast.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-        slow = reverse(slow);
-        fast = head;
-        int sum = Integer.MIN_VALUE;
-        while (slow != null) {
-            sum = Math.max(slow.val + fast.val, sum);
-            slow = slow.next;
-            fast = fast.next;
-        }
-        return sum;
+        int i=0,j=vec.size()-1;
+        
+        int maxVal = 0 ;
+        
+        while(i<j)
+            maxVal = max(maxVal , vec[i++] + vec[j--]);            
+        
+        return maxVal;  
     }
-    
-    public ListNode reverse(ListNode node) {
-        if (node == null) {
-            return null;
-        }
-        ListNode current = node;
-        ListNode previous = null;
-        while (current != null) {
-            ListNode next = current.next;
-            current.next = previous;
-            previous = current;
-            current = next;
-        }
-        return previous;
-    }   
-    
-}
+};
