@@ -28,9 +28,12 @@ public:
         {
             if(nums[i-1] > nums[i])
             {
+                cout<<"nums[i-1] : "<<nums[i-1]<<"  nums[i] : "<<nums[i]<<endl;
                 cnt++;
-                if(i-2<0 || nums[i-2] <= nums[i]) nums[i-1] = nums[i];                   
-                else nums[i] = nums[i-1];                                               
+                if(i-2<0 || nums[i-2] <= nums[i]) 
+                    nums[i-1] = nums[i];                   
+                else 
+                    nums[i] = nums[i-1];                                               
             }
         }
         return cnt<=1;
