@@ -1,4 +1,4 @@
-// Time: O(n/2*logn)
+// Time: O(nlogn)
 // Space : O(1)
 class Solution {
 public:
