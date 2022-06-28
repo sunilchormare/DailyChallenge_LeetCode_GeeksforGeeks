@@ -1,13 +1,15 @@
 class Solution {
-public:
-    int minDeletions(string s) {
-       int cnt[26] = {}, res = 0;
-    unordered_set<int> used;
-    for (char ch : s)
-        ++cnt[ch - 'a'];
-    for (int i = 0; i < 26; ++i)
-        for (; cnt[i] > 0 && !used.insert(cnt[i]).second; --cnt[i])
+    public int minDeletions(String s) {
+        int cnt[] = new int[26], res = 0;
+    Set<Integer> used = new HashSet<>();
+    for (int i = 0; i < s.length(); ++i)
+        ++cnt[s.charAt(i) - 'a'];
+    for (int i = 0; i < 26; ++i) {
+        while (cnt[i] > 0 && !used.add(cnt[i])) {
+            --cnt[i];
             ++res;
-    return res; 
+        }
+    }        
+    return res;
     }
-};
+}
