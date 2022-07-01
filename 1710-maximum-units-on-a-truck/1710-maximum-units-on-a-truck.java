@@ -1,13 +1,19 @@
 //Time Complexity : O(nlogn)
 //Space Complexity : O(1)
 class Solution {
-    public int maximumUnits(int[][] boxTypes, int truckSize) {
-       
-        Arrays.sort(boxTypes,(a,b)-> b[1]-a[1]);
-         //Arrays.sort(boxTypes, (a, b) -> Integer.compare(b[1], a[1]));
+public:
+    static bool comparator(vector<int>&a, vector<int> &b)
+    {
+        return (a[1] > b[1]);
+    }
+
+    int maximumUnits(vector<vector<int>>& boxTypes, int truckSize) 
+    {
+         sort(boxTypes.begin(),boxTypes.end(),comparator);
+        
          int maxUnitNoOfBoxes=0;
         
-        for(int a[]:boxTypes)
+        for(vector<int> a:boxTypes)
         {
             int noOfBoxes=a[0];
             int noOfUnitsPerBox=a[1];
@@ -26,4 +32,4 @@ class Solution {
         }
         return maxUnitNoOfBoxes;
     }
-}
+};
