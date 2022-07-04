@@ -1,17 +1,19 @@
 class Solution {
-public:
-    vector<bool> camelMatch(vector<string>& queries, string pattern) {
-        vector<bool> res;
-        for (string &query : queries) res.push_back(isMatch(query, pattern));
+    public List<Boolean> camelMatch(String[] queries, String pattern) {
+        List<Boolean> res = new ArrayList<>();
+        for (String query : queries)
+            res.add(isMatch(query, pattern));
         return res;
-
     }
 
-    bool isMatch(string query, string pattern) {
+    private boolean isMatch(String query, String pattern) {
         int i = 0;
-        for (char & c : query)
-            if (i < pattern.length() && c == pattern[i]) i++;
-            else if (c < 'a') return false;
+        for (char c: query.toCharArray()) {
+            if (i < pattern.length() && c == pattern.charAt(i))
+                i++;
+            else if (c < 'a')
+                return false;
+        }
         return i == pattern.length();
     }
-};
+}
