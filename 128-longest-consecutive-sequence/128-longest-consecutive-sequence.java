@@ -23,6 +23,7 @@ class Solution {
 
 //         return Math.max(longestStreak, currentStreak);
         
+        //OPTIMIZED APPROACH
         
      Set<Integer> hashSet=new HashSet<Integer>();
      for(int num:nums) hashSet.add(num);
