@@ -7,7 +7,8 @@ class Solution {
     boolean table[][]=new boolean[s1.length()+1][s2.length()+1];
     
     for(int i=0; i<s1.length()+1; i++)
-        for(int j=0; j< s2.length()+1; j++){
+        for(int j=0; j< s2.length()+1; j++)
+        {
             if(i==0 && j==0)
                 table[i][j] = true;
             else if(i == 0)
