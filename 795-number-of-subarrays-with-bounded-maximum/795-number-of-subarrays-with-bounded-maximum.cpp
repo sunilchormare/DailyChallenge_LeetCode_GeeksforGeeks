@@ -1,13 +1,12 @@
 class Solution {
-   public int numSubarrayBoundedMax(int[] nums, int left, int right) {
-        return count(nums, right) - count(nums, left - 1);
-    }
-    int count(int[] nums, int bound) {
-        int ans = 0, cnt = 0;
-        for (int x : nums) {
-            cnt = x <= bound ? cnt + 1 : 0;
-            ans += cnt;
+public:
+    int numSubarrayBoundedMax(vector<int>& A, int L, int R) {
+        int result=0, left=-1, right=-1;
+        for (int i=0; i<A.size(); i++) {
+            if (A[i]>R) left=i;
+            if (A[i]>=L) right=i;
+            result+=right-left;
         }
-        return ans;
+        return result;
     }
-}
+};
