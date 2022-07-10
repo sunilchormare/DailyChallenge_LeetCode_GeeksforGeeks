@@ -2,7 +2,8 @@ class Solution {
 public:
     string findLongestWord(string s, vector<string>& d) {
       string longest = "";
-    for (string dictWord : d) {
+    for (string dictWord : d) 
+    {
         int i = 0;
         for (char c : s) 
             if (i < dictWord.size() && c == dictWord[i]) i++;
