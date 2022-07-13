@@ -19,7 +19,7 @@ public:
         while(!nodes.empty()){
             vector<int> row;
             int size=nodes.size();
-            while(size--){
+           for(int i=0;i<size;i++){
                 TreeNode* node=nodes.front();
                 nodes.pop();
                 if(node->left)
