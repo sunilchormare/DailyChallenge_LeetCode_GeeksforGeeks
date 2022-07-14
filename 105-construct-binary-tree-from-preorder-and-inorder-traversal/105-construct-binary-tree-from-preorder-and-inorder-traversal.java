@@ -17,7 +17,7 @@ class Solution {
     int preIndex;
     int inIndex;
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        if (preorder == null || inorder == null || preorder.length != inorder.length) { return null; }
+        if ( preorder.length != inorder.length) { return null; }
         preIndex = 0;
         inIndex = 0;
         return build(preorder, inorder, -3001);
