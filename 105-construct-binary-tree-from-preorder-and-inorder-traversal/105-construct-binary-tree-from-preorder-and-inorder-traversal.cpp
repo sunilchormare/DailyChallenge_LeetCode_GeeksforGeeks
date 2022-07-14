@@ -1,41 +1,40 @@
 /**
  * Definition for a binary tree node.
- * public class TreeNode {
+ * struct TreeNode {
  *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
  */
 class Solution {
-    int preIndex;
+public:
+     int preIndex;
     int inIndex;
-    public TreeNode buildTree(int[] preorder, int[] inorder) {
-        if (preorder == null || inorder == null || preorder.length != inorder.length) { return null; }
+    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder)
+    {
+    if (preorder.size()==0|| inorder.size()==0 || preorder.size() != inorder.size()) { return NULL; }
         preIndex = 0;
         inIndex = 0;
         return build(preorder, inorder, -3001);
+        
     }
-    public TreeNode build(int[] preorder, int[] inorder, int rootValue) {
-        if (preIndex >= preorder.length) { return null; }
+     TreeNode* build(vector<int> &preorder, vector<int> inorder, int rootValue) {
+        if (preIndex >= preorder.size()) { return NULL; }
         
         if (inorder[inIndex] == rootValue) {
             inIndex++;
-            return null;
+            return NULL;
         }
         
-        TreeNode current = new TreeNode(preorder[preIndex]);
+        TreeNode* current = new TreeNode(preorder[preIndex]);
         preIndex++;
         
-        current.left = build(preorder, inorder, current.val);
-        current.right = build(preorder, inorder, rootValue);
+        current->left = build(preorder, inorder, current->val);
+        current->right = build(preorder, inorder, rootValue);
         
         return current;
     }
-}
+};
