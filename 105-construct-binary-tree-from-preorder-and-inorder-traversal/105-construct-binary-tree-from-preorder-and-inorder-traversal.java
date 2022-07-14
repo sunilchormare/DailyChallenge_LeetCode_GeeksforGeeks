@@ -1,10 +1,13 @@
+/*
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+
 class Solution {
     int preIndex=0;
     int inIndex=0;
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         if ( preorder.length != inorder.length) { return null; }
-        // preIndex = 0;
-        // inIndex = 0;
         return build(preorder, inorder, -3001);
     }
     public TreeNode build(int[] preorder, int[] inorder, int rootValue) {
