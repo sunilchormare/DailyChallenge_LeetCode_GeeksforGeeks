@@ -4,8 +4,7 @@ public:
     int inIndex;
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder)
     {
-    if (preorder.size() != inorder.size())
-         return NULL;    
+    if (preorder.size() != inorder.size()) return NULL;    
         preIndex = 0;
         inIndex = 0;
         return build(preorder, inorder, -3001);
