@@ -20,12 +20,12 @@ public:
             return NULL;
         }
          
-        TreeNode* current = new TreeNode(preorder[preIndex]);
+        TreeNode* root = new TreeNode(preorder[preIndex]);
         preIndex++;
         
-        current->left = build(preorder, inorder, current->val);
-        current->right = build(preorder, inorder, rootValue);
+        root->left = build(preorder, inorder, root->val);
+        root->right = build(preorder, inorder, rootValue);
         
-        return current;
+        return root;
     }
 };
