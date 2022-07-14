@@ -1,12 +1,12 @@
 class Solution {
 public:
-     int preIndex;
-    int inIndex;
+     int preIndex=0;
+    int inIndex=0;
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder)
     {
     if (preorder.size() != inorder.size()) return NULL;    
-        preIndex = 0;
-        inIndex = 0;
+        // preIndex = 0;
+        // inIndex = 0;
         return build(preorder, inorder, -3001);
         
     }
