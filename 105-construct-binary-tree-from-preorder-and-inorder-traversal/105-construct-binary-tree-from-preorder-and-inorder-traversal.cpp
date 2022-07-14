@@ -1,14 +1,15 @@
+/*
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
 class Solution {
 public:
      int preIndex=0;
     int inIndex=0;
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder)
     {
-    if (preorder.size() != inorder.size()) return NULL;    
-        // preIndex = 0;
-        // inIndex = 0;
-        return build(preorder, inorder, -3001);
-        
+       //if (preorder.size() != inorder.size()) return NULL;    
+        return build(preorder, inorder, -3001);    
     }
     
      TreeNode* build(vector<int> &preorder, vector<int> &inorder, int rootValue)
