@@ -11,7 +11,8 @@ public:
         
     }
     
-     TreeNode* build(vector<int> &preorder, vector<int> inorder, int rootValue) {
+     TreeNode* build(vector<int> &preorder, vector<int> &inorder, int rootValue)
+     {
         if (preIndex >= preorder.size()) return NULL; 
         
         if (inorder[inIndex] == rootValue) {
