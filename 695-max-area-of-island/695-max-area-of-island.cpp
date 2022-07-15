@@ -1,16 +1,18 @@
+/*
+BRUTE FORCE : RECURSIVE DFS
+TIME COMPLEXITY: O(R*C)
+SPACE COMPLEXITY: O(R*C)
+*/
+
 class Solution {
 public:
     int maxAreaOfIsland(vector<vector<int>>& grid) {
      
         int maxi=0;
         for(int i=0;i<grid.size();i++)
-        {
             for(int j=0;j<grid[i].size();j++)
-            {
                if(grid[i][j]==1)
                    maxi=max(maxi,dfs(grid,i,j));
-            }
-        }
         
         return maxi;
     }
