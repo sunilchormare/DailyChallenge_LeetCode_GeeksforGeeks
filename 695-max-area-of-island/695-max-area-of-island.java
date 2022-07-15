@@ -1,3 +1,9 @@
+/*
+BRUTE FORCE : RECURSIVE DFS
+TIME COMPLEXITY: O(R*C)
+SPACE COMPLEXITY: O(R*C)
+*/
+
 class Solution {
     public int maxAreaOfIsland(int[][] grid) {
         int max=0;
