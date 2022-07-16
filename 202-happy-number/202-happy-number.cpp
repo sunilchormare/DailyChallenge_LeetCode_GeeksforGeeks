@@ -1,25 +1,25 @@
 class Solution {
-public:
-    int digitSquareSum(int n) {
-        int sum = 0, tmp;
-        while (n!=0)
+    public int digitSquare(int n)
+    {
+        int sum=0,tem;
+        while(n!=0)
         {
-            tmp = n % 10;
-            sum += tmp * tmp;
-            n /= 10;
+            tem=n%10;
+            sum+=(tem*tem);
+            n=n/10;
         }
         return sum;
+         
     }
-    bool isHappy(int n) {
-         int slow, fast;
-        slow = fast = n;
-        do {
-            slow = digitSquareSum(slow);
-            fast = digitSquareSum(fast);
-            fast = digitSquareSum(fast);
-            if(fast == 1) return 1;
-        }while(slow != fast);
-         return 0;
-                
+    public boolean isHappy(int n) {
+     int slow=n,fast=n;
+        do{
+            slow=digitSquare(slow);
+            fast=digitSquare(fast);
+            fast=digitSquare(fast);
+            if(fast==1) return true;
+        }while(slow!=fast);
+        
+        return false;
     }
-};
+}
