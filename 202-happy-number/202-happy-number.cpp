@@ -18,9 +18,8 @@ public:
             fast = digitSquareSum(fast);
             fast = digitSquareSum(fast);
             if(fast == 1) return 1;
-        } while(slow != fast);
+        }while(slow != fast);
          return 0;
-        
-        
+                
     }
 };
