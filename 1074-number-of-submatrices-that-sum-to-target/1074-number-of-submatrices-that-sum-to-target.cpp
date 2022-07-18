@@ -18,7 +18,7 @@ public:
                 {
                     cur += A[k][j] - (i > 0 ? A[k][i - 1] : 0);
                     res += counter[cur - target];
-                    counter[cur]=counter[cur]+ 1;
+                    counter[cur]=counter[cur]+1;
                 }
             }
         }
