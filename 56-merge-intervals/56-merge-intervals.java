@@ -9,6 +9,7 @@ class Solution {
         int end = intervals[0][1];
         
         for(int[] i : intervals) {
+            //System.out.println("i[0] = "+i[0]+" i[1] = "+i[1]+" end = "+end);
             if(i[0] <= end) {
                 end = Math.max(end, i[1]);
             }
