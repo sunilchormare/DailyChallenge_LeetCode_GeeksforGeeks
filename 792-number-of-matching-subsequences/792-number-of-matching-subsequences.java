@@ -2,9 +2,8 @@ class Solution {
     public int numMatchingSubseq(String S, String[] words) {
         Map<Character, Deque<String>> map = new HashMap<>();
         for (char c = 'a'; c <= 'z'; c++) 
-        {
             map.putIfAbsent(c, new LinkedList<String>());
-        }
+        
         for (String word : words) {
             map.get(word.charAt(0)).addLast(word);
         }
