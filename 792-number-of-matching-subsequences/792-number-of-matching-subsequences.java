@@ -1,26 +1,71 @@
 class Solution {
-    public int numMatchingSubseq(String S, String[] words) {
-        Map<Character, Deque<String>> map = new HashMap<>();
-        for (char c = 'a'; c <= 'z'; c++) {
-            map.putIfAbsent(c, new LinkedList<String>());
-        }
-        for (String word : words) {
-            map.get(word.charAt(0)).addLast(word);
-        }
+public:
+    int numMatchingSubseq(string S, vector<string>& words) {
+//         int count=0;
+//         for(int i=0;i<words.size();i++)
+//         {
+//             int k=0;
+//             int ans=0;
+//             for(int j=0;j<words[i].size();++j)
+//             {
+//                 if(s.find(words[i][j],k)!=0)
+//                 {
+//                    k++;
+//                     ans++;
+//                 }
+              
+//             }
+//             if(ans==words[i].size()) count+=1;
+//         }
+//         return count;
+        
+        
+//         map<char,queue<string>> m;
+//         // for (int i=0;i<s.size(); ++i) {
+//         //     m[s[i]].push(s[i]);
+//         // }
+//         for (string word : words) {
+//             m[word[0]].push(word);
+//         }
 
+//         int count = 0;
+//         for (char c : s) {
+//             queue<string> q = m[c];
+//             int size = q.size();
+//             for (int i = 0; i < size; i++) {
+//                 string word = q.front();
+//                 q.pop();
+//                 if (word.size() == 1) {
+//                     count++;
+//                 } else {
+//                     m[word[1]].push(word.substr(1));
+//                 }
+//             }
+//         }
+//         return count;
+        
+        
+        
         int count = 0;
-        for (char c : S.toCharArray()) {
-            Deque<String> queue = map.get(c);
-            int size = queue.size();
-            for (int i = 0; i < size; i++) {
-                String word = queue.removeFirst();
-                if (word.length() == 1) {
-                    count++;
-                } else {
-                    map.get(word.charAt(1)).addLast(word.substring(1));
+        map<char, list<string>>maps;
+        for(string s : words)
+            maps[s[0]].push_back(s);
+        
+        for(char c : S){
+            if(maps.count(c)){
+                
+                int n = maps[c].size();
+                while(n-->0){
+                    
+                    string word = maps[c].front();
+                    maps[c].pop_front();
+                    
+                    if(word.length() == 1) count++;
+                    else maps[word[1]].push_back(word.substr(1));                    
                 }
             }
         }
         return count;
+        
     }
-}
+};
