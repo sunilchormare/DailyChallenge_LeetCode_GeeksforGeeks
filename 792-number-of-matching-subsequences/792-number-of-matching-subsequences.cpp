@@ -54,7 +54,7 @@ public:
         for(auto& c : S){
             if(maps.count(c)){
                 int n = maps[c].size();
-                while(n--){
+                while(n-->0){
                     string word = maps[c].front();
                     maps[c].pop_front();
                     if(word.length() == 1) count++;
