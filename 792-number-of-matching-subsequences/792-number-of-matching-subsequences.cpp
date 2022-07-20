@@ -51,7 +51,7 @@ public:
         for(string s : words)
             maps[s[0]].push_back(s);
         
-        for(auto& c : S){
+        for(char c : S){
             if(maps.count(c)){
                 
                 int n = maps[c].size();
