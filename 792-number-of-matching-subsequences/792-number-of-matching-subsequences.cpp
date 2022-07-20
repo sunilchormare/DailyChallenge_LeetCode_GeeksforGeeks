@@ -47,7 +47,7 @@ public:
         
         
         int count = 0;
-        unordered_map<char, list<string>>maps;
+        map<char, list<string>>maps;
         for(string s : words)
             maps[s[0]].push_back(s);
         
