@@ -47,16 +47,19 @@ public:
         
         
         int count = 0;
-        
         unordered_map<char, list<string>>maps;
-        for(auto& s : words)
+        for(string s : words)
             maps[s[0]].push_back(s);
+        
         for(auto& c : S){
             if(maps.count(c)){
+                
                 int n = maps[c].size();
                 while(n-->0){
+                    
                     string word = maps[c].front();
                     maps[c].pop_front();
+                    
                     if(word.length() == 1) count++;
                     else maps[word[1]].push_back(word.substr(1));                    
                 }
