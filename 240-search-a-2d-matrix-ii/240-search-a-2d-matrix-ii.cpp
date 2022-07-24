@@ -11,11 +11,12 @@ public:
      //             return true;
    //return false;
         
-         if (!matrix.size())
-          return false;
+         if (matrix.size()==0)
+            return false;
 
     int col = 0;
     int row = matrix.size() - 1;
+        //cout<<matrix.size();
     while (col <= matrix[0].size() - 1 && row >= 0) 
     {
         if (target == matrix[row][col])
