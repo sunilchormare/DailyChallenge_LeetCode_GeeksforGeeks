@@ -3,6 +3,6 @@ class Solution {
          int sum = nums.length;
     for (int i = 0; i < nums.length; i++)
         sum += i - nums[i];
-    return sum; 
+    return sum;
     }
 }
