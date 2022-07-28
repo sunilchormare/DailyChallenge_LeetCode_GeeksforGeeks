@@ -26,7 +26,7 @@ public:
             counts[t[i]]--;
         }
         for (auto count : counts)
-            if (count.second) return false;
+            if (count.second!=0) return false;
         return true;
     }
 };
