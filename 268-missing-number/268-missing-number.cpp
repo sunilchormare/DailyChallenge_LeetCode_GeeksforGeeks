@@ -8,6 +8,7 @@ public:
          int xors = 0,i = 0;
 	for (i = 0; i < nums.size(); i++) {
 		xors = xors ^ i ^ nums[i];
+        cout<<"i= "<<i<<" nums[i] = "<<nums[i]<<" xors = "<<xors<<endl;
 	}
 
 	return xors ^ i;
