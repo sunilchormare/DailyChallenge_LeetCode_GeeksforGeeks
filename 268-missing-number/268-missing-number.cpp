@@ -1,16 +1,21 @@
 class Solution {
-public:
-    int missingNumber(vector<int>& nums) {
-    //      int sum = nums.size();
-    // for (int i = 0; i < nums.size(); i++)
+    public int missingNumber(int[] nums) {
+    //      int sum = nums.length;
+    // for (int i = 0; i < nums.length; i++)
     //     sum += i - nums[i];
     // return sum;
-         int xors = 0,i = 0;
-	for (i = 0; i < nums.size(); i++) {
-		xors = xors ^ i ^ nums[i];
-        cout<<"i= "<<i<<" nums[i] = "<<nums[i]<<" xors = "<<xors<<endl;
-	}
+        
+//          int xor = 0, i = 0;
+// 	for (i = 0; i < nums.length; i++) {
+// 		xor = xor ^ i ^ nums[i];
+// 	}
 
-	return xors ^ i;
+// 	return xor ^ i;
+        
+          int sum = 0;
+        for(int num: nums)
+            sum += num;
+            
+        return (nums.length * (nums.length + 1) )/ 2 - sum;
     }
-};
+}
