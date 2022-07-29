@@ -8,12 +8,13 @@ public:
      //    int sum=(n*(n+1))/2;
      //    cout<<sum;
      //    return sumArr-sum;
-    map<int,int> m;
-        for(int i:nums)
-            m[i]++;
-    for(auto i:m)
-        if(i.second>=2)
-            return i.first;
-    return 0;
+   int idx = 0;
+        while (nums[idx] == idx) ++idx;
+        while (nums[idx] != idx) {
+            int tmp = idx;
+            idx = nums[tmp];
+            nums[tmp] = tmp;
+        }
+        return idx;
     }
 };
