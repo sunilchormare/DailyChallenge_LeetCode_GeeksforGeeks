@@ -2,9 +2,11 @@ class Solution {
 public:
      bool matches(string word,string pattern)
    {
-        vector<char> patternToWord(26,0);
-        vector<char> wordToPattern(26,0);
+        // vector<char> patternToWord(26,0);
+        // vector<char> wordToPattern(26,0);
          //map<char,int> patternToWord,wordToPattern;
+         char patternToWord[26]={0};
+         char wordToPattern[26]={0};
        for(int index=0;index<word.size();++index)
        {
            char wordChar=word[index];
