@@ -2,12 +2,8 @@ class Solution {
     public List<String> findAndReplacePattern(String[] words, String pattern) {
         List<String> result=new ArrayList<>();
         for(String s:words)
-        {
             if(matches(s,pattern))
-            {
                 result.add(s);
-            }
-        }
         return result;
     }
     private boolean matches(String word,String pattern)
