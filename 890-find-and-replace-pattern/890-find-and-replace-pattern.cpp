@@ -9,11 +9,11 @@ public:
        {
            char wordChar=word[index];
            char patternChar=pattern[index];
-           if(patternToWord[patternChar-'a']==0)
-               patternToWord[patternChar-'a']=wordChar;
-           if(wordToPattern[wordChar-'a']==0)
-               wordToPattern[wordChar-'a']=patternChar;
-           if(patternToWord[patternChar-'a']!=wordChar||wordToPattern[wordChar-'a']!=patternChar)
+           if(patternToWord[patternChar-'0']==0)
+               patternToWord[patternChar-'0']=wordChar;
+           if(wordToPattern[wordChar-'0']==0)
+               wordToPattern[wordChar-'0']=patternChar;
+           if(patternToWord[patternChar-'0']!=wordChar||wordToPattern[wordChar-'0']!=patternChar)
                return false;
        }
        return true;
