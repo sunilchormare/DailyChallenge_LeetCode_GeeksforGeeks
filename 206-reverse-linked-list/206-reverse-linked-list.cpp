@@ -17,8 +17,8 @@ public:
     ListNode* reverse(ListNode* head,ListNode *n)
     {
         if(head==NULL) return n;
-      ListNode*  next=head->next;
-         head->next=n;
+        ListNode*  next=head->next;
+        head->next=n;
         return reverse(next,head);
     }
 };
