@@ -11,7 +11,7 @@ public:
          tem=next;
          
      }
-        head=prev;
-        return head;
+       // head=prev;
+        return prev;
     }
 };
