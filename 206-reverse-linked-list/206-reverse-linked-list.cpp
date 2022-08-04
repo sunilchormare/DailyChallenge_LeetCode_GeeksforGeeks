@@ -11,7 +11,6 @@ public:
          head=next;
          
      }
-       // head=prev;
         return prev;
     }
 };
