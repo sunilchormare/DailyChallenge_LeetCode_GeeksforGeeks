@@ -22,18 +22,18 @@ public:
         // vector<int> ds;
         // int c=0;
         // findCombinations(0,nums,target,ds,c);
-        // return c;
-        
-        
+        // return c;   
         vector<unsigned int> result(target+1);
         result[0]=1;
-        for(int i=1;i<=target;++i)
-        {
+        for(int i=1;i<=target;++i){
+           // cout<<" i = "<<i<<endl;
             for(int x:nums)
+            {
                 if(i>=x)
                   result[i]+=result[i-x];
+               // cout<<" x = "<<x<<" result[i] = "<<result[i]<<" result[i-x] = "<<result[i-x]<<endl;
+            }
         }
-        
     return result[target];
     }
 };
