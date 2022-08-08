@@ -10,7 +10,7 @@ public:
         }
         p->next = head;
         k = len - k % len;
-        while (k--)
+        while (k-->0)
             p = p->next;
         head = p->next;
         p->next = NULL;
