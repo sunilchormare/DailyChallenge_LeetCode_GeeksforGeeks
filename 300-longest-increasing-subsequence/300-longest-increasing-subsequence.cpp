@@ -1,7 +1,17 @@
 class Solution {
 public:
+    
+//     int helper(int i,int prev,vector<int>&arr, int n)
+//     {
+//         if(i==n) return 0;
+//         int len=0+helper(i+1,prev,arr,n);
+//         if(arr[i]>arr[prev]||prev==-1)
+//              len=max(len,1+helper(i+1,i,arr,n));
+            
+//      return len;
+//     }
     int lengthOfLIS(vector<int>& arr) {
-        int n=arr.size();
+         int n=arr.size();
         int lis[n]; 
 
 	lis[0] = 1; 
@@ -15,5 +25,7 @@ public:
 	} 
 
 	return *max_element(lis, lis+n); 
+        
+        //return helper(0,-1,arr,n); 
     }
 };
