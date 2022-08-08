@@ -4,7 +4,7 @@ public:
        if (head==NULL) return NULL;
         int len = 1;
         ListNode *p = head;
-        while (p->next) {
+        while (p->next!=NULL) {
             len++;
             p = p->next;
         }
