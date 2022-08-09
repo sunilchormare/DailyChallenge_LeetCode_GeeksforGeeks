@@ -1,24 +1,24 @@
 class Solution {
-public:
-    void findCombinations(int i,vector<int> &A,int target,vector<vector<int>> &res,vector<int> &ds)
-    {if(i==A.size()){
-        if(target==0)
-            res.push_back(ds);
-        return;
+    public List<List<Integer>> combinationSum(int[] A, int target) {
+        List<List<Integer>> res=new ArrayList<>();
+        findCombinations(0,A,target,res,new ArrayList<>());
+        return res;
+        
     }
-        if(A[i]<=target){
-                ds.push_back(A[i]);
+    public void findCombinations(int i,int[] A,int target,List<List<Integer>> res,List<Integer>ds)
+    {
+        if(i==A.length)
+        {
+            if(target==0)
+                res.add(new ArrayList<>(ds));
+            return;
+        }
+        if(A[i]<=target)
+        {
+            ds.add(A[i]);
             findCombinations(i,A,target-A[i],res,ds);
-            ds.pop_back();
+            ds.remove(ds.size()-1);
         }
         findCombinations(i+1,A,target,res,ds);
     }
-    vector<vector<int>> combinationSum(vector<int>& A, int target) {
-       ios_base::sync_with_stdio(false);
-cin.tie(NULL);
-        vector<vector<int>> res;
-        vector<int>ds;
-        findCombinations(0,A,target,res,ds);
-        return res;
-    }
-};
+}
