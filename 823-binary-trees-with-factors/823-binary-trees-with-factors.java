@@ -1,17 +1,16 @@
 class Solution {
-    public int numFactoredBinaryTrees(int[] A) {
-       long res = 0L, mod = (long)1e9 + 7;
-        Arrays.sort(A);
-        HashMap<Integer, Long> dp = new HashMap<>();
-        for (int i = 0; i < A.length; ++i) 
-        {
-            dp.put(A[i], 1L);
-    for (int j = 0; j < i; ++j)
-        if (A[i] % A[j] == 0)
-           dp.put(A[i], (dp.get(A[i]) + dp.get(A[j]) * dp.getOrDefault(A[i] / A[j], 0L)) % mod);
-            res = (res + dp.get(A[i])) % mod;
+public:
+    int numFactoredBinaryTrees(vector<int>& A) {
+     long res = 0, mod = pow(10, 9) + 7;
+        sort(A.begin(), A.end());
+        unordered_map<int, long> dp;
+        for (int i = 0; i < A.size(); ++i) {
+            dp[A[i]] = 1;
+            for (int j = 0; j < i; ++j)
+                if (A[i] % A[j] == 0)
+                    dp[A[i]] = (dp[A[i]] + dp[A[j]] * dp[A[i] / A[j]]) % mod;
+            res = (res + dp[A[i]]) % mod;
         }
-        
-        return (int) res; 
+        return res;
     }
-}
+};
