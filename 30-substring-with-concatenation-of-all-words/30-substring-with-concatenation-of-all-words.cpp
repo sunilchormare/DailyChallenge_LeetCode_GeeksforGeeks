@@ -18,7 +18,8 @@ vector<int> findSubstring(string s, vector<string>& words) {
                     if (seen[word] > counts[word])
                         break;
                 }
-                else break;
+                else 
+                    break;
             }
             if (j == num) indexes.push_back(i);
         }
