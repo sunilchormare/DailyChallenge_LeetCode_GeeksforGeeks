@@ -1,80 +1,70 @@
-class Solution {
-public:
-bool able(string s,string t){
-    if(s.length()!=t.length())
-        return false;
-    int c=0;
-    for(int i=0;i<s.length();i++)
-        c+=(s[i]!=t[i]);
-    return c==1;
-}
-void bfs(vector<vector<int>> &g,vector<int> parent[],int n,int sr,int ds){
-    vector <int> dist(n,1005);
-    queue <int> q;
-    q.push(sr);
-    parent[sr]={-1};
-    dist[sr]=0;
-    while(!q.empty()){
-        int x=q.front();
-        q.pop();
-        for(int u:g[x]){
-            if(dist[u]>dist[x]+1){
-                dist[u]=dist[x]+1;
-                q.push(u);
-                parent[u].clear();
-                parent[u].push_back(x);
-            }
-            else if(dist[u]==dist[x]+1)
-                parent[u].push_back(x);
+class Solution{
+    
+List<List<String>> res = new ArrayList<>();
+    List<String> list = new LinkedList<>();
+    Map<String, List<String>> map = new HashMap<>();
+
+    public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
+        if (wordList.size() == 0) return res;
+
+        Queue<String> q = new ArrayDeque<>();
+        Set<String> visited = new HashSet<>();
+        Set<String> unvisited = new HashSet<>(wordList);
+        q.add(beginWord);
+        unvisited.remove(beginWord);
+        boolean found = false;
+
+        // bfs
+        while(!q.isEmpty()) {
+            int size = q.size();
+            for (int k = size - 1; k >= 0; k--) { // for each string in the queue
+                String word = q.poll();
+                for (int i = 0; i < word.length(); i++) {
+                    char chs[] = word.toCharArray();
+                    for (char c = 'a'; c <= 'z'; c++) {
+                        chs[i] = c;
+                        String newStr = new String(chs);
+                        if (unvisited.contains(newStr)) {
+                            if (!visited.contains(newStr)) {
+                                visited.add(newStr);
+                                q.add(newStr);
+                            }
+                            // build adjacent graph
+                            if (map.containsKey(newStr)) map.get(newStr).add(word);
+                            else {
+                                List<String> l = new ArrayList<>();
+                                l.add(word);
+                                map.put(newStr, l);
+                            }
+                            if (newStr.equals(endWord)) found = true;
+                        }
+                    }//a-z
+                }//first index-last index
+            }//for each string
+            if (found) break;
+            unvisited.removeAll(visited);
+            visited.clear();
+
         }
+
+        // back trace based on the adjacent graph that we have built
+        backTrace(endWord, beginWord);
+        return res;
     }
-}
-void shortestPaths(vector<vector<int>> &Paths, vector<int> &path, vector<int> parent[],int node){
-    if(node==-1){
-        Paths.push_back(path);
-        return ;
-    }
-    for(auto u:parent[node]){
-        path.push_back(u);
-        shortestPaths(Paths,path,parent,u);
-        path.pop_back();
-    }
-}
-vector<vector<string>> findLadders(string beginWord, string endWord, vector<string>& wordList) {
-    int n=wordList.size(),sr=-1,ds=-1;
-    vector<vector<string>> ANS;
-    for(int i=0;i<n;i++){
-        if(wordList[i]==beginWord)
-            sr=i;
-        if(wordList[i]==endWord)
-            ds=i;
-    }
-    if(ds==-1)
-        return ANS;
-    if(sr==-1){
-        wordList.emplace(wordList.begin(),beginWord);
-        sr=0;
-        ds++;
-        n++;
-    }
-    vector <vector<int>> g(n,vector<int>()),Paths;
-    vector <int> parent[n],path;
-    for(int i=0;i<n-1;i++)
-        for(int j=i+1;j<n;j++)
-            if(able(wordList[i],wordList[j])){
-                g[i].push_back(j);
-                g[j].push_back(i);
+
+    private void backTrace(String cur, String start) {
+        if (cur.equals(start)) {
+            list.add(0, start);
+            res.add(new ArrayList<String>(list));
+            list.remove(0); // backtrace by one step
+            return;
+        }
+        list.add(0, cur);
+        if (map.get(cur) != null) {
+            for (String s:map.get(cur)) { // for each neighbors
+                backTrace(s,start);
             }
-    bfs(g,parent,n,sr,ds); 
-    shortestPaths(Paths,path,parent,ds);
-    for(auto u:Paths){
-        vector <string> now;
-        for(int i=0;i<u.size()-1;i++)
-            now.push_back(wordList[u[i]]);
-        reverse(now.begin(),now.end());
-        now.push_back(wordList[ds]);
-        ANS.push_back(now);
+        }
+        list.remove(0);
     }
-    return ANS;
 }
-}; 
