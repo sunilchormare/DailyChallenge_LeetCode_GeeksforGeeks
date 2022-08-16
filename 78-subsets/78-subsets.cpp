@@ -1,8 +1,7 @@
 class Solution {
 public:
     void helper(int i,vector<int> &nums,vector<int> ds,vector<vector<int>> &res){
-        if(i==nums.size())
-        {
+        if(i==nums.size()){
             res.push_back(ds);
             return;
         }
