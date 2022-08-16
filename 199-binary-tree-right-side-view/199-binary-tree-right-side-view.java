@@ -9,8 +9,9 @@ class Solution {
     {
         if(root==null) return;
         if(res.size()==level) res.add(root.val);
-        helper(root.right,level+1,res);
-        helper(root.left,level+1,res);
+      
+        
+          helper(root.right,level+1,res);helper(root.left,level+1,res);
        
     }
 }
