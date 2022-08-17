@@ -1,19 +1,18 @@
 class Solution {
-public:
-    int uniqueMorseRepresentations(vector<string>& words) {
-        vector<string> morse{".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
+    public int uniqueMorseRepresentations(String[] words) {
+        String []morse=new String[]{".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
         
-        set<string> code;
-        for(string w: words)
+        Set<String> code=new HashSet<>();
+        for(String w: words)
         {
-            string sb="";
-            for(char c:w)
+            StringBuilder sb=new StringBuilder();
+            for(char c:w.toCharArray())
             {
-                sb+=morse[c-'a'];
+                sb.append(morse[c-'a']);
             }
-            code.insert(sb);
+            code.add(sb.toString());
         }
             
         return code.size();
     }
-};
+}
