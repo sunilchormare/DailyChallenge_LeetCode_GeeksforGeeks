@@ -13,7 +13,8 @@ class Solution {
             left.put(i+2, left.get(i+2) - 1);
             end.put(i+3, end.getOrDefault(i+3,0) + 1);
         }
-        else return false;
+        else 
+            return false;
         left.put(i, left.get(i) - 1);
     }
     return true;
