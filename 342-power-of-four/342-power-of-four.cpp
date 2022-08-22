@@ -8,7 +8,9 @@ public:
       //           return true;
       //   }
       // return false;
-        if(n>1) while(n%4==0) n /= 4;
+        if(n>1) 
+            while(n%4==0) 
+                n /= 4;
       return n==1;  
     }
 };
