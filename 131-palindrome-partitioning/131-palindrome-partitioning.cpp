@@ -1,6 +1,12 @@
 class Solution {
 public:
-    void palindromePartitions(int index,string s,vector<string> &path,vector<vector<string>> &res)
+   
+    vector<vector<string>> partition(string s) {
+         vector<vector<string>> res;
+         vector<string> path;
+          palindromePartitions(0,s,path,res);
+        return res;
+    } void palindromePartitions(int index,string s,vector<string> &path,vector<vector<string>> &res)
     {
         if(index==s.size())
         {
@@ -27,11 +33,5 @@ public:
             
         }
         return true;
-    }
-    vector<vector<string>> partition(string s) {
-         vector<vector<string>> res;
-         vector<string> path;
-          palindromePartitions(0,s,path,res);
-        return res;
     }
 };
