@@ -1,32 +1,21 @@
-struct CapCmp {
-    bool operator()(pair<int, int> &a, pair<int, int> &b) {
-        return a.first > b.first;
-    }
-};
-struct ProCmp {
-    bool operator()(pair<int, int> &a, pair<int, int> &b) {
-        return a.second < b.second;
-    }
-};
 class Solution {
-public:
-    int findMaximizedCapital(int k, int W, vector<int>& Profits, vector<int>& Capital) {
-        priority_queue<pair<int, int>, vector<pair<int, int>>, CapCmp> cap;
-        priority_queue<pair<int, int>, vector<pair<int, int>>, ProCmp> pro;
-        for (int i = 0; i < Profits.size(); ++i) 
-            cap.push({ Capital[i], Profits[i] });
+    public int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
+     PriorityQueue<int[]> pqCap=new PriorityQueue<>((a,b)->(a[0]-b[0]));
+     PriorityQueue<int[]> pqPro=new PriorityQueue<>((a,b)->(b[1]-a[1]));
         
-        while (k--) {
-            while (cap.size() && cap.top().first <= W) 
-            {
-                pro.push(cap.top());
-                cap.pop();
-            }
-            if (pro.empty()) 
-                return W;
-            W += pro.top().second;
-            pro.pop();
+    for(int i=0;i<profits.length;++i)
+        pqCap.add(new int[]{capital[i],profits[i]});
+        
+    for(int i=0;i<k;++i)
+    {
+        while(!pqCap.isEmpty() && pqCap.peek()[0]<=w)
+        {
+            pqPro.add(pqCap.poll());
         }
-        return W;
+        if(pqPro.isEmpty()) break;
+        w+=pqPro.poll()[1];
+        
     }
-};
+        return w;
+    }
+}
