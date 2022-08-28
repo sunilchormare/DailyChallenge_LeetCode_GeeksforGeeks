@@ -3,7 +3,7 @@ class Solution {
     
     public List<List<Integer>> subsets(int[] nums) {
     List<List<Integer>> res=new ArrayList<>();
-    Arrays.sort(nums);
+    //Arrays.sort(nums);
     helper(0,nums,new ArrayList<>(),res);
     
     return res;
