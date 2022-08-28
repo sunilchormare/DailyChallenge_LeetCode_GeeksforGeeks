@@ -13,9 +13,10 @@ public:
         // return pq.top();
         
          priority_queue<int> maxh;
-        for(auto curr:nums) maxh.push(curr);
+        for(auto curr:nums) 
+            maxh.push(curr);
         int a = maxh.top();
-        maxh.pop();;
+        maxh.pop();
         int b = maxh.top();
         return (a-1)*(b-1);
     }
