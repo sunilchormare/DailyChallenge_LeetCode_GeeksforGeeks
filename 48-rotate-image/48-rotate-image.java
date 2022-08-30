@@ -1,12 +1,11 @@
 class Solution {
-public:
-    void rotate(vector<vector<int>>& matrix) {
+    public void rotate(int[][] matrix) {
         transpose(matrix);
         reflect(matrix);
     }
-    void transpose(vector<vector<int>> &matrix)
+     void transpose(int [][]matrix)
     {
-        int n=matrix.size();
+        int n=matrix.length;
         for(int i=0;i<n;++i)
         {
             for(int j=i+1;j<n;++j)
@@ -18,9 +17,9 @@ public:
         }
         
     }
-    void reflect(vector<vector<int>> &matrix)
+    void reflect(int [][]matrix)
     {
-        int n=matrix.size();
+        int n=matrix.length;
         for(int i=0;i<n;++i)
         {
             for(int j=0;j<n/2;++j)
@@ -32,4 +31,4 @@ public:
         }
         
     }
-};
+}
