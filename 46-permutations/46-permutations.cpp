@@ -21,6 +21,7 @@ public:
         if(ds.size()==nums.size())
         {
             res.push_back(ds);
+            return;
         }
         for(int i=0;i<nums.size();++i)
         {
