@@ -8,12 +8,14 @@ public:
         if(!size(mat)) return ans;
         m = size(mat), n = size(mat[0]);
         atlantic = pacific = vector<vector<bool> >(m, vector<bool>(n, false));
-        for(int i = 0; i < m; i++) dfs(mat, pacific, i, 0), dfs(mat, atlantic, i, n - 1);
-        for(int i = 0; i < n; i++) dfs(mat, pacific, 0, i), dfs(mat, atlantic, m - 1, i);             
+        for(int i = 0; i < m; i++) 
+            dfs(mat, pacific, i, 0), dfs(mat, atlantic, i, n - 1);
+        for(int i = 0; i < n; i++) 
+            dfs(mat, pacific, 0, i), dfs(mat, atlantic, m - 1, i);             
         return ans;
     }
    
-    void dfs(vector<vector<int> >& mat, vector<vector<bool> >& visited, int i, int j){        
+    void dfs(vector<vector<int> >& mat, vector<vector<bool> >& visited, int i, int j){     
         if(visited[i][j]) return;
         visited[i][j] = true;
 		
