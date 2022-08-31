@@ -1,8 +1,8 @@
 class Solution {
     public List<String> letterCasePermutation(String s) {
-        if (s == null) {
+        if (s == null) 
             return new LinkedList<>();
-        }
+        
         
         List<String> res = new LinkedList<>();
         helper(s.toCharArray(), res, 0);
