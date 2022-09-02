@@ -5,10 +5,10 @@ class Solution {
             if (input.charAt(i) == '-' ||
                 input.charAt(i) == '*' ||
                 input.charAt(i) == '+' ) {
-                List<Integer> part1Ret = diffWaysToCompute(input.substring(0, i));
-                List<Integer> part2Ret = diffWaysToCompute(input.substring(i+1));
-                for (Integer p1 :   part1Ret) {
-                    for (Integer p2 :   part2Ret) {
+                List<Integer> left = diffWaysToCompute(input.substring(0, i));
+                List<Integer> right = diffWaysToCompute(input.substring(i+1));
+                for (Integer p1 :   left) {
+                    for (Integer p2 :   right) {
                         int c = 0;
                         switch (input.charAt(i)) {
                             case '+': c = p1+p2;
