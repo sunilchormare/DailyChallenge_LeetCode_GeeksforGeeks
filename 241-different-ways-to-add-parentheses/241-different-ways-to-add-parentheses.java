@@ -1,16 +1,17 @@
 class Solution {
-    public List<Integer> diffWaysToCompute(String input) {
-        List<Integer> ret = new LinkedList<Integer>();
-        for (int i=0; i<input.length(); i++) {
-            if (input.charAt(i) == '-' ||
-                input.charAt(i) == '*' ||
-                input.charAt(i) == '+' ) {
-                List<Integer> left = diffWaysToCompute(input.substring(0, i));
-                List<Integer> right = diffWaysToCompute(input.substring(i+1));
-                for (Integer p1 :   left) {
-                    for (Integer p2 :   right) {
+public:
+    vector<int> diffWaysToCompute(string input) {
+      vector<int> ret;
+        for (int i=0; i<input.size(); i++) {
+            if (input[i] == '-' ||
+                input[i] == '*' ||
+                input[i] == '+' ) {
+                vector<int> left = diffWaysToCompute(input.substr(0, i));
+                vector<int> right = diffWaysToCompute(input.substr(i+1));
+                for (int p1 :   left) {
+                    for (int p2 :   right) {
                         int c = 0;
-                        switch (input.charAt(i)) {
+                        switch (input[i]) {
                             case '+': c = p1+p2;
                                 break;
                             case '-': c = p1-p2;
@@ -18,15 +19,14 @@ class Solution {
                             case '*': c = p1*p2;
                                 break;
                         }
-                        ret.add(c);
+                        ret.push_back(c);
                     }
                 }
             }
         }
         if (ret.size() == 0) {
-            ret.add(Integer.valueOf(input));
+            ret.push_back(stoi(input));
         }
         return ret;
     }
-    
-}
+};
