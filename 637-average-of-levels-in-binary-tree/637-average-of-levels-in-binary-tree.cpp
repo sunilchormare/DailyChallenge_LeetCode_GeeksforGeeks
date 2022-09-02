@@ -1,26 +1,26 @@
+
 class Solution {
-public:
-    vector<double> averageOfLevels(TreeNode* root) {
-        vector<double> res;
-        if(root==NULL) return res;
-        queue<TreeNode*> q;
-        q.push(root);
-        while(!q.empty())
+    public List<Double> averageOfLevels(TreeNode root) {
+        List<Double> res=new ArrayList<>();
+        if(root==null) return res;
+        Queue<TreeNode> q=new LinkedList<>();
+        q.offer(root);
+        while(!q.isEmpty())
         {
 
             int size=q.size();
             double sum=0;
             for(int i=0;i<size;++i)
-            { TreeNode *node=q.front(); q.pop();
-                sum+=node->val;
-           if(node->left!=NULL) q.push(node->left);
-            if(node->right!=NULL) q.push(node->right);
+            { TreeNode node=q.poll();
+                sum+=node.val;
+           if(node.left!=null) q.offer(node.left);
+            if(node.right!=null) q.offer(node.right);
             }
-            res.push_back(sum/size);
+            res.add(sum/size);
            
             
         }
         
         return res;
     }
-};
+}
