@@ -1,22 +1,20 @@
-class Solution {
-    public List<Double> averageOfLevels(TreeNode root) {
-        List<Double> res=new ArrayList<>();
-        if(root==null) return res;
-        Queue<TreeNode> q=new LinkedList<>();
-        q.offer(root);
-        while(!q.isEmpty())
-        {
-            int size=q.size();
-            double sum=0;
-            for(int i=0;i<size;++i){
-                TreeNode node=q.poll();
-                sum+=node.val;
-                if(node.left!=null) q.offer(node.left);
-                if(node.right!=null) q.offer(node.right);
-            }
-            
-            res.add(sum/size);
-        }
-        return res;
-    }
-}
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def averageOfLevels(self, root: Optional[TreeNode]) -> List[float]:
+            q,res = [root],[]
+            if not root: return res
+            while len(q):
+                s=len(q)
+                sum=0
+                for i in range(s):
+                    node=q.pop(0)
+                    sum+=node.val
+                    if(node.left): q.append(node.left)
+                    if(node.right): q.append(node.right)
+                res.append(sum/s)
+            return res
