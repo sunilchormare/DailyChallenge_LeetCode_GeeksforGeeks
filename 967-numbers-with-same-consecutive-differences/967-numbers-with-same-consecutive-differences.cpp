@@ -15,7 +15,7 @@ public:
     }
     vector<int> numsSameConsecDiff(int n, int k) {
        vector<int> res;
-        //if(n==1) res.push_back(0);
+        
         for(int d=1;d<10;++d)
             dfs(d,n-1,k,res);
         return res;
