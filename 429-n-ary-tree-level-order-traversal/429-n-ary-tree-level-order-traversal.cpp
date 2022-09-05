@@ -1,16 +1,17 @@
 /*
 // Definition for a Node.
 class Node {
-    public int val;
-    public List<Node> children;
+public:
+    int val;
+    vector<Node*> children;
 
-    public Node() {}
+    Node() {}
 
-    public Node(int _val) {
+    Node(int _val) {
         val = _val;
     }
 
-    public Node(int _val, List<Node> _children) {
+    Node(int _val, vector<Node*> _children) {
         val = _val;
         children = _children;
     }
@@ -18,27 +19,28 @@ class Node {
 */
 
 class Solution {
-    public List<List<Integer>> levelOrder(Node root) {
-         List<List<Integer>> ret = new LinkedList<>();
+public:
+    vector<vector<int>> levelOrder(Node* root) {
+         vector<vector<int>> ret ;
         
-        if (root == null) return ret;
+        if (root == NULL) return ret;
         
-        Queue<Node> queue = new LinkedList<>();
+        queue<Node*> q;
         
-        queue.offer(root);
+        q.push(root);
         
-        while (!queue.isEmpty()) {
-            List<Integer> curLevel = new LinkedList<>();
-            int len = queue.size();
+        while (!q.empty()) {
+            vector<int> curLevel;
+            int len = q.size();
             for (int i = 0; i < len; i++) {
-                Node curr = queue.poll();
-                curLevel.add(curr.val);
-                for (Node c : curr.children)
-                    queue.offer(c);
+                Node* curr = q.front(); q.pop();
+                curLevel.push_back(curr->val);
+                for (Node* c : curr->children)
+                     q.push(c);
             }
-            ret.add(curLevel);
+            ret.push_back(curLevel);
         }
         
         return ret;
     }
-}
+};
