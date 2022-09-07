@@ -12,6 +12,6 @@ public:
             else
                 right=mid;
         }
-        return letters[left];
+        return letters[right];
     }
 };
