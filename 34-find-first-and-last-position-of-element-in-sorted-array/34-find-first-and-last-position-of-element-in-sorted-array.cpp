@@ -12,8 +12,7 @@ public:
             else
                 right=mid;
         }
-        if(nums[left]==target) res[0]=left;
-        else res[0]=-1;
+        res[0]=(nums[left]==target)?res[0]=left:res[0]=-1;
         right=nums.size()-1;
         while(left<right)
         {
@@ -23,8 +22,7 @@ public:
             else
                 left=mid;
         }
-        if(nums[right]==target) res[1]=right;
-        else res[1]=-1;
+        res[1]=(nums[right]==target)?res[1]=right:res[1]=-1;
         
      return res;
     }
