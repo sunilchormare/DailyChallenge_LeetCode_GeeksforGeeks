@@ -1,24 +1,18 @@
 class Solution {
-public:
-     static bool comp(vector<int> &a, vector<int> &b)
-     {
-          if (a[0] == b[0])
-               return a[1] > b[1];
-          return a[0] < b[0];
-     }
-    int numberOfWeakCharacters(vector<vector<int>>& p) {
+    public int numberOfWeakCharacters(int[][] p) {
+             int n = p.length;
+        int count = 0;
         
-        sort(p.begin(), p.end(), comp);
-          int ans = 0;
-                  int mtn = INT_MIN;            
-
-          for (int i = p.size() - 1; i >= 0; i--)
-          {
-               if (p[i][1] < mtn) 
-                    ans++;
-               mtn = max(mtn, p[i][1]);
-          }
-          return ans;
+        Arrays.sort(p, (a, b) -> (b[0] == a[0]) ? (a[1] - b[1]) : b[0] - a[0]);
         
+        int max = 0;
+        for (int i = 0; i < n; i++) {
+            
+            if (p[i][1] < max) {
+                count++;
+            }
+            max = Math.max(max, p[i][1]);
+        }
+        return count;
     }
-};
+}
