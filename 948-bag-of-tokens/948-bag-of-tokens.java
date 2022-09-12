@@ -1,11 +1,12 @@
 class Solution {
-    public int bagOfTokensScore(int[] tokens, int P) {
-        Arrays.sort(tokens);
-        int res = 0, points = 0, i = 0, j = tokens.length - 1;
+public:
+    int bagOfTokensScore(vector<int>& tokens, int P) {
+         sort(tokens.begin(), tokens.end());
+        int res = 0, points = 0, i = 0, j = tokens.size() - 1;
         while (i <= j) {
             if (P >= tokens[i]) {
                 P -= tokens[i++];
-                res = Math.max(res, ++points);
+                res = max(res, ++points);
             } else if (points > 0) {
                 points--;
                 P += tokens[j--];
@@ -14,5 +15,6 @@ class Solution {
             }
         }
         return res;
+    
     }
-}
+};
