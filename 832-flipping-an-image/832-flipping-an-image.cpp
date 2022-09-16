@@ -15,7 +15,8 @@ public:
         
        for (auto& row : A) {
             reverse(row.begin(), row.end());
-            for (auto& v : row) v ^= 1;
+            for (auto& v : row)
+                v ^= 1;
         }
         return A;
         
