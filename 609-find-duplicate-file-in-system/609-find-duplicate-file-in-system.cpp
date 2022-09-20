@@ -1,26 +1,22 @@
 class Solution {
-public:
-   vector<vector<string>> findDuplicate(vector<string>& paths) {
-    unordered_map<string, vector<string>> files;
-    vector<vector<string>> result;
-
-    for (auto path : paths) {
-	    stringstream ss(path);
-	    string root;
-	    string s;
-	    getline(ss, root, ' ');
-	    while (getline(ss, s, ' ')) {
-		    string fileName = root + '/' + s.substr(0, s.find('('));
-		    string fileContent = s.substr(s.find('(') + 1, s.find(')') - s.find('(') - 1);
-		    files[fileContent].push_back(fileName);
-	    }
+    public List<List<String>> findDuplicate(String[] paths) {
+        Map<String,List<String>> map = new HashMap<>();
+        for(String path : paths){
+            String[] dir = path.split(" ");
+            String root = dir[0];
+            for(int i=1;i<dir.length;i++){
+                String content = dir[i].substring(dir[i].indexOf("("),dir[i].indexOf(")"));
+                if(map.get(content)==null)
+                    map.put(content,new ArrayList<>());
+                map.get(content).add(root +"/" +dir[i].substring(0,dir[i].indexOf("(")));
+            }
+        }
+        List<List<String>> list = new ArrayList<>();
+        for(Map.Entry<String,List<String>> entry : map.entrySet()){
+            if(entry.getValue().size()>1)
+                list.add(entry.getValue());
+        }
+        return list;
     }
 
-    for (auto file : files) {
-	    if (file.second.size() > 1)
-		    result.push_back(file.second);
-    }
-
-    return result;
 }
-};
