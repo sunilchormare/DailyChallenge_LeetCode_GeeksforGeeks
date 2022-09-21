@@ -1,6 +1,6 @@
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
-    HashMap<Integer,Integer> hm = new HashMap<>();
+         HashMap<Integer,Integer> hm = new HashMap<>();
     PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a,b) -> (hm.get(b)-hm.get(a)));
     int[] res = new int[k];
     
