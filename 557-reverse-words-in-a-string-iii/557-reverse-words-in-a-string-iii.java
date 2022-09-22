@@ -2,7 +2,7 @@ public class Solution {
     public String reverseWords(String s) {
         char[] ca = s.toCharArray();
         for (int i = 0; i < ca.length; i++) {
-            if (ca[i] != ' ') {   // when i is a non-space
+            if (ca[i] != ' ') {  
                 int j = i;
                 while (j + 1 < ca.length && ca[j + 1] != ' ') 
                 { j++; } 
