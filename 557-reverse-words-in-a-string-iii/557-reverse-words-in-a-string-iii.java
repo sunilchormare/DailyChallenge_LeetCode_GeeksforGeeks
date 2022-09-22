@@ -13,10 +13,11 @@ public class Solution {
     }
 
     private void reverse(char[] ca, int i, int j) {
-        for (; i < j; i++, j--) {
+       while(i < j){
             char tmp = ca[i];
             ca[i] = ca[j];
             ca[j] = tmp;
+            i++;j--;
         }
     }
 }
