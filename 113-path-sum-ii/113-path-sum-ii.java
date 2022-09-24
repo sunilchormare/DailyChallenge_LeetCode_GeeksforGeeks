@@ -1,19 +1,18 @@
+
 class Solution {
-public:
-    void pathSum(TreeNode*root,int sum,vector<int> &ds,vector<vector<int>> &res)
+    public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
+        List<List<Integer>> result=new ArrayList<>();
+        pathSum(root,targetSum,new ArrayList<>(),result);
+        return result;
+    }
+    private void pathSum(TreeNode root,int sum,List<Integer> path,List<List<Integer>> result)
     {
-     if(root==NULL) return;
-     ds.push_back(root->val);
-     if(root->left==NULL&&root->right==NULL&&sum==root->val)
-         res.push_back(ds);
-     pathSum(root->left,sum-root->val,ds,res);
-     pathSum(root->right,sum-root->val,ds,res); 
-     ds.pop_back();
+        if(root==null) return;
+        path.add(root.val);
+        if(root.left==null&&root.right==null&&root.val==sum)
+            result.add(new ArrayList<>(path));
+        pathSum(root.left,sum-root.val,path,result);
+        pathSum(root.right,sum-root.val,path,result);
+        path.remove(path.size()-1);
     }
-    vector<vector<int>> pathSum(TreeNode* root, int targetSum) {
-    vector<vector<int>> res;
-    vector<int> ds;
-    pathSum(root,targetSum,ds,res);
-    return res;
-    }
-};
+}
