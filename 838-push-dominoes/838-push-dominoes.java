@@ -1,10 +1,6 @@
-// Complexity:
-// Time O(N)
-// Space O(N)
 class Solution {
-    public String pushDominoes(String d)
-    {
-        d = 'L' + d + 'R';
+    public String pushDominoes(String d) {
+         d = 'L' + d + 'R';
         StringBuilder res = new StringBuilder();
         for (int i = 0, j = 1; j < d.length(); ++j) 
         {
@@ -29,5 +25,5 @@ class Solution {
               i = j;
           }
         return res.toString();
-     }
+    }
 }
