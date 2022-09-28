@@ -4,14 +4,11 @@ public:
     string reorganizeString(string S) {
          string res="";
         unordered_map<char,int> mp;
-        priority_queue<pair<int,char>>pq;
-        
+        priority_queue<pair<int,char>>pq;   
         for(auto s: S)
-            mp[s]+=1;
-        
+            mp[s]+=1;       
         for(auto m: mp)
-            pq.push(make_pair(m.second,m.first));
-        
+            pq.push(make_pair(m.second,m.first));      
         while(pq.size()>1){
             auto top1= pq.top();
             pq.pop();
