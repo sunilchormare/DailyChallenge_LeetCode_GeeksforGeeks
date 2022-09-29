@@ -1,27 +1,28 @@
 class Solution {
-    public int leastInterval(char[] tasks, int n) {
-         Map<Character,Integer> counts=new HashMap<>();
-     
+public:
+    int leastInterval(vector<char>& tasks, int n) {
+     unordered_map<char,int> counts;
+     priority_queue<int> pq;
      int result=0;
-      for(char c: tasks) counts.put(c,counts.getOrDefault(c,0)+1);
-     PriorityQueue<Integer> pq=new PriorityQueue(counts.size(),Collections.reverseOrder());
-        pq.addAll(counts.values());
-        while(!pq.isEmpty())
+      for(char c: tasks) counts[c]++;
+      for(auto t:counts) pq.push(t.second);
+        while(!pq.empty())
         {
          int time=0;
-         List<Integer> tmp=new ArrayList<>();
+         vector<int> tmp;
         for(int i=0;i<n+1;++i)
         {
-            if(!pq.isEmpty()) {
-                tmp.add(pq.remove()-1);
+            if(!pq.empty()) {
+                tmp.push_back(pq.top()-1);
+                pq.pop();
                 time++;
             }
         }
-            for(int t:tmp)
-                if(t>0) pq.add(t);
+            for(auto t:tmp)
+                if(t) pq.push(t);
                 
-            result+=pq.isEmpty()?time:n+1;
+            result+=pq.empty()?time:n+1;
         }
         return result;
     }
-}
+};
