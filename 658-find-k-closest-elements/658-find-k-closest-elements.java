@@ -1,13 +1,17 @@
-class Solution {
-    public List<Integer> findClosestElements(int[] A, int k, int x) {
-        int left = 0, right = A.length - k;
-        while (left < right) {
-            int mid = (left + right) / 2;
-            if (x - A[mid] > A[mid + k] - x)
-                left = mid + 1;
-            else
-                right = mid;
-        }
-        return Arrays.stream(A, left, left + k).boxed().collect(Collectors.toList());
-    }
-}
+class Solution:
+    def findClosestElements(self, arr: List[int], k: int, x: int) -> List[int]:
+        left = 0
+        right = len(arr) - k
+        
+        while left < right:
+            mid = left + (right - left)//2
+			
+            if x <= arr[mid]:
+                right = mid
+            elif x >= arr[mid + k]:
+                left = mid + 1
+            elif x - arr[mid] > arr[mid + k] - x:
+                left = mid + 1
+            else:
+                right = mid
+        return arr[left : left + k]
