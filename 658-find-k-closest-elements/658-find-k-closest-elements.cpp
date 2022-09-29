@@ -1,6 +1,8 @@
 class Solution {
-    public List<Integer> findClosestElements(int[] A, int k, int x) {
-        int left = 0, right = A.length - k;
+public:
+    vector<int> findClosestElements(vector<int>& A, int k, int x){
+        
+          int left = 0, right = A.size() - k;
         while (left < right) {
             int mid = (left + right) / 2;
             if (x - A[mid] > A[mid + k] - x)
@@ -8,6 +10,6 @@ class Solution {
             else
                 right = mid;
         }
-        return Arrays.stream(A, left, left + k).boxed().collect(Collectors.toList());
+        return vector<int>(A.begin() + left, A.begin() + left + k);
     }
-}
+};
