@@ -1,19 +1,27 @@
 class FreqStack {
-public:
-   unordered_map<int, int> freq;
-    unordered_map<int, stack<int>> m;
+  HashMap<Integer, Integer> freq = new HashMap<>();
+    HashMap<Integer, Stack<Integer>> m = new HashMap<>();
     int maxfreq = 0;
 
-    void push(int x) {
-        maxfreq = max(maxfreq, ++freq[x]);
-        m[freq[x]].push(x);
+    public void push(int x) {
+        int f = freq.getOrDefault(x, 0) + 1;
+        freq.put(x, f);
+        maxfreq = Math.max(maxfreq, f);
+        if (!m.containsKey(f)) m.put(f, new Stack<Integer>());
+        m.get(f).add(x);
     }
 
-    int pop() {
-        int x = m[maxfreq].top();
-        m[maxfreq].pop();
-        if (!m[freq[x]--].size()) maxfreq--;
+    public int pop() {
+        int x = m.get(maxfreq).pop();
+        freq.put(x, maxfreq - 1);
+        if (m.get(maxfreq).size() == 0) maxfreq--;
         return x;
     }
-};
+}
 
+/**
+ * Your FreqStack object will be instantiated and called as such:
+ * FreqStack obj = new FreqStack();
+ * obj.push(val);
+ * int param_2 = obj.pop();
+ */
