@@ -1,8 +1,6 @@
 class Solution:
     def numDecodings(self, s: str) -> int:
         dp = [0] * (len(s)+1)
-
-        # base case initialization
         dp[0] = 1 
         dp[1] = 0 if s[0] == "0" else 1
          
