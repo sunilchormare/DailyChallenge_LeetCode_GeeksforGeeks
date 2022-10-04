@@ -16,7 +16,8 @@ class Solution {
     while (!path.isEmpty()) {
         TreeNode temp = path.pop();
         int tempVal = sub.pop();
-        if (temp.left == null && temp.right == null) {if (tempVal == sum) return true;}
+        if (temp.left == null && temp.right == null && tempVal == sum)
+            return true;
         else {
             if (temp.left != null) {
                 path.push(temp.left);
