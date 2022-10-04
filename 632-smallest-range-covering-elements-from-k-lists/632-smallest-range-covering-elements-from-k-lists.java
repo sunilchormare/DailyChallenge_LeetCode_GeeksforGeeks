@@ -1,29 +1,22 @@
 class Solution {
-public:
-   struct mycompare {
-        bool operator () (pair<int, int>& a, pair<int, int>& b) {return a.first > b.first;}  
-    };
-    vector<int> smallestRange(vector<vector<int>>& nums) {
-        int n = nums.size(), large = INT_MIN, maxlen = INT_MAX;
-        priority_queue<pair<int, int>, vector<pair<int, int>>, mycompare> pq;
-        for (int i = 0; i < nums.size(); i++) {
-            large = max(large, nums[i][0]);
-            pq.push({nums[i][0], i});
+    public int[] smallestRange(List<List<Integer>> a) {
+     PriorityQueue<int[]> q = new PriorityQueue<>(Comparator.comparingInt(o -> a.get(o[0]).get(o[1])));
+        int max = Integer.MIN_VALUE, start = 0, end = Integer.MAX_VALUE;
+        for (int i = 0; i < a.size(); i++) {
+            q.offer(new int[]{i, 0});
+            max = Math.max(max, a.get(i).get(0));
         }
-        vector<int> ans(2, 0), idx(n, 0);
-        while (pq.size() == n) {
-            int cur = pq.top().first, row = pq.top().second;
-            pq.pop();
-            if (large-cur < maxlen) {
-                maxlen = large-cur;
-                ans[0] = cur;
-                ans[1] = large;
+        while (q.size() == a.size()) {
+            int e[] = q.poll(), row = e[0], col = e[1];
+            if (end - start > max - a.get(row).get(col)) {
+                start = a.get(row).get(col);
+                end = max;
             }
-            if (++idx[row] < nums[row].size()) {
-                pq.push({nums[row][idx[row]], row});
-                large = max(large, nums[row][idx[row]]);
+            if (col + 1 < a.get(row).size()) {
+                q.offer(new int[]{row, col + 1});
+                max = Math.max(max, a.get(row).get(col + 1));
             }
         }
-        return ans;
+        return new int[]{start, end};    
     }
-};
+}
