@@ -1,12 +1,13 @@
-class Solution {
-public:
-    bool hasPathSum(TreeNode* root, int targetSum) {
-         if(root == NULL) return false;
-        targetSum -= root->val;
-        
-        if(root->left == NULL && root->right == NULL){
-            return (targetSum == 0) ? true : false;
-        }
-        return (hasPathSum(root->left, targetSum) || hasPathSum(root->right, targetSum));    
-    }
-};
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
+            if(not root): return False
+            if not root.left and not root.right and root.val == targetSum:
+                return True
+            targetSum -= root.val
+            return self.hasPathSum(root.left, targetSum) or self.hasPathSum(root.right, targetSum)
