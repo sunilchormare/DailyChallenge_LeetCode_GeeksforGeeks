@@ -30,7 +30,7 @@ class Solution {
 //          top.right.right=temp;
 //         }
 //         return root;
-        
+
         if (d == 0 || d == 1) {
             TreeNode newroot = new TreeNode(v);
             newroot.left = d == 1 ? root : null;
