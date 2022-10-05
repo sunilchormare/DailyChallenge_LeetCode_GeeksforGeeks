@@ -20,7 +20,7 @@ class Solution {
             }
             q=temp;
         }
-        while(q.size()>0)
+        while(!q.isEmpty())
         {TreeNode top=q.poll();
          TreeNode temp=top.left;
          top.left=new TreeNode(val);
