@@ -46,6 +46,5 @@ public:
             root->right= addOneRow(root->right, v, d > 2 ? d - 1 : 0);
         }
         return root;
-        
     }
 };
