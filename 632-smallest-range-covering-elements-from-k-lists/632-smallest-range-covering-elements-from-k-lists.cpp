@@ -1,7 +1,10 @@
 class Solution {
 public:
    struct mycompare {
-        bool operator () (pair<int, int>& a, pair<int, int>& b) {return a.first > b.first;}  
+        bool operator () (pair<int, int>& a, pair<int, int>& b) 
+        {
+            return a.first > b.first;
+        }  
     };
     vector<int> smallestRange(vector<vector<int>>& nums) {
         int n = nums.size(), large = INT_MIN, maxlen = INT_MAX;
