@@ -11,7 +11,7 @@ class Solution {
         while(depth-->2)
         {
             Queue<TreeNode> temp=new LinkedList<>();
-            while(q.size()!=0)
+            while(!q.isEmpty())
             {
               TreeNode top=q.poll();
                 if(top.left!=null) temp.add(top.left);
