@@ -13,7 +13,7 @@ class Solution {
             Queue<TreeNode> temp=new LinkedList<>();
             while(!q.isEmpty())
             {
-              TreeNode top=q.poll();
+                TreeNode top=q.poll();
                 if(top.left!=null) temp.add(top.left);
                 if(top.right!=null) temp.add(top.right);
                 
