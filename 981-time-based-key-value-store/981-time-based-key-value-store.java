@@ -1,11 +1,7 @@
 class TimeMap {
  Map<String,Map> map = new HashMap<>();
     Map<Integer,String> timeMap = new HashMap<>();
-    /** Initialize your data structure here. */
-    public TimeMap() {
-        
-    }
-    
+   
     public void set(String key, String value, int timestamp) {
         Map<Integer,String> tempMap = map.getOrDefault(key,new HashMap<Integer,String>());
         tempMap.put(timestamp,value);
