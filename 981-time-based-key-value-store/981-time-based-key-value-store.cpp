@@ -1,12 +1,23 @@
 class TimeMap {
-public:
-   unordered_map<string, map<int, string>> m;
-void set(string key, string value, int timestamp) {
-  m[key].insert({ timestamp, value });
+ Map<String,Map> map = new HashMap<>();
+    Map<Integer,String> timeMap = new HashMap<>();
+   
+    public void set(String key, String value, int timestamp) {
+        Map<Integer,String> tempMap = map.getOrDefault(key,new HashMap<Integer,String>());
+        tempMap.put(timestamp,value);
+        map.put(key,tempMap);
+    }
+    
+    public String get(String key, int timestamp) {
+        if(!map.containsKey(key)) return "";
+        else{
+            Map<Integer,String> tempMap = map.get(key);
+            for(int i = timestamp;i>=0;i--){
+                if(tempMap.containsKey(i)){
+                    return tempMap.get(i);
+                }
+            }
+            return "";
+        }
+    }
 }
-string get(string key, int timestamp) {
-  auto it = m[key].upper_bound(timestamp);
-  return it == m[key].begin() ? "" : prev(it)->second;
-}
-};
-
