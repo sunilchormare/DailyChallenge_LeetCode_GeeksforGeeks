@@ -29,12 +29,12 @@ public:
     int n = nums.size();
      vector<bool> dp(sum+1,false);
     dp[0] = true;
-    for (int num : nums) {
+    for (int num : nums) 
         for (int i = sum; i > 0; i--) 
             if (i >= num) 
                 dp[i] = dp[i] || dp[i-num];
         
-    }
+    
     
     return dp[sum];  
     }
