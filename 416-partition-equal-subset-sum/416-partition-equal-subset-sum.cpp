@@ -17,7 +17,7 @@ public:
        //  if(sum&1) return false;
        //  m.clear();
        //  m.resize(n+1,vector<int>(sum/2+1,-1));
-       // return subsetSum(nums,n,0,sum/2);
+       // return subsetSum(nums,n,0,sum/2);                                      
         
     int sum = 0;    
     for (int num : nums) 
@@ -29,13 +29,17 @@ public:
     int n = nums.size();
      vector<bool> dp(sum+1,false);
     dp[0] = true;
-    for (int num : nums) 
-        for (int i = sum; i > 0; i--) 
+    for (int num : nums) {
+        //cout<<"num: "<<num;
+        for (int i = sum; i > 0; i--) {
             if (i >= num) 
+            {
                 dp[i] = dp[i] || dp[i-num];
-        
-    
-    
+                //cout<<" i= "<<i<<" dp[i] : "<<dp[i]<<" dp[i-num] : "<<dp[i-num]<<endl;
+            }
+        }
+       // cout<<endl;
+    }
     return dp[sum];  
     }
 };
