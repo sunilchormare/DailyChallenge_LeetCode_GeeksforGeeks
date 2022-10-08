@@ -5,7 +5,6 @@ class Solution {
         for(int i=0;i<nums.length-2;++i)
         { int a=i+1;
           int b=nums.length-1;
-          
           while(a<b)
           {
               int currSum=nums[i]+nums[a]+nums[b];
@@ -14,8 +13,7 @@ class Solution {
               else
                   a++;
               if(Math.abs(currSum-target)<Math.abs(result-target))
-                  result=currSum;
-              
+                  result=currSum; 
           }
             
         }
