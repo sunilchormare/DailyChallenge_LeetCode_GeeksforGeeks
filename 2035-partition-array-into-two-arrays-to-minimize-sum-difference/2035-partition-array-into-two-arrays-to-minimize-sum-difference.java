@@ -1,28 +1,52 @@
 class Solution {
-public:
-    int minimumDifference(vector<int>& nums) {
-         int n = nums.size()/2; 
-        vector<int> left(nums.begin(), nums.begin()+n), right(nums.begin()+n, nums.begin()+2*n); 
-        
-        vector<vector<int>> vals(n+1); 
-        for (int mask = 0; mask < (1<<n); ++mask) {
-            int diff = 0, key = __builtin_popcount(mask); 
-            for (int i = 0; i < n; ++i) 
-                diff += (mask & (1 << i)) ? left[i] : -left[i]; 
-            vals[key].push_back(diff); 
+    public int minimumDifference(int[] nums) {
+     int n = nums.length;
+        int sum = 0;
+        for (int i : nums) {
+            sum += i;
         }
         
-        for (auto& v : vals) sort(v.begin(), v.end()); 
-        
-        int ans = INT_MAX; 
-        for (int mask = 0; mask < (1<<n); ++mask) {
-            int diff = 0, key = n - __builtin_popcount(mask); 
-            for (int i = 0; i < n; ++i) 
-                diff += (mask & (1 << i)) ? right[i] : -right[i]; 
-            auto it = lower_bound(vals[key].begin(), vals[key].end(), -diff); 
-            if (it != vals[key].begin()) ans = min(ans, abs(diff + *prev(it))); 
-            if (it != vals[key].end()) ans = min(ans, abs(diff + *it)); 
+        TreeSet<Integer>[] sets = new TreeSet[n/2+1];
+        for (int i = 0; i < (1 << (n / 2)); ++i) {
+            int curSum = 0;
+            int m = 0;
+            for (int j = 0; j < n / 2; ++j) {
+                if ((i & (1<<j)) != 0) {
+                    curSum += nums[j];
+                    m ++;
+                }
+            }
+            if (sets[m] == null)
+                sets[m] = new TreeSet<Integer>();
+            sets[m].add(curSum);
         }
-        return ans; 
+        
+        int res = Integer.MAX_VALUE / 3;
+        for (int i = 0; i < (1 << (n / 2)); ++i) {
+            int curSum = 0;
+            int m = 0;
+            for (int j = 0; j < n / 2; ++j) {
+                if ((i & (1<<j)) != 0) {
+                    curSum += nums[n/2 + j];
+                    m ++;
+                }
+            }
+            int target = (sum - 2 * curSum) / 2;
+            
+            Integer left = sets[n/2-m].floor(target), right = sets[n/2-m].ceiling(target);
+            if (left != null) {
+                res = Math.min(res, Math.abs(sum - 2 * (curSum + left.intValue())));
+            }
+            
+            if (right != null) {
+                res = Math.min(res, Math.abs(sum - 2 * (curSum + right.intValue())));
+            }
+            
+            if (res == 0)
+                return 0;
+                               
+        }
+        
+        return res;
     }
-};
+}
