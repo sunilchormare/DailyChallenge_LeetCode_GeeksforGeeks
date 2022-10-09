@@ -1,15 +1,14 @@
 
 class Solution {
-public:
-    bool findTarget(TreeNode* root, int k) {
-        unordered_set<int> set;
+    public boolean findTarget(TreeNode root, int k) {
+        HashSet<Integer> set = new HashSet<>();
         return dfs(root, set, k);
     }
     
-    bool dfs(TreeNode* root, unordered_set<int>& set, int k){
-        if(root == NULL)return false;
-        if(set.count(k - root->val))return true;
-        set.insert(root->val);
-        return dfs(root->left, set, k) || dfs(root->right, set, k);
+    public boolean dfs(TreeNode root, HashSet<Integer> set, int k){
+        if(root == null)return false;
+        if(set.contains(k - root.val))return true;
+        set.add(root.val);
+        return dfs(root.left, set, k) || dfs(root.right, set, k);
     }
-};
+}
