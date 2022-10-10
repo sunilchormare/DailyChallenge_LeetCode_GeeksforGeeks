@@ -1,16 +1,15 @@
 class Solution {
-public:
-    string breakPalindrome(string palindrome) {
-        int n=palindrome.size();
-        if(n==1) return "";
-        for(int i=0;i<n/2;++i)
-        {
-            if(palindrome[i]!='a'){
-                 palindrome[i]='a';
-                return palindrome;
+    public String breakPalindrome(String palindrome) {
+         char[] s = palindrome.toCharArray();
+        int n = s.length;
+
+        for (int i = 0; i < n / 2; i++) {
+            if (s[i] != 'a') {
+                s[i] = 'a';
+                return String.valueOf(s);
             }
         }
-        palindrome[n-1]='b';
-        return palindrome;
+        s[n - 1] = 'b'; //if all 'a'
+        return n < 2 ? "" : String.valueOf(s);
     }
-};
+}
