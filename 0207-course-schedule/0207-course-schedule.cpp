@@ -36,26 +36,36 @@
 
 class Solution {
 public:
-    bool acyclic(vector<vector<int>>& graph, int node, vector<bool>& visit, vector<bool>& done) {
-        if (visit[node]) return false;
-        if (done[node]) return true;
-        visit[node]= true;
-        done[node]= true;
-        for (int adj: graph[node]) {
-            if (acyclic(graph, adj, visit, done)== false) 
-                return false;
-        }
-        visit[node]= false;
-        return true;
-    }
-    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
-        int n= numCourses;
-        vector<vector<int>> graph(n);
-        for (auto x: prerequisites) graph[x[1]].push_back(x[0]);
-        vector<bool> visit(n, false), done(n, false);
-        for (int i= 0; i<n; i++) {
-            if (done[i]== false and acyclic(graph, i, visit, done)== false) return false;
-        }
-        return true;
+    // bool acyclic(vector<vector<int>>& graph, int node, vector<bool>& visit, vector<bool>& done) {
+    //     if (visit[node]) return false;
+    //     if (done[node]) return true;
+    //     visit[node]= true;
+    //     done[node]= true;
+    //     for (int adj: graph[node]) {
+    //         if (acyclic(graph, adj, visit, done)== false) 
+    //             return false;
+    //     }
+    //     visit[node]= false;
+    //     return true;
+    // }
+    bool canFinish(int n, vector<vector<int>>& prerequisites) {
+        // int n= numCourses;
+        // vector<vector<int>> graph(n);
+        // for (auto x: prerequisites) graph[x[1]].push_back(x[0]);
+        // vector<bool> visit(n, false), done(n, false);
+        // for (int i= 0; i<n; i++) {
+        //     if (done[i]== false and acyclic(graph, i, visit, done)== false) return false;
+        // }
+        // return true;
+        
+         vector<vector<int>> G(n);
+        vector<int> degree(n, 0), bfs;
+        for (auto& e : prerequisites)
+            G[e[1]].push_back(e[0]), degree[e[0]]++;
+        for (int i = 0; i < n; ++i) if (!degree[i]) bfs.push_back(i);
+        for (int i = 0; i < bfs.size(); ++i)
+            for (int j: G[bfs[i]])
+                if (--degree[j] == 0) bfs.push_back(j);
+        return bfs.size() == n;
     }
 };
