@@ -3,8 +3,9 @@ class Solution {
          Map<Character,Integer> counts=new HashMap<>();
      
      int result=0;
-      for(char c: tasks) counts.put(c,counts.getOrDefault(c,0)+1);
-     PriorityQueue<Integer> pq=new PriorityQueue(counts.size(),Collections.reverseOrder());
+      for(char c: tasks) 
+          counts.put(c,counts.getOrDefault(c,0)+1);
+     PriorityQueue<Integer> pq=new                      PriorityQueue(counts.size(),Collections.reverseOrder());
         pq.addAll(counts.values());
         while(!pq.isEmpty())
         {
