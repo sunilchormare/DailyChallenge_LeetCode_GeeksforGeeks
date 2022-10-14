@@ -1,24 +1,15 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-class Solution {
-public:
-    ListNode* deleteMiddle(ListNode* head) {
-      if (head->next == nullptr)
-        return nullptr;
-    auto slow = head, fast = head->next->next;
-    while (fast != nullptr && fast->next != nullptr) {
-        fast = fast->next->next;
-        slow = slow->next;
-    }
-    slow->next = slow->next->next;
-    return head;
-    }
-};
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if (not head.next):
+            return head.next
+        slow,fast=head,head.next.next
+        while (fast and fast.next):
+            fast = fast.next.next
+            slow = slow.next
+        slow.next = slow.next.next
+        return head
