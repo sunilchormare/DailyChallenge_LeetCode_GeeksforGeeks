@@ -6,8 +6,8 @@ public:
         if(n==1)
             return {0};
         vector<int>res;
-        vector<int>degrees(n,0);
-        vector<vector<int>>adj(n);
+        vector<int> degrees(n,0);
+        vector<vector<int>> adj(n);
         for(int i=0;i<edges.size();i++)
         {
             adj[edges[i][0]].push_back(edges[i][1]);//creating adjacent list
