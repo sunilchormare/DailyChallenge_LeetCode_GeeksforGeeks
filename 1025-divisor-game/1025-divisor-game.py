@@ -1,3 +1,3 @@
 class Solution(object):
     def divisorGame(self, N):
-        return N % 2 == 0;
+        return N % 2 == 0
