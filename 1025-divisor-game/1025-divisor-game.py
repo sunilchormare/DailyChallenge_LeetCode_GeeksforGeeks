@@ -1,3 +1,3 @@
-class Solution:
-    def divisorGame(self, N: int) -> bool:
-         return N % 2 == 0;
+class Solution(object):
+    def divisorGame(self, N):
+        return N % 2 == 0;
