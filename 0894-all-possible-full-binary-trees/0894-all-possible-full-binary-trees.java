@@ -1,37 +1,41 @@
 /**
  * Definition for a binary tree node.
- * struct TreeNode {
+ * public class TreeNode {
  *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
  */
 class Solution {
-public:
-    vector<TreeNode*> allPossibleFBT(int n) {
-      if((n&1) == 0)return {}; //FBT can have only odd number of nodes
-        if(n == 1)return {new TreeNode()};
-		
-        vector<TreeNode*>res;
-		
-        for(int i = 1; i < n-1;i+=2){  //incrementation by 2 to avoid redundant recursive call for even number of nodes
-		
-            vector<TreeNode*>left = allPossibleFBT(i);
-            vector<TreeNode*>right = allPossibleFBT(n-i-1);  //1 is reserved for root node, hence n-i-1
-			
-            for(auto l : left){
-                for(auto r : right){
-                    TreeNode* root = new TreeNode(); 
-                    root->left = l; 
-                    root->right = r; 
-                    res.push_back(root);
+    Map<Integer, List<TreeNode>> memo = new HashMap();
+
+    public List<TreeNode> allPossibleFBT(int N) {
+        if (!memo.containsKey(N)) {
+            List<TreeNode> ans = new LinkedList();
+            if (N == 1) {
+                ans.add(new TreeNode(0));
+            } else if (N % 2 == 1) {
+                for (int x = 0; x < N; ++x) {
+                    int y = N - 1 - x;
+                    for (TreeNode left: allPossibleFBT(x))
+                        for (TreeNode right: allPossibleFBT(y)) {
+                            TreeNode bns = new TreeNode(0);
+                            bns.left = left;
+                            bns.right = right;
+                            ans.add(bns);
+                        }
                 }
             }
+            memo.put(N, ans);
         }
-		
-        return res;   
+
+        return memo.get(N);
     }
-};
+}
