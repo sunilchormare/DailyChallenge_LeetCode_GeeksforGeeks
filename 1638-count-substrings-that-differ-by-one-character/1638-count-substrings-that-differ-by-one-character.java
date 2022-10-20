@@ -1,17 +1,16 @@
 class Solution {
-public:
-    int countSubstrings(string s, string t) {
-        int res = 0;
-    for (int i = 0; i < s.size(); ++i) {
-        for (int j = 0; j < t.size(); ++j) {
+    public int countSubstrings(String s, String t) {
+         int res = 0;
+    for (int i = 0; i < s.length(); ++i) {
+        for (int j = 0; j < t.length(); ++j) {
             int miss = 0;
-            for (int pos = 0; i + pos < s.size() && j + pos < t.size(); ++pos) {
-                if (s[i + pos] != t[j + pos] && ++miss > 1)
+            for (int pos = 0; i + pos < s.length() && j + pos < t.length(); ++pos) {
+                if (s.charAt(i + pos) != t.charAt(j + pos) && ++miss > 1)
                     break;
                 res += miss;
             }
         }
     }
-    return res;
+    return res;        
     }
-};
+}
