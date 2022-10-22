@@ -10,8 +10,10 @@ public:
             if(map[s[end++]]-->0) counter--; 
             while(counter==0)
             {
-                if(end-begin<d)  d=end-(head=begin);
-                if(map[s[begin++]]++==0) counter++; 
+                if(end-begin<d)  
+                    d=end-(head=begin);
+                if(map[s[begin++]]++==0) 
+                    counter++; 
             }  
         }
         return d==INT_MAX? "":s.substr(head, d);
