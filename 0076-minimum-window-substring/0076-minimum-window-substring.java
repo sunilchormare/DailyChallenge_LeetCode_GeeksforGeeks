@@ -1,21 +1,47 @@
 class Solution {
-public:
-    string minWindow(string s, string t) {
-         vector<int> map(128,0);
-        for(auto c: t) map[c]++;
-        int counter=t.size(), begin=0, end=0, d=INT_MAX, head=0;
-       
-        while(end<s.size())
-        {
-            if(map[s[end++]]-->0) counter--; 
-            while(counter==0)
-            {
-                if(end-begin<d)  
-                    d=end-(head=begin);
-                if(map[s[begin++]]++==0) 
-                    counter++; 
-            }  
+    public String minWindow(String s, String t) {
+        if(s == null || s.length() < t.length() || s.length() == 0)
+        return "";
+    
+    HashMap<Character,Integer> map = new HashMap<Character,Integer>();
+    for(char c : t.toCharArray()){
+        if(map.containsKey(c)){
+            map.put(c,map.get(c)+1);
+        }else{
+            map.put(c,1);
         }
-        return d==INT_MAX? "":s.substr(head, d);
     }
-};
+    int left = 0;
+    int minLeft = 0;
+    int minLen = s.length()+1;
+    int count = 0;
+    for(int right = 0; right < s.length(); right++)
+    {
+        if(map.containsKey(s.charAt(right)))
+        {
+            map.put(s.charAt(right),map.get(s.charAt(right))-1);
+            if(map.get(s.charAt(right)) >= 0)
+                count ++;
+            
+            while(count == t.length())
+            {
+                if(right-left+1 < minLen)
+                {
+                    minLeft = left;
+                    minLen = right-left+1;
+                }
+                if(map.containsKey(s.charAt(left))){
+                    map.put(s.charAt(left),map.get(s.charAt(left))+1);
+                    if(map.get(s.charAt(left)) > 0){
+                        count --;
+                    }
+                }
+                left ++ ;
+            }
+        }
+    }
+    if(minLen>s.length())  
+        return "";    
+    return s.substring(minLeft,minLeft+minLen);
+  }   
+}
