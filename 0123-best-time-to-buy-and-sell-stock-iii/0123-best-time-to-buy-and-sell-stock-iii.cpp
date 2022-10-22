@@ -7,6 +7,7 @@ public:
         {
             minPrice1=min(minPrice1,prices[i]);
             maxProfit1=max(maxProfit1,prices[i]-minPrice1);
+            
             minPrice2=min(minPrice2,prices[i]-maxProfit1);
             maxProfit2=max(maxProfit2,prices[i]-minPrice2);
         }
