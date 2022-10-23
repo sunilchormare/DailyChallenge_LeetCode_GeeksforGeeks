@@ -1,7 +1,7 @@
 class Solution {
 public:
     int minCut(string s) {
-   if(s.empty()) return 0;
+           if(s.empty()) return 0;
             int n = s.size();
             vector<vector<bool>> pal(n,vector<bool>(n,false));
             vector<int> d(n);
