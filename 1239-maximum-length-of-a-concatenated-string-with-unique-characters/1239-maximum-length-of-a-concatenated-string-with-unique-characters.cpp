@@ -1,19 +1,18 @@
 class Solution {
-public:
-    int maxLength(vector<string>& arr) {
-          return process(arr, "", 0);
+    public int maxLength(List<String> arr) {
+         return process(arr, "", 0);
     }
-    int process(vector<string>& arr, string soFar, int index) {
+    int process(List<String> arr, String soFar, int index) {
         if (index > arr.size()) return 0;
-        set<char> set;
-        for(char c: soFar) {
-            if(set.count(c)) return 0;
-            set.insert(c);
+        Set<Character> set = new HashSet<>();
+        for(char c: soFar.toCharArray()) {
+            if(set.contains(c)) return 0;
+            set.add(c);
         }
-        int maxi = soFar.length();
+        int max = soFar.length();
         for(int i = index; i < arr.size(); i++) {
-            maxi = max(maxi, process(arr, soFar + arr[i], i + 1));
+            max = Math.max(max, process(arr, soFar + arr.get(i), i + 1));
         }
-        return maxi;
+        return max;
     }
-};
+}
