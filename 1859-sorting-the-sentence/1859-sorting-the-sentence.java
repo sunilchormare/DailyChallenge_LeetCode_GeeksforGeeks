@@ -1,6 +1,6 @@
 class Solution {
     public String sortSentence(String s) {
-     String[] words = s.split(" ");
+       String[] words = s.split(" ");
         String[] bucket = new String[words.length];
         for (String word : words) {
             int index = Character.getNumericValue(word.charAt(word.length() - 1)) - 1;
