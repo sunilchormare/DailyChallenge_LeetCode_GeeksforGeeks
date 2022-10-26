@@ -1,16 +1,23 @@
 class Solution {
-    public boolean checkSubarraySum(int[] nums, int k) {
-         Map<Integer, Integer> map = new HashMap<>(){{put(0,-1);}};;
-    int runningSum = 0;
-    for (int i=0;i<nums.length;i++) {
-        runningSum += nums[i];
-        if (k != 0) runningSum %= k; 
-        Integer prev = map.get(runningSum);
-        if (prev != null) {
-            if (i - prev > 1) return true;
-        }
-        else map.put(runningSum, i);
-    }
-    return false;
-    }
+public:
+    bool checkSubarraySum(vector<int>& nums, int k) {
+        long long sum=nums[0];
+for(int i=1;i<nums.size();i++){
+if(nums[i]==nums[i-1])
+if(nums[i]==0)
+return true;
+sum+=nums[i];
+if(sum%k==0)
+return true;
+int j=0;
+int temp=sum;
+while((i-j)>1 && temp>=k){
+temp-=nums[j++];
+if(temp%k==0)
+return true;
 }
+}
+return false;
+
+    }
+};
