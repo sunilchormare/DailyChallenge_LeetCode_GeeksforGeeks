@@ -1,15 +1,13 @@
 class Solution {
-public:
-    int countMatches(vector<vector<string>>& items, string ruleKey, string ruleValue) {
-          int i = ruleKey == "type" ? 0 : ruleKey == "color" ? 1 : 2;
-        int ans = 0;
+    public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
+        int res = 0;
         
-        for(auto item : items)
-        {
-            if(item[i] == ruleValue)
-                ans++;
+        for(int i = 0 ;i<items.size();i++){
+            if(ruleKey.equals("type") && items.get(i).get(0).equals(ruleValue)) res++;
+            if(ruleKey.equals("color") && items.get(i).get(1).equals(ruleValue)) res++;
+            if(ruleKey.equals("name") && items.get(i).get(2).equals(ruleValue)) res++;
         }
         
-       return ans;
+        return res;
     }
-};
+}
