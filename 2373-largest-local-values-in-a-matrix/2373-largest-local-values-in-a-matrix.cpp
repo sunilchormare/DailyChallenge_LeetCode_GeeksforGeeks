@@ -1,21 +1,20 @@
 class Solution {
-public:
-    vector<vector<int>> largestLocal(vector<vector<int>>& grid) {
-        int n=grid.size();
-        vector<vector<int>> res(n-2, vector<int> (n-2));
-      
-        for(int i=1; i<=n-2; i++)
-        {
-            for(int j=1; j<=n-2; j++)
-            {
-                int maxi=0;
-                maxi = max({maxi, grid[i-1][j-1], grid[i-1][j], grid[i-1][j+1]});
-                maxi = max({maxi, grid[i][j-1], grid[i][j], grid[i][j+1]});
-                maxi = max({maxi, grid[i+1][j-1], grid[i+1][j], grid[i+1][j+1]});
-                
-               res[i-1][j-1] = maxi;
+    public int[][] largestLocal(int[][] grid) {
+      int n=grid.length;
+       int[][] result = new int[grid.length - 2][grid.length - 2];
+
+        for (int i = 0; i < result.length; ++i) {
+            for (int j = 0; j < result.length; ++j) {
+			
+                int largest = Integer.MIN_VALUE;
+                for (int row = i; row < i + 3; ++row) {
+                    for (int column = j; column < j + 3; ++column) {
+                        largest = Math.max(largest, grid[row][column]);
+                    }
+                }
+                result[i][j] = largest;
             }
         }
-        return res;
+        return result;
     }
-};
+}
