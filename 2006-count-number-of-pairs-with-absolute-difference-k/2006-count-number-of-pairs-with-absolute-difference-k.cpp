@@ -3,6 +3,8 @@ public:
     int countKDifference(vector<int>& nums, int k) {
      
         //BRUTE FORCE SOLUTION
+        //TIME COMPLEXITY: O(N^2) 
+        //SPACE COMPLEXITY: O(1)
         int count=0;
         for(int i=0;i<nums.size();++i)
         {
