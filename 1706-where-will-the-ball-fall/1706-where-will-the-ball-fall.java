@@ -1,6 +1,8 @@
 class Solution {
-    public int[] findBall(int[][] grid) {
-        int m = grid.length, n = grid[0].length, res[] = new int[n];
+public:
+    vector<int> findBall(vector<vector<int>>& grid) {
+        int m = grid.size(), n = grid[0].size();
+        vector<int> res;
         for (int i = 0; i < n; ++i) {
             int i1 = i, i2;
             for (int j = 0; j < m; ++j) {
@@ -11,8 +13,8 @@ class Solution {
                 }
                 i1 = i2;
             }
-            res[i] = i1;
+            res.push_back(i1);
         }
         return res;
     }
-}
+};
