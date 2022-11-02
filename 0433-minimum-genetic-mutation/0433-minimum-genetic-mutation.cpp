@@ -1,32 +1,40 @@
 class Solution {
-public:
-    int minMutation(string start, string end, vector<string>& bank) {
-        unordered_set<string> dict(bank.begin(), bank.end());
-        if (!dict.count(end)) return -1;
-        unordered_set<string> bset, eset, *set1, *set2;
-        bset.insert(start), eset.insert(end);
-        int step = 0, n = start.size();
-        while (!bset.empty() and !eset.empty()) {
-            if (bset.size() <= eset.size())
-                set1 = &bset, set2 = &eset;
-            else set2 = &bset, set1 = &eset;
-            unordered_set<string> tmp;
-            step ++;
-            for (auto itr = set1->begin(); itr != set1->end(); ++itr) {
-                for (int i = 0; i < n; ++i) {
-                    string dna = *itr;
-                    for (auto g : string("ATGC")) {
-                        dna[i] = g;
-                        if (set2->count(dna)) return step;
-                        if (dict.count(dna)) {
-                            tmp.insert(dna);
-                            dict.erase(dna);
+    public int minMutation(String start, String end, String[] bank) {
+         if(start.equals(end)) return 0;
+        
+        Set<String> bankSet = new HashSet<>();
+        for(String b: bank) bankSet.add(b);
+        
+        char[] charSet = new char[]{'A', 'C', 'G', 'T'};
+        
+        int level = 0;
+        Set<String> visited = new HashSet<>();
+        Queue<String> queue = new LinkedList<>();
+        queue.offer(start);
+        visited.add(start);
+        
+        while(!queue.isEmpty()) {
+            int size = queue.size();
+            while(size-- > 0) {
+                String curr = queue.poll();
+                if(curr.equals(end)) return level;
+                
+                char[] currArray = curr.toCharArray();
+                for(int i = 0; i < currArray.length; i++) {
+                    char old = currArray[i];
+                    for(char c: charSet) {
+                        currArray[i] = c;
+                        String next = new String(currArray);
+                        if(!visited.contains(next) && bankSet.contains(next)) {
+                            visited.add(next);
+                            queue.offer(next);
                         }
                     }
+                    currArray[i] = old;
                 }
             }
-            *set1 = tmp;
+            level++;
         }
         return -1;
     }
-};
+}
