@@ -1,13 +1,9 @@
 class Solution {
-    public String truncateSentence(String s, int k) {
-        int idx=0;
-        int spaceCount=0;
-        
-        while(idx<s.length() && spaceCount<k){
-            if(s.charAt(idx)==' ') spaceCount++;
-            idx++;
-        }
-        
-        return spaceCount==k?s.substring(0,idx-1):s;
+public:
+    string truncateSentence(string s, int k) {
+        for (int i = 0; i < s.size(); ++i)
+        if (s[i] == ' ' && --k == 0)
+            return s.substr(0, i);
+    return s;
     }
-}
+};
