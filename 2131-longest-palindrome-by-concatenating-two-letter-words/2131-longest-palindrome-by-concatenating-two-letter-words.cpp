@@ -1,32 +1,31 @@
 class Solution {
-    public int longestPalindrome(String[] words) {
-    HashMap<String, Integer> m = new HashMap();
+public:
+    int longestPalindrome(vector<string>& words) {
+    unordered_map<string, int> m;
     int unpaired = 0, ans = 0;
-    for (String w: words) {
-        if (!m.containsKey(w)) m.put(w, 0);
-        if (w.charAt(0) == w.charAt(1)) {
-            if (m.get(w) > 0) {
+    for (string w: words) {
+        if (w[0] == w[1]) {
+            if (m[w] > 0) {
                 unpaired--;
-                m.put(w, m.get(w) - 1);
+                m[w]--;
                 ans += 4;
             }
             else {
-                m.put(w, m.get(w) + 1);
+                m[w]++;
                 unpaired++;
             }
         }
         else {
-            String rev = Character.toString(w.charAt(1)) + 
-                Character.toString(w.charAt(0));
-            if (m.containsKey(rev) && m.get(rev) > 0) {
+            string rev = w;
+            reverse(rev.begin(), rev.end());
+            if (m[rev] > 0) {
                 ans += 4;
-                m.put(rev, m.get(rev) - 1);
+                m[rev]--;
             }
-            else m.put(w, m.get(w) + 1);
+            else m[w]++;
         }
-
     }
     if (unpaired > 0) ans += 2;
     return ans;
 }
-}
+};
