@@ -1,47 +1,48 @@
 class Solution {
-public:
-    struct TrieNode {
-        vector<TrieNode*> child;
-        string word;
-        TrieNode() : word(""), child(vector<TrieNode*>(26, nullptr)) {}
-    };
-    
-    TrieNode* buildTrie(vector<string>& words) {
-        TrieNode* root = new TrieNode();
-        for (string w : words) {
-            TrieNode* curr = root;
-            for (char c : w) {
-                int i = c - 'a';
-                if (curr->child[i] == NULL) curr->child[i] = new TrieNode();
-                curr = curr->child[i];
-            }
-            curr->word = w;
+   public List<String> findWords(char[][] board, String[] words) {
+    List<String> res = new ArrayList<>();
+    TrieNode root = buildTrie(words);
+    for (int i = 0; i < board.length; i++) {
+        for (int j = 0; j < board[0].length; j++) {
+            dfs (board, i, j, root, res);
         }
-        return root;
+    }
+    return res;
+}
+
+public void dfs(char[][] board, int i, int j, TrieNode p, List<String> res) {
+    char c = board[i][j];
+    if (c == '#' || p.next[c - 'a'] == null) return;
+    p = p.next[c - 'a'];
+    if (p.word != null) {   // found one
+        res.add(p.word);
+        p.word = null;     // de-duplicate
     }
 
-    vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {
-        vector<string> out;
-        TrieNode* root = buildTrie(words);
-        for(int i = 0; i < board.size(); ++i) 
-            for(int j = 0; j < board[0].size(); ++j) 
-                dfs(board, i, j, root, out);
-        return out;
+    board[i][j] = '#';
+    if (i > 0) dfs(board, i - 1, j ,p, res); 
+    if (j > 0) dfs(board, i, j - 1, p, res);
+    if (i < board.length - 1) dfs(board, i + 1, j, p, res); 
+    if (j < board[0].length - 1) dfs(board, i, j + 1, p, res); 
+    board[i][j] = c;
+}
+
+public TrieNode buildTrie(String[] words) {
+    TrieNode root = new TrieNode();
+    for (String w : words) {
+        TrieNode p = root;
+        for (char c : w.toCharArray()) {
+            int i = c - 'a';
+            if (p.next[i] == null) p.next[i] = new TrieNode();
+            p = p.next[i];
+       }
+       p.word = w;
     }
-    
-    void dfs(vector<vector<char>>& board, int i, int j, TrieNode* curr, vector<string>& out) {
-        char c = board[i][j];
-        if(c == '#' || curr->child[c - 'a'] == NULL) return;
-        curr = curr->child[c - 'a'];
-        if (curr->word != "") {
-            out.push_back(curr->word);
-            curr->word = "";
-        }
-        board[i][j] = '#';
-        if(i > 0) dfs(board, i - 1, j , curr, out); 
-        if(j > 0) dfs(board, i, j - 1, curr, out);
-        if(i < board.size() - 1) dfs(board, i + 1, j, curr, out); 
-        if(j < board[0].size() - 1) dfs(board, i, j + 1, curr, out); 
-        board[i][j] = c;
-    }
-};
+    return root;
+}
+
+class TrieNode {
+    TrieNode[] next = new TrieNode[26];
+    String word;
+}
+}
