@@ -1,17 +1,16 @@
 class Solution {
-public:
-    vector<int> countPoints(vector<vector<int>>& points, vector<vector<int>>& queries) {
-        vector<int> res;
-        for(int i=0;i<queries.size();++i)
+    public int[] countPoints(int[][] points, int[][] queries) {
+         int res[]=new int[queries.length];
+        for(int i=0;i<queries.length;++i)
         {
             int count=0;
-            for(int j=0;j<points.size();++j)
+            for(int j=0;j<points.length;++j)
             {
-                if(pow((points[j][0]-queries[i][0]),2)+pow((points[j][1]-queries[i][1]),2)<=pow(queries[i][2],2))
+                if(Math.pow((points[j][0]-queries[i][0]),2)+Math.pow((points[j][1]-queries[i][1]),2)<=Math.pow(queries[i][2],2))
                     count++;
             }
-            res.push_back(count);
+            res[i]=count;
         }
         return res;
     }
-};
+}
