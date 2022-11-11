@@ -1,7 +1,8 @@
 class Solution {
-    public boolean divideArray(int[] nums) {
-        int n =nums.length;
-        Arrays.sort(nums);
+public:
+    bool divideArray(vector<int>& nums) {
+        int n =nums.size();
+        sort(nums.begin(), nums.end());
         int i=1;
         while(i<n)
         {
@@ -11,4 +12,4 @@ class Solution {
         }
         return true;
     }
-}
+};
