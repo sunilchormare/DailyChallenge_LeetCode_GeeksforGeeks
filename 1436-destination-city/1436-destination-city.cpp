@@ -1,18 +1,16 @@
 class Solution {
-public:
-    string destCity(vector<vector<string>>& paths) {
-        int m = paths.size();
-        
-        unordered_map<string, int> mp;
-        for(int i = 0; i < m; i++)
-            mp[paths[i][0]]++;
-        
-        for(int i = 0; i < m; i++)
-        {
-            if(mp[paths[i][1]] < 1)
-                return paths[i][1];
+    public String destCity(List<List<String>> paths) {
+        Set<String> cities = new HashSet<>(); 
+        for (List<String> path : paths) {
+            cities.add(path.get(0)); 
         }
         
-        return "";   
+        for (List<String> path : paths) {
+            String dest = path.get(1); 
+            if (!cities.contains(dest)) {
+                return dest; 
+            }
+        }
+        return "";
     }
-};
+}
