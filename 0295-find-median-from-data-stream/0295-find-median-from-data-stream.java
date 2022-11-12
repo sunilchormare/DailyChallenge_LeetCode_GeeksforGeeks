@@ -1,18 +1,17 @@
 class MedianFinder {
-    priority_queue<long> small, large;
-public:
-    void addNum(int num) {
-        small.push(num);
-        large.push(-small.top());
-        small.pop();
-        if (small.size() < large.size()) {
-            small.push(-large.top());
-            large.pop();
-        }
+
+    private Queue<Long> small = new PriorityQueue(),
+                        large = new PriorityQueue();
+
+    public void addNum(int num) {
+        large.add((long) num);
+        small.add(-large.poll());
+        if (large.size() < small.size())
+            large.add(-small.poll());
     }
-    double findMedian() {
-        return small.size() > large.size()
-               ? small.top()
-               : (small.top() - large.top()) / 2.0;
+
+    public double findMedian() {
+       
+        return large.size() > small.size() ? large.peek() : (large.peek() - small.peek()) / 2.0;
     }
-};
+}
