@@ -1,17 +1,16 @@
-class MedianFinder {
+class MedianFinder:
+    def __init__(self):
+        self.small = []  # the smaller half of the list, max heap (invert min-heap)
+        self.large = []  # the larger half of the list, min heap
 
-    private Queue<Long> small = new PriorityQueue(),
-                        large = new PriorityQueue();
+    def addNum(self, num):
+        if len(self.small) == len(self.large):
+            heappush(self.large, -heappushpop(self.small, -num))
+        else:
+            heappush(self.small, -heappushpop(self.large, num))
 
-    public void addNum(int num) {
-        large.add((long) num);
-        small.add(-large.poll());
-        if (large.size() < small.size())
-            large.add(-small.poll());
-    }
-
-    public double findMedian() {
-       
-        return large.size() > small.size() ? large.peek() : (large.peek() - small.peek()) / 2.0;
-    }
-}
+    def findMedian(self):
+        if len(self.small) == len(self.large):
+            return float(self.large[0] - self.small[0]) / 2.0
+        else:
+            return float(self.large[0])
