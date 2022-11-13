@@ -1,16 +1,17 @@
 class Solution {
-    public int garbageCollection(String[] garbage, int[] travel) {
-        int last[] = new int[128], res = 0;
-        for (int i = 0; i < garbage.length; ++i) {
-            res += garbage[i].length();
-            for (int j = 0; j < garbage[i].length(); ++j)
-                last[garbage[i].charAt(j)] = i;
+public:
+    int garbageCollection(vector<string>& garbage, vector<int>& travel) {
+        int last[128] = {}, res = 0;
+        for (int i = 0; i < garbage.size(); ++i) {
+            res += garbage[i].size();
+            for (char c : garbage[i])
+                last[c] = i;
         }
-        for (int j = 1; j < travel.length; ++j)
+        for (int j = 1; j < travel.size(); ++j)
             travel[j] += travel[j - 1];
-        for (int c : "PGM".toCharArray())
-            if (last[c] > 0)
+        for (int c : "PGM")
+            if (last[c])
                 res += travel[last[c] - 1];
         return res;
     }
-}
+};
