@@ -1,20 +1,22 @@
 class Solution {
-    public int numOfPairs(String[] nums, String target) {
-        Map<String, Integer> map = new HashMap<>();
-        int tot = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (target.startsWith(nums[i])) {
-                String sub = target.substring(nums[i].length());
-                if (map.containsKey(sub))
-                    tot += map.get(sub);
+public:
+    int numOfPairs(vector<string>& nums, string target) {
+        unordered_map<string, int> freq;
+        for (auto num : nums) if (num.size() < target.size()) freq[num]++;
+        
+        int res = 0;
+        for (auto [s, frq] : freq) {
+            
+            if (target.find(s) == 0) {
+                
+                if (s + s == target) 
+                    res += frq*(frq-1);
+                
+                else 
+                    res += frq * freq[target.substr(s.size())];
             }
-           if (target.endsWith(nums[i])) {
-                String sub = target.substring(0, target.length()-nums[i].length());
-                if (map.containsKey(sub))
-                    tot += map.get(sub);
-            }
-            map.put(nums[i], map.getOrDefault(nums[i], 0)+1);
         }
-        return tot;
+        
+        return res;
     }
-}
+};
