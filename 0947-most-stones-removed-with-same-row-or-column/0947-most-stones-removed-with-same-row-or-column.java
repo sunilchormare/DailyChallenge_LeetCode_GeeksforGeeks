@@ -1,27 +1,22 @@
 class Solution {
-     Map<Integer, Integer> f = new HashMap<>();
+public:
+    int removeStones(vector<vector<int>>& stones) {
+    for (int i = 0; i < stones.size(); ++i)
+            uni(stones[i][0], ~stones[i][1]);
+        return stones.size() - islands;
+    }
+
+    unordered_map<int, int> f;
     int islands = 0;
 
-    public int removeStones(int[][] stones) {
-        for (int i = 0; i < stones.length; ++i)
-            union(stones[i][0], ~stones[i][1]);
-        return stones.length - islands;
+    int find(int x) {
+        if (!f.count(x)) f[x] = x, islands++;
+        if (x != f[x]) f[x] = find(f[x]);
+        return f[x];
     }
 
-    public int find(int x) {
-        if (f.putIfAbsent(x, x) == null)
-            islands++;
-        if (x != f.get(x))
-            f.put(x, find(f.get(x)));
-        return f.get(x);
+    void uni(int x, int y) {
+        x = find(x), y = find(y);
+        if (x != y) f[x] = y, islands--;
     }
-
-    public void union(int x, int y) {
-        x = find(x);
-        y = find(y);
-        if (x != y) {
-            f.put(x, y);
-            islands--;
-        }
-    }
-}
+};
