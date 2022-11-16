@@ -11,5 +11,5 @@ public:
         else if(cnt == 0)
             cnt += broken.count(text[i]);
     return res;
-}
+    }
 };
