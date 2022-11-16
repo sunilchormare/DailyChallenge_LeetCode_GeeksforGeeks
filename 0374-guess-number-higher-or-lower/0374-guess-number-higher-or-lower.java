@@ -7,9 +7,10 @@
  * int guess(int num);
  */
 
-public class Solution extends GuessGame {
-    public int guessNumber(int n) {
-         int maxNumber = n, minNumber = 1;
+class Solution {
+public:
+    int guessNumber(int n) {
+    int maxNumber = n, minNumber = 1;
         while (true)
         {
             int meanNumber = (maxNumber - minNumber) / 2 + minNumber;
@@ -29,4 +30,4 @@ public class Solution extends GuessGame {
             }    
         }
     }
-}
+};
