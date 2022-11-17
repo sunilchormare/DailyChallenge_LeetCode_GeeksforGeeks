@@ -1,24 +1,19 @@
 class Solution {
-   public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
-        List<List<Integer>> res = new ArrayList<>();
-        List<Integer> path = new ArrayList<>();
-        path.add(0);
-        backtracking(res, graph, 0, path);
-        return res;
-    }
+public:
     
-    private void backtracking(List<List<Integer>> res, int[][] graph, int start, List<Integer> cur) {
-        if(graph[start].length==0 || start==graph.length-1) {
-            if(start==graph.length-1) {
-                res.add(new ArrayList<>(cur));
-            }
-            return;
+    void dfs(vector<vector<int>>& graph,vector<vector<int>> &result,vector<int> &path,int u){
+        path.push_back(u);     
+        if(u==graph.size()-1) result.push_back(path);
+        else 
+        { for(int v:graph[u]) 
+            dfs(graph,result,path,v);
         }
-        
-        for(int next:graph[start]) {
-            cur.add(next);
-            backtracking(res, graph, next, cur);
-            cur.remove(cur.size()-1);
-        }
+        path.pop_back();
     }
-}
+    vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {
+        vector<vector<int>> result;
+        vector<int> path;
+        dfs(graph,result,path,0);
+     return result;
+    }
+};
