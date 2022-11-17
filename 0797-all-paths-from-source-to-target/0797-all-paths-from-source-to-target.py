@@ -1,19 +1,10 @@
-class Solution {
-public:
-    
-    void dfs(vector<vector<int>>& graph,vector<vector<int>> &result,vector<int> &path,int u){
-        path.push_back(u);     
-        if(u==graph.size()-1) result.push_back(path);
-        else 
-        { for(int v:graph[u]) 
-            dfs(graph,result,path,v);
-        }
-        path.pop_back();
-    }
-    vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {
-        vector<vector<int>> result;
-        vector<int> path;
-        dfs(graph,result,path,0);
-     return result;
-    }
-};
+class Solution:
+    def allPathsSourceTarget(self, graph):
+        def dfs(cur, path):
+            if cur == len(graph) - 1: res.append(path)
+            else:
+                for i in graph[cur]: dfs(i, path + [i])
+        res = []
+        dfs(0, [0])
+        return res
+        
