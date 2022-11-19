@@ -1,48 +1,61 @@
 class Solution {
-public:
-     int cmp(array <int,2> &p1,array <int,2> &p2,array <int,2> p3)
-    {
-        return (p3[1]-p2[1])*(p2[0]-p1[0])-(p2[1]-p1[1])*(p3[0]-p2[0]);
-    }
-    
-    vector<vector<int>> outerTrees(vector<vector<int>>& trees) {
-        vector <vector <int>> ans;
-        sort(trees.begin(),trees.end());
+  public int[][] outerTrees(int[][] trees) {
+        if(trees.length <= 3) return trees;
         
-        deque <array <int,2>> upper,lower;
+        Arrays.sort(trees, (a, b) -> {
+            if(a[0] == b[0]) {
+                return a[1] - b[1];
+            } else {
+                return a[0] - b[0];
+            }
+        });
         
-        for(auto &i:trees)
-        {
-            int l = lower.size();
-            int u = upper.size();
-            
-            while(l>=2 && cmp(lower[l-2],lower[l-1],{i[0],i[1]})>0)
-            {
-                l--;
-                lower.pop_back();
+        List<int[]> lower = new ArrayList<>();
+        List<int[]> upper = new ArrayList<>();
+        
+        for(int[] tree: trees) {
+            while(lower.size() >= 2 && compare(lower.get(lower.size() - 2), lower.get(lower.size() - 1), tree) > 0) {
+                lower.remove(lower.size() - 1);
             }
             
-            while(u>=2 && cmp(upper[u-2],upper[u-1],{i[0],i[1]})<0)
-            {
-                u--;
-                upper.pop_back();
+            while(upper.size() >= 2 && compare(upper.get(upper.size() - 2), upper.get(upper.size() - 1), tree) < 0) {
+                upper.remove(upper.size() - 1);
             }
             
-            upper.push_back({i[0],i[1]});
-            lower.push_back({i[0],i[1]});
+            lower.add(tree);
+            upper.add(tree);
         }
         
-        set <array<int,2>> s;
+        Set<int[]> set = new HashSet<>();
+        for(int[] l : lower) {
+            set.add(l);
+        }
         
-        for(auto &i:upper)
-            s.insert(i);
+        for(int[] u : upper) {
+            set.add(u);
+        }
         
-        for(auto &i:lower)
-            s.insert(i);
+        int[][] result = new int[set.size()][2];
         
-        for(auto &i:s)
-            ans.push_back({i[0],i[1]});
+        int index = 0;
+        for(int[] s: set) {
+            result[index++] = s;
+        }
         
-        return ans;
+        return result;
     }
-};
+    
+    // < 0: clockwise
+    // > 0: counterclockwise
+    // == 0 : collinear
+    private int compare(int[] p1, int[] p2, int[] p3) {
+        int x1 = p1[0];
+        int y1 = p1[1];
+        int x2 = p2[0];
+        int y2 = p2[1];
+        int x3 = p3[0];
+        int y3 = p3[1];
+        
+        return (y3 - y2) * (x2 - x1) - (y2 - y1) * (x3 - x2);
+    }
+}
