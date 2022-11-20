@@ -1,22 +1,23 @@
-public class Solution {
-public boolean exist(char[][] board, String word) {
-    for(int i = 0; i < board.length; i++)
-        for(int j = 0; j < board[0].length; j++){
-            if(exist(board, i, j, word, 0))
+class Solution {
+public:
+    bool exist(vector<vector<char>>& board, string word) {
+    for (unsigned int i = 0; i < board.size(); i++) 
+        for (unsigned int j = 0; j < board[0].size(); j++) 
+            if (dfs(board, i, j, word))
                 return true;
-        }
     return false;
 }
-private boolean exist(char[][] board, int i, int j, String word, int ind){
-    if(ind == word.length()) return true;
-    if(i > board.length-1 || i <0 || j<0 || j >board[0].length-1 || board[i][j]!=word.charAt(ind))
+
+bool dfs(vector<vector<char>>& board, int i, int j, string& word) {
+    if (!word.size())
+        return true;
+    if (i<0 || i>=board.size() || j<0 || j>=board[0].size() || board[i][j] != word[0])  
         return false;
-    board[i][j]='*';
-    boolean result =    exist(board, i-1, j, word, ind+1) ||
-                        exist(board, i, j-1, word, ind+1) ||
-                        exist(board, i, j+1, word, ind+1) ||
-                        exist(board, i+1, j, word, ind+1);
-    board[i][j] = word.charAt(ind);
-    return result;
+    char c = board[i][j];
+    board[i][j] = '*';
+    string s = word.substr(1);
+    bool ret = dfs(board, i-1, j, s) || dfs(board, i+1, j, s) || dfs(board, i, j-1, s) || dfs(board, i, j+1, s);
+    board[i][j] = c;
+    return ret;
 }
-}
+};
