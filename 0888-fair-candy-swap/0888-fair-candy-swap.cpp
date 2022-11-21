@@ -1,11 +1,9 @@
 class Solution {
-public:
-vector<int> fairCandySwap(vector<int>& A, vector<int>& B) {
-        int diff = (accumulate(A.begin(), A.end(), 0) - 
-                    accumulate(B.begin(), B.end(), 0))/2;
-        for (auto i : A ) 
-            if(find(B.begin(), B.end(), i - diff) != B.end())
-                return {i,  i - diff};
-        return {};
+   public int[] fairCandySwap(int[] A, int[] B) {
+        int dif = (IntStream.of(A).sum() - IntStream.of(B).sum()) / 2;
+        HashSet<Integer> S = new HashSet<>();
+        for (int a : A) S.add(a);
+        for (int b : B) if (S.contains(b + dif)) return new int[] {b + dif, b};
+        return new int[0];
     }
-};
+}
