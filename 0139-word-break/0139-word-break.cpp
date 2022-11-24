@@ -2,7 +2,6 @@ class Solution {
 public:
     bool wordBreak(string s, vector<string>& wordDict) {
         int n =s.size();
-        
         set<string> dict;
         for(auto w: wordDict)
             dict.insert(w);
