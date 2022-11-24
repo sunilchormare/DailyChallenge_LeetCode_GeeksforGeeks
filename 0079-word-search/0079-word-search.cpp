@@ -19,5 +19,5 @@ bool dfs(vector<vector<char>>& board, int i, int j, string& word) {
     bool ret = dfs(board, i-1, j, s) || dfs(board, i+1, j, s) || dfs(board, i, j-1, s) || dfs(board, i, j+1, s);
     board[i][j] = c;
     return ret;
-}
+ }
 };
