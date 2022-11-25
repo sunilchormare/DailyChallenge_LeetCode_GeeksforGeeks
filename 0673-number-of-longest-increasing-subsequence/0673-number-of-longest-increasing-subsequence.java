@@ -7,7 +7,7 @@ class Solution {
             for(int j = 0; j <i ; j++){
                 if(nums[i] > nums[j]){
                     if(len[i] == len[j] + 1)cnt[i] += cnt[j];
-                    if(len[i] < len[j] + 1){
+                    else if(len[i] < len[j] + 1){
                         len[i] = len[j] + 1;
                         cnt[i] = cnt[j];
                     }
