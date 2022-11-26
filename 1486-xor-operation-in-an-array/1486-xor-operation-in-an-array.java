@@ -1,11 +1,19 @@
 class Solution {
     public int xorOperation(int n, int start) {
-        int xors=0;
-        int nums[]=new int[n];
+        // int xors=0;
+        // int nums[]=new int[n];
+        // for(int i=0;i<n;++i)
+        // {
+        //     nums[i]=start+2*i;
+        //     xors^=nums[i];
+        // }
+        // return xors;
+         int xors=0;
+        //int nums[n];
         for(int i=0;i<n;++i)
         {
-            nums[i]=start+2*i;
-            xors^=nums[i];
+            //nums[i]=start+2*i;
+            xors^=start+2*i;
         }
         return xors;
     }
