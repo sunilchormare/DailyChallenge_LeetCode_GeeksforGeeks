@@ -1,6 +1,7 @@
 class Solution {
     public int secondHighest(String s) {
        char first = '0' - 10, second = first;
+        //System.out.println('0'-10);
     for(char c : s.toCharArray()){
         if(Character.isDigit(c)){
             if(c > first){
