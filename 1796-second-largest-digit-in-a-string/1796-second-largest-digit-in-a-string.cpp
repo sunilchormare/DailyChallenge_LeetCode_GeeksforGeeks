@@ -1,24 +1,16 @@
 class Solution {
-public:
-    int secondHighest(string s) {
-//         map<int,int> m;
-//         for(int i=0;i<s.size();++i)
-//         {
-//             if(isdigit(s[i]))
-//                 m[s[i]-'0']++;
-//         }
-        
-//         return (m.size()<2)?-1:m[m.size()-1];
-         map<int, int> mp;
-        
-        for(const char &ch : s) {
-            if(isdigit(ch))
-                mp[ch-'0'] = 1;
+    public int secondHighest(String s) {
+       char first = '0' - 10, second = first;
+        //System.out.println('0'-10);
+    for(char c : s.toCharArray()){
+        if(Character.isDigit(c)){
+            if(c > first){
+                second = first;
+                first = c;
+            } else if(c != first && c > second)
+                second = c;
         }
-        
-        if(mp.empty()) return -1;
-        auto it = rbegin(mp);
-        it++;
-        return it == rend(mp) ? -1 : it->first;
     }
-};
+    return second >= '0' ? second - '0' : -1; 
+    }
+}
