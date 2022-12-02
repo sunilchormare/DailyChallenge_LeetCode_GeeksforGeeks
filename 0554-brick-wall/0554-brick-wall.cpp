@@ -1,25 +1,25 @@
 class Solution {
-public:
-    int leastBricks(vector<vector<int>>& wall) {
+    public int leastBricks(List<List<Integer>> wall) {
         
-     unordered_map<int, int> edge_frequency;    
-        int max_frequency = 0;         
+    HashMap<Integer, Integer> edge_frequency = new HashMap<>(); 
         
-        for(int row=0; row<wall.size(); row++)        
+        int max_frequency = 0; 
+        
+        for(int row=0; row<wall.size(); row++) 
         {
-            int edge_postion = 0;      
+            int edge_postion = 0;
             
-            for(int brick_no=0; brick_no< wall[row].size() -1; brick_no++)    
-            { 
-                int current_brick_length = wall[row][brick_no];  
+            for(int brick_no=0; brick_no<wall.get(row).size()-1; brick_no++) 
+            {
+                int current_brick_length = wall.get(row).get(brick_no); 
                 
-                edge_postion = edge_postion + current_brick_length ;  
+                edge_postion = edge_postion + current_brick_length; 
                 
-                edge_frequency[edge_postion]++;  
+                edge_frequency.put(edge_postion,edge_frequency.getOrDefault(edge_postion,0)+1); 
                 
-                max_frequency = max(edge_frequency[edge_postion],max_frequency);  
+                max_frequency = Math.max(edge_frequency.get(edge_postion),max_frequency); 
             }
         }
         return wall.size() - max_frequency; 
     }
-};
+}
