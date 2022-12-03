@@ -15,10 +15,14 @@ class Solution {
                     sb.append(matrix[i][j]);
             }
             String tmp=sb.toString();
-            if(!map.containsKey(tmp)) map.put(tmp, 1);
-            else map.put(tmp, map.get(tmp)+1);
+            if(!map.containsKey(tmp)) 
+                map.put(tmp, 1);
+            else 
+                map.put(tmp, map.get(tmp)+1);
         }
-        for(String i : map.keySet()) res=Math.max(res, map.get(i));
+        
+        for(String i : map.keySet()) 
+            res=Math.max(res, map.get(i));
         return res;
     }
 }
