@@ -18,7 +18,6 @@ public:
 				t[i][j] = t[i - 1][j];
 		}
 	}
-
 	return t[n][sum]; 
 }
     bool canPartition(vector<int>& arr) {
@@ -26,10 +25,8 @@ public:
         int n=arr.size();
 	for (int i = 0; i < n; i++) 
 		sum += arr[i];
-
 	if (sum % 2 != 0) 
 		return false;
-
 	  return isSubsetPossible(arr, n, sum / 2);
     }
 };
