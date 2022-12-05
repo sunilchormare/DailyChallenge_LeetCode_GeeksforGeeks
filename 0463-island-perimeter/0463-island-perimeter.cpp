@@ -1,10 +1,9 @@
 class Solution {
-public:
-    int islandPerimeter(vector<vector<int>>& grid) {
-        int count=0, repeat=0;
-        for(int i=0;i<grid.size();i++)
+    public int islandPerimeter(int[][] grid) {
+      int count=0, repeat=0;
+        for(int i=0;i<grid.length;i++)
         {
-            for(int j=0; j<grid[i].size();j++)
+            for(int j=0; j<grid[i].length;j++)
                 {
                     if(grid[i][j]==1)
                     {
@@ -14,6 +13,6 @@ public:
                     }
                 }
         }
-        return 4*count-repeat*2;
+        return 4*count-repeat*2;  
     }
-};
+}
