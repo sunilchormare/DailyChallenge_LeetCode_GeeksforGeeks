@@ -1,15 +1,15 @@
 
 class Solution {
-      int res = 0;
-    public int distributeCoins(TreeNode root) {
+public:
+   int res = 0;
+    int distributeCoins(TreeNode* root) {
         dfs(root);
         return res;
     }
-
-    public int dfs(TreeNode root) {
-        if (root == null) return 0;
-        int left = dfs(root.left), right = dfs(root.right);
-        res += Math.abs(left) + Math.abs(right);
-        return root.val + left + right - 1;
+    int dfs(TreeNode* root) {
+        if (!root) return 0;
+        int left = dfs(root->left), right = dfs(root->right);
+        res += abs(left) + abs(right);
+        return root->val + left + right - 1;
     }
-}
+};
