@@ -1,7 +1,6 @@
 class Solution {
-public:
-    bool canArrange(vector<int>& arr, int k) {
-       vector<int> frequency(k,0);
+    public boolean canArrange(int[] arr, int k) {
+      int[] frequency = new int[k];
         for(int num : arr){
             num %= k;
             if(num < 0) num += k;
@@ -12,6 +11,6 @@ public:
         for(int i = 1; i <= k/2; i++)
             if(frequency[i] != frequency[k-i]) return false;
 			
-        return true;
+        return true;   
     }
-};
+}
