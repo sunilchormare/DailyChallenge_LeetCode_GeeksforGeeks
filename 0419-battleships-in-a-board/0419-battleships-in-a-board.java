@@ -1,8 +1,9 @@
 class Solution {
-    public int countBattleships(char[][] board) {
-      int m = board.length;
+public:
+    int countBattleships(vector<vector<char>>& board) {
+        int m = board.size();
         if (m==0) return 0;
-        int n = board[0].length;
+        int n = board[0].size();
         
         int count=0;
         
@@ -15,6 +16,6 @@ class Solution {
             }
         }
         
-        return count;  
+        return count;
     }
-}
+};
