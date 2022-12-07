@@ -1,10 +1,7 @@
-class Solution {
-public:
-    int sumOddLengthSubarrays(vector<int>& A) {
-       int res = 0, n = A.size();
-        for (int i = 0; i < n; ++i) {
-            res += ((i + 1) * (n - i) + 1) / 2 * A[i];
-        }
-        return res;
-    }
-};
+class Solution:
+    def sumOddLengthSubarrays(self, arr: List[int]) -> int:
+        res = 0; freq = 0; n = len(arr)
+        for i in range(n):
+            freq = freq-(i+1)//2+(n-i+1)//2
+            res += freq*arr[i]
+        return res
