@@ -12,7 +12,7 @@
 class Solution {
 public:
     bool leafSimilar(TreeNode* root1, TreeNode* root2) {
-    stack<TreeNode*> s1 , s2;
+         stack<TreeNode*> s1 , s2;
         s1.push(root1); s2.push(root2);
         while (!s1.empty() && !s2.empty())
             if (dfs(s1) != dfs(s2)) return false;
