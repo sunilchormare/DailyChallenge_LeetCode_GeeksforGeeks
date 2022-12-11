@@ -1,5 +1,6 @@
 class Solution {
-    public boolean squareIsWhite(String a) {
-             return a.charAt(0) % 2 != a.charAt(1) % 2;
+public:
+    bool squareIsWhite(string a) {
+        return a[0] % 2 != a[1] % 2;  
     }
-}
+};
