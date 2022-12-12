@@ -1,13 +1,14 @@
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
-class Solution:
-    def longestZigZag(self, root: Optional[TreeNode]) -> int:
-        def dfs(root):
-            if not root: return [-1, -1, -1]
-            left, right = dfs(root.left), dfs(root.right)
-            return [left[1] + 1, right[0] + 1, max(left[1] + 1, right[0] + 1, left[2], right[2])]
-        return dfs(root)[-1]
+
+class Solution {
+public:
+    int longestZigZag(TreeNode* root) {
+        return dfs(root)[2];
+    }
+
+    vector<int> dfs(TreeNode* root) {
+        if (!root) return { -1, -1, -1};
+        vector<int> left = dfs(root->left), right = dfs(root->right);
+        int res = max(max(left[1], right[0]) + 1, max(left[2], right[2]));
+        return {left[1] + 1, right[0] + 1, res};
+    }
+};
