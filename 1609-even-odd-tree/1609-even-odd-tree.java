@@ -1,29 +1,24 @@
 
 class Solution {
-public:
-    bool isEvenOddTree(TreeNode* root) {
-         queue<TreeNode*> q;
-        q.push(root);
-        int level=0;
-        while(!q.empty()) {
-            int size=q.size(), n=-1;
-            for(int i=0;i<size;i++) {
-                TreeNode* cur=q.front();
-                if(level%2==0) {
-                    if(cur->val%2==0) return false;
-                    if(cur->val<=n) return false;
-                }
-                else {
-                    if(cur->val%2!=0) return false;
-                    if(n>0&&cur->val>=n) return false;
-                }
-                n=cur->val;
-                q.pop();
-                if(cur->left!=NULL) q.push(cur->left);
-                if(cur->right!=NULL) q.push(cur->right);
+    public boolean isEvenOddTree(TreeNode root) {
+        if(root == null) return true;
+        Queue<TreeNode> q = new LinkedList();
+        q.add(root);
+        boolean even = true;
+        while(q.size() > 0) {
+            int size = q.size();
+            int prevVal = even ? Integer.MIN_VALUE : Integer.MAX_VALUE; // init preVal based on level even or odd
+			while(size-- > 0) { // level by level
+                root = q.poll();
+                if(even && (root.val % 2 == 0 || root.val <= prevVal)) return false; // invalid case on even level
+                if(!even && (root.val % 2 == 1 || root.val >= prevVal)) return false; // invalid case on odd level
+                prevVal = root.val; // update the prev value
+                if(root.left != null) q.add(root.left); // add left child if exist
+                if(root.right != null) q.add(root.right); // add right child if exist
             }
-            level++;
+            even = !even; // alter the levels
         }
+        
         return true;
     }
-};
+}
