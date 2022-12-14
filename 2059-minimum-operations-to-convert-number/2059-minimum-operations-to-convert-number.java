@@ -1,27 +1,32 @@
 class Solution {
-public:
-    int minimumOperations(vector<int>& nums, int start, int goal) {
-        vector<bool>visited(1001,false);
-        int ans=0;
-        queue<int>q;
-        q.push(start);
-        while(!q.empty()){
+    public int minimumOperations(int[] nums, int start, int goal) {
+           Queue<Integer> q=new LinkedList<>();
+        q.add(start);
+        int step=0;
+        boolean[] visited=new boolean[1001];
+        visited[start]=true;
+        while(!q.isEmpty()) {
+            step++;
             int size=q.size();
-            while(size--){
-                int node=q.front();q.pop();
-                if(node==goal)
-                    return ans;
-                if(node>1000 || node<0 || visited[node])
-                    continue;
-                visited[node]=true;
-                for(int i=0;i<nums.size();i++){
-                    int a=node+nums[i],b=node-nums[i],c=node^nums[i];
-                    for(auto j :{a,b,c})
-                            q.push(j);
+            for(int ct=0;ct<size;ct++) {
+                int cur=q.poll();
+                for(int i=0;i<nums.length;i++) {
+                    if(cur+nums[i]==goal||cur-nums[i]==goal||(cur^nums[i])==goal) return step;
+                    if(cur+nums[i]>=0&&cur+nums[i]<=1000&&!visited[cur+nums[i]]) {
+                        q.offer(cur+nums[i]);
+                        visited[cur+nums[i]]=true;
+                    } 
+                    if(cur-nums[i]>=0&&cur-nums[i]<=1000&&!visited[cur-nums[i]]) {
+                        q.offer(cur-nums[i]);
+                        visited[cur-nums[i]]=true;
+                    }
+                    if((cur^nums[i])>=0&&(cur^nums[i])<=1000&&!visited[cur^nums[i]]) {
+                        q.offer(cur^nums[i]);
+                        visited[cur^nums[i]]=true;
+                    }
                 }
             }
-            ans++;
         }
         return -1;
     }
-};
+}
