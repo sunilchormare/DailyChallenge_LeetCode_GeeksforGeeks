@@ -1,6 +1,7 @@
 class Solution {
-    public int minSteps(int n) {
-         int[] dp = new int[n+1];
+public:
+    int minSteps(int n) {
+        vector<int> dp(n+1,0);
 
         for (int i = 2; i <= n; i++) {
             dp[i] = i;
@@ -12,6 +13,6 @@ class Solution {
                 
             }
         }
-        return dp[n];
+        return dp[n]; 
     }
-}
+};
