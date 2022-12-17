@@ -21,5 +21,6 @@ class Solution {
                 ++waysOfSecondCut;
             }
         }
-        return (int)(waysOfFirstCut * waysOfSecondCut % m);  }
+        return (int)(waysOfFirstCut * waysOfSecondCut % m);  
+    }
 }
