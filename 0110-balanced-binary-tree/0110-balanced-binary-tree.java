@@ -1,18 +1,20 @@
 
 class Solution {
-public:
-   int dfsHeight (TreeNode *root) {
-        if (root == NULL) return 0;
-        
-        int leftHeight = dfsHeight (root -> left);
-        if (leftHeight == -1) return -1;
-        int rightHeight = dfsHeight (root -> right);
-        if (rightHeight == -1) return -1;
-        
-        if (abs(leftHeight - rightHeight) > 1)  return -1;
-        return max (leftHeight, rightHeight) + 1;
+    public boolean isBalanced(TreeNode root) {
+        if(root == null){
+            return true;
+        }
+        return helper(root) != -1;
     }
-    bool isBalanced(TreeNode *root) {
-        return dfsHeight (root) != -1;
+    private int helper(TreeNode root){
+        if(root == null){
+            return 0;
+        }
+        int left = helper(root.left);
+        int right = helper(root.right);
+        if(left == -1 || right == -1 || Math.abs(left - right) > 1){
+            return -1;
+        }
+        return Math.max(left, right) + 1;
     }
-};
+}
