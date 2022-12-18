@@ -1,17 +1,15 @@
 class Solution {
-public:
-    vector<int> dailyTemperatures(vector<int>& t) {
-        if(t.size()==1) return {0};
-        vector<int> retVec(t.size(),0);
-        stack<int> mStack;
-        for(int i = 0;i<t.size();++i) {
-            while(!mStack.empty()&&t[mStack.top()]<t[i]) {
-                retVec[mStack.top()] = i-mStack.top();
-                mStack.pop();
-            }
-            mStack.push(i);
+    public int[] dailyTemperatures(int[] temperatures) {
+           int[] stack = new int[temperatures.length];
+    int top = -1;
+    int[] ret = new int[temperatures.length];
+    for(int i = 0; i < temperatures.length; i++) {
+        while(top > -1 && temperatures[i] > temperatures[stack[top]]) {
+            int idx = stack[top--];
+            ret[idx] = i - idx;
         }
-        return retVec;
-        
+        stack[++top] = i;
     }
-};
+    return ret;
+    }
+}
