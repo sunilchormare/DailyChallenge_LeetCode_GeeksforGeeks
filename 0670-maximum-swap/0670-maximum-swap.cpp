@@ -1,23 +1,25 @@
 class Solution {
-    public int maximumSwap(int num) {
-        char[] digits = Integer.toString(num).toCharArray();
+public:
+    int maximumSwap(int num) {
+     string numString = to_string(num);
+    int n = numString.length();
+    vector<int> dpPosition(n, -1);
         
-        int[] buckets = new int[10];
-        for (int i = 0; i < digits.length; i++) {
-            buckets[digits[i] - '0'] = i;
+    int curMaxPos = n - 1;
+    for (int i = n - 1; i >= 0; i--) {
+        if (numString[i] > numString[curMaxPos]) {
+            curMaxPos = i;
         }
-        
-        for (int i = 0; i < digits.length; i++) {
-            for (int k = 9; k > digits[i] - '0'; k--) {
-                if (buckets[k] > i) {
-                    char tmp = digits[i];
-                    digits[i] = digits[buckets[k]];
-                    digits[buckets[k]] = tmp;
-                    return Integer.valueOf(new String(digits));
-                }
-            }
-        }
-        
-        return num;
+        dpPosition[i] = curMaxPos;
     }
-}
+        
+    for (int i = 0; i < n; i++) {
+        if(numString[dpPosition[i]] != numString[i]) {
+            swap(numString[i], numString[dpPosition[i]]);
+            break;
+        }
+    }
+        
+    return stoi(numString);
+    }
+};
