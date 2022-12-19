@@ -1,28 +1,42 @@
 class Solution {
-public:
-    bool validPath(int n, vector<vector<int>>& edges, int start, int end) {
-        unordered_map<int,vector<int>> graph; 
-        for(auto e : edges) {
-            graph[e[0]].push_back(e[1]);
-            graph[e[1]].push_back(e[0]);
-        }
-        vector<bool> visited(n,0);        
-        stack<int> st;
-        st.push(start);
-        visited[start] = 1; 
+     public boolean validPath(int n, int[][] edges, int start, int end) {
+        boolean[] visited = new boolean[n];
+        HashSet<Integer>[] graph = new HashSet[n];
+        int i, j;
         
-        while(!st.empty()){ 
-            auto top = st.top();
-            if(top == end)
-                return 1;
-            st.pop();
-            for(auto node : graph[top]){
-                if(!visited[node]){
-                    visited[node] = 1;
-                    st.push(node); 
+        for(i = 0; i < n; i++){
+            graph[i] = new HashSet<Integer>();
+        }
+        
+        for(int[] edge : edges){
+            graph[edge[0]].add(edge[1]);
+            graph[edge[1]].add(edge[0]);
+        }
+		
+        if(graph[start].contains(end)){  // direct connection exists
+            return true;
+        }
+       
+        Queue<Integer> queue = new LinkedList<Integer>();
+        int N, current;
+        queue.offer(start);
+        visited[start] = true;
+       
+        while(!queue.isEmpty()){
+            N = queue.size();
+            current = queue.poll();
+            if(current == end){
+                    return true;
+            }
+                
+            for(Integer neighbor : graph[current]){
+                if(!visited[neighbor]){
+                    visited[neighbor] = true;
+                    queue.offer(neighbor);
                 }
             }
         }
+       
         return false;
     }
-};
+}
