@@ -1,48 +1,28 @@
 class Solution {
-public:
-    bool possibleBipartition(int n, vector<vector<int>>& dislikes) {
-        vector<vector<int>>adj(n+1);
-        
-        for(auto pair : dislikes){
-            adj[pair[0]].push_back(pair[1]);
-            adj[pair[1]].push_back(pair[0]);
+    public boolean possibleBipartition(int N, int[][] dislikes) {
+    List<Integer>[] arr=new List[N+1];
+        for(int i=1;i<=N;i++)arr[i]=new ArrayList<>();
+        for(int i=0;i<dislikes.length;i++){
+            arr[dislikes[i][0]].add(dislikes[i][1]);
+            arr[dislikes[i][1]].add(dislikes[i][0]);
         }
-        
-        unordered_map<int,int>color;  // 1=Red , 2=Blue 
-        unordered_set<int>visited;
-        
-        queue<int>q;
-        for(int i=1 ; i<=n ; i++)
-        {
-            if(visited.find(i)==visited.end()){
-                color[i]=1;
-                q.push(i);
-                
-                while(!q.empty()){
-                    int u = q.front();
-                    q.pop();
-                    
-                    if(visited.find(u)!=visited.end())
-                        continue;
-                    
-                    for(int v  : adj[u])
-                    {
-                        if(color[v]==color[u])
-                            return false;
-                        
-                        if(color[u]==1)
-                            color[v]=2;
-                        else
-                            color[v]=1;
-                    
-                        q.push(v);
-                        
-                        visited.insert(u);
-                    }
-                }
+        int[] parent=new int[N+1];
+        for(int i=1;i<=N;i++)parent[i]=i;
+        for(int i=1;i<=N;i++){
+            List<Integer> list=arr[i];
+            if(list.isEmpty())continue;
+            int curP=list.get(0);
+            if(parent[findUnion(i,parent)]==parent[findUnion(curP,parent)])return false;
+            for(int j=1;j<list.size();j++){
+                if(parent[findUnion(i,parent)]==parent[findUnion(list.get(j),parent)])return false;
+                parent[list.get(j)]=parent[curP];
             }
         }
-        
         return true;
     }
-};
+    
+    public int findUnion(int i,int[] parent){
+        if(i!=parent[i])parent[i]=findUnion(parent[i],parent);
+        return parent[i];
+    }
+}
