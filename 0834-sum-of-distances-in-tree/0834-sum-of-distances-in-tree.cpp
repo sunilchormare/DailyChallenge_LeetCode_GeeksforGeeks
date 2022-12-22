@@ -1,36 +1,37 @@
 class Solution {
-public:
-    vector<unordered_set<int>> tree;
-    vector<int> res, count;
-
-    vector<int> sumOfDistancesInTree(int N, vector<vector<int>>& edges) {
-        tree.resize(N);
-        res.assign(N, 0);
-        count.assign(N, 1);
-        for (auto e : edges) {
-            tree[e[0]].insert(e[1]);
-            tree[e[1]].insert(e[0]);
+     int[] res, count;
+    ArrayList<HashSet<Integer>> tree;
+    public int[] sumOfDistancesInTree(int N, int[][] edges) {
+        tree = new ArrayList<HashSet<Integer>>();
+        res = new int[N];
+        count = new int[N];
+        for (int i = 0; i < N ; ++i)
+            tree.add(new HashSet<Integer>());
+        for (int[] e : edges) {
+            tree.get(e[0]).add(e[1]);
+            tree.get(e[1]).add(e[0]);
         }
         dfs(0, -1);
         dfs2(0, -1);
         return res;
-
     }
 
-    void dfs(int root, int pre) {
-        for (auto i : tree[root]) {
+    public void dfs(int root, int pre) {
+        for (int i : tree.get(root)) {
             if (i == pre) continue;
             dfs(i, root);
             count[root] += count[i];
             res[root] += res[i] + count[i];
         }
+        count[root]++;
     }
 
-    void dfs2(int root, int pre) {
-        for (auto i : tree[root]) {
+
+    public void dfs2(int root, int pre) {
+        for (int i : tree.get(root)) {
             if (i == pre) continue;
-            res[i] = res[root] - count[i] + count.size() - count[i];
+            res[i] = res[root] - count[i] + count.length - count[i];
             dfs2(i, root);
         }
     }
-};
+}
