@@ -1,17 +1,18 @@
 class Solution {
-    public String shortestPalindrome(String s) {
-        if(s.length() <= 1){ return s; }
-        String curs = s + " " + new StringBuilder(s).reverse().toString();
-        int[] trace = new int[curs.length()];
-        for(int i = 1 ; i < curs.length() ; i++){
-            int curindex = trace[i-1];
-            while(curindex > 0 && curs.charAt(curindex) != curs.charAt(i)){
-                curindex = trace[curindex-1];
-            }
-            if(curs.charAt(curindex) == curs.charAt(i)){
-                trace[i] = curindex+1;
-            }
+public:
+    string shortestPalindrome(string s) {
+         string rev_s = s;
+        reverse(rev_s.begin(), rev_s.end());
+        string l = s + "#" + rev_s;
+        
+        vector<int> p(l.size(), 0);
+        for (int i = 1; i < l.size(); i++) {
+            int j = p[i - 1];
+            while (j > 0 && l[i] != l[j])
+                j = p[j - 1];
+            p[i] = (j += l[i] == l[j]);
         }
-        return new StringBuilder(s.substring(trace[curs.length()-1])).reverse().toString() + s;
+        
+        return rev_s.substr(0, s.size() - p[l.size() - 1]) + s;
     }
-}
+};
