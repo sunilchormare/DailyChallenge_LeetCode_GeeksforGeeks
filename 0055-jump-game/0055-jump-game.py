@@ -1,12 +1,8 @@
-class Solution {
-    public boolean canJump(int[] nums) {
-        int reachable=0;
-        for(int i=0;i<nums.length;++i)
-        {
-            if(reachable<i)
-                return false;
-            reachable=Math.max(reachable,i+nums[i]);
-        }
-        return true;
-    }
-}
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        reachable=0
+        for i in range(len(nums)):
+            if(reachable<i):
+                return False
+            reachable=max(reachable,i+nums[i])
+        return True
