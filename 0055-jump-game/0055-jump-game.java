@@ -1,14 +1,12 @@
 class Solution {
-public:
-    bool canJump(vector<int>& nums) {
+    public boolean canJump(int[] nums) {
         int reachable=0;
-        for(int i=0;i<nums.size();++i)
+        for(int i=0;i<nums.length;++i)
         {
             if(reachable<i)
                 return false;
-            reachable=max(reachable,i+nums[i]);
-          //  cout<<"i= "<<i<<" reachable : "<<reachable<<" "<<endl;
+            reachable=Math.max(reachable,i+nums[i]);
         }
         return true;
     }
-};
+}
