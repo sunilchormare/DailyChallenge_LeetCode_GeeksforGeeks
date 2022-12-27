@@ -1,42 +1,21 @@
 class Solution {
-    public int nearestExit(char[][] maze, int[] entrance) {
-     Queue<int[]> bfs = new ArrayDeque<>();
-        bfs.offer(entrance);
-        
-        int rows = maze.length, cols = maze[0].length;
-        boolean[][] visited = new boolean[rows][cols];
-        visited[entrance[0]][entrance[1]] = true;
-        
-        int steps = 1;
-        
-        while (!bfs.isEmpty()) {
-            int size = bfs.size();
-            for (int i = 1; i <= size; i++) {
-                int[] cell = bfs.poll();
-                int row = cell[0], col = cell[1];
-                
-                int[][] adjacentCells = new int[][]{{row+1, col}, {row, col+1}, {row-1, col}, {row, col-1}};
-                for (int[] adjacentCell : adjacentCells) {
-                    int adjacentRow = adjacentCell[0], adjacentCol = adjacentCell[1];
-                    
-                    if (adjacentRow < 0 || adjacentRow >= rows
-                        || adjacentCol < 0 || adjacentCol >= cols
-                        || maze[adjacentRow][adjacentCol] == '+')
-                        continue;
-                    
-                    if (!visited[adjacentRow][adjacentCol]) {       // important step checking for visited cell preventing loop
-                        if (adjacentRow == 0 || adjacentRow == rows - 1 
-                            || adjacentCol == 0 || adjacentCol == cols - 1)
-                            return steps;
-                        
-                        visited[adjacentRow][adjacentCol] = true;
-                        bfs.offer(new int[]{adjacentRow, adjacentCol});
-                    }
-                }
+public:
+   int dir[5] = {0, -1, 0, 1, 0};
+int nearestExit(vector<vector<char>>& m, vector<int>& ent) {
+    queue<array<int, 3>> q; // i, j, steps
+    q.push({ent[0], ent[1], 0});
+    while(!q.empty()) {
+        auto [i, j, steps] = q.front(); q.pop();
+        if ((i != ent[0] || j != ent[1]) && (i == 0 || j == 0 || i == m.size() - 1 || j == m[i].size() - 1))
+            return steps;
+        for (int d = 0; d < 4; ++d) {
+            int di = i + dir[d], dj = j + dir[d + 1];
+            if (di >= 0 && dj >= 0 && di < m.size() && dj < m[di].size() && m[di][dj] == '.') {
+                m[di][dj] = '+';
+                q.push({di, dj, steps + 1});
             }
-            steps++;
         }
-        
-        return -1;   
     }
+    return -1;
 }
+};
