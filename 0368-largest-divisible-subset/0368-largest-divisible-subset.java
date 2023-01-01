@@ -1,46 +1,31 @@
 class Solution {
-public:
-    vector<int> largestDivisibleSubset(vector<int>& nums) {
-       if(nums.size()==0){
-            return nums;
-        }
-        sort(nums.begin(),nums.end());
-        int flag=1;
-        if(nums[0]==1){
-            flag=0;
-        }
-        else{
-            nums.push_back(1);
-            flag=1;
-        }
-        sort(nums.begin(),nums.end());
-        int i,j;
-        int dp[nums.size()][2];
-        for(i=nums.size()-1;i>=0;i--){
-            dp[i][0]=0;
-            dp[i][1]=i;
-            for(j=i+1;j<nums.size();j++){
-                if((nums[j]%nums[i])==0){
-                    if(dp[j][0]>dp[i][0]){
-                        dp[i][0]=dp[j][0];
-                        dp[i][1]=j;
-                    }  
-                }
+    public List<Integer> largestDivisibleSubset(int[] nums) {
+    int[] l = new int[nums.length]; // the length of largestDivisibleSubset that ends with element i
+    int[] prev = new int[nums.length]; // the previous index of element i in the largestDivisibleSubset ends with element i
+    
+    Arrays.sort(nums);
+    
+    int max = 0;
+    int index = -1;
+    for (int i = 0; i < nums.length; i++){
+        l[i] = 1;
+        prev[i] = -1;
+        for (int j = i - 1; j >= 0; j--){
+            if (nums[i] % nums[j] == 0 && l[j] + 1 > l[i]){
+                l[i] = l[j] + 1;
+                prev[i] = j;
             }
-            dp[i][0]++;
         }
-        i=0;
-        vector<int> t;
-        t.push_back(nums[i]);
-        while(dp[i][1]!=i){
-            i=dp[i][1];
-            t.push_back(nums[i]);
-            
+        if (l[i] > max){
+            max = l[i];
+            index = i;
         }
-        if(flag==1){
-            t.erase(t.begin());
-        }
-        return t;
-         
     }
-};
+    List<Integer> res = new ArrayList<Integer>();
+    while (index != -1){
+        res.add(nums[index]);
+        index = prev[index];
+    }
+    return res;
+}
+}
