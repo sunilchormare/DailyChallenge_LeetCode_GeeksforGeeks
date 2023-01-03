@@ -1,17 +1,30 @@
-
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
 class Solution {
-public:
-  vector<vector<int>> spiralMatrix(int m, int n, ListNode* head) {
-    int i = 0, j = 0, cur_d = 0, d[5] = {0, 1, 0, -1, 0};
-    vector<vector<int>> res(m, vector<int>(n, -1));
-    for (; head != nullptr; head = head->next) {
-        res[i][j] = head->val;
-        int ni = i + d[cur_d], nj = j + d[cur_d + 1];
-        if (min(ni, nj) < 0 || ni >= m || nj >= n || res[ni][nj] != -1)
-            cur_d = (cur_d + 1) % 4;
-        i += d[cur_d];
-        j += d[cur_d + 1];
+   public int[][] spiralMatrix(int m, int n, ListNode head) {
+        int[][] spiral = new int[m][n];
+        for(int[] row : spiral)
+            Arrays.fill(row, -1);
+        int r = 0, c = 0, ri = 0, ci = 1;
+        while(head != null){
+            spiral[r][c] = head.val;
+            head = head.next;
+            if(spiral[(r+ri+m) % m][(c+ci+n) % n] != -1){
+                int temp = ri;
+                ri = ci;
+                ci = -temp;
+            }
+            r += ri;
+            c += ci;
+        }
+        return spiral;
     }
-    return res;
 }
-};
