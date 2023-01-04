@@ -1,7 +1,8 @@
 class Solution {
-    public boolean canCross(int[] stones) {
-        int N = stones.length;
-        boolean[][] dp = new boolean[N][N + 1];
+public:
+    bool canCross(vector<int>& stones) {
+        int N = stones.size();
+        vector<vector<bool>> dp(N,vector<bool>(N+1,0));
         dp[0][1] = true;
         
         for(int i = 1; i < N; ++i){
@@ -17,4 +18,4 @@ class Solution {
 
         return false;
     }
-}
+};
