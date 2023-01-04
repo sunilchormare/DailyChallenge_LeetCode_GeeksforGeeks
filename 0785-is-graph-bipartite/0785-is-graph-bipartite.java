@@ -1,34 +1,20 @@
 class Solution {
-public:
-    vector<int>vis,col;
-    bool dfs(int v, int c, vector<vector<int>>& graph){
-        vis[v]=1;
-        col[v]=c;
-        for(int child:graph[v]){
-            if(vis[child]==0){
-                // here c^1 is for flipping 1 by 0 or 0 by 1, that is flip the current color
-                if(dfs(child,c^1,graph)==false) 
-                    return false;
-            }
-            else{
-                if(col[v]==col[child])
-                    return false;
-            }
+   public boolean isBipartite(int[][] G) {        
+        int n = G.length, colors[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            if (colors[i] == 0 && !dfs(G, colors, i, 1)) 
+                return false;            
         }
         return true;
     }
     
-    bool isBipartite(vector<vector<int>>& graph) {
-        int n=graph.size();
-        vis.resize(n);
-        col.resize(n);
-
-        for(int i=0;i<n;++i){
-            if(vis[i]==0 && dfs(i,0,graph)==false){ 
-                return false;
-            }
+    private boolean dfs(int[][] G, int[] colors, int i, int color) {
+        colors[i] = color;
+        for (int j = 0; j < G[i].length; j++) {
+            int k = G[i][j]; // adjacent node
+            if (colors[k] == -color) continue;
+            if (colors[k] == color || !dfs(G, colors, k, -color)) return false;
         }
-        
         return true;
     }
-};
+}
