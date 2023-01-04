@@ -1,17 +1,36 @@
 class Solution {
-  public int maximalNetworkRank(int n, int[][] roads) {
-        boolean[][] connected = new boolean[n][n];
-        int[] cnts = new int[n];
-        for (int[] r : roads) {
-            cnts[r[0]]++;
-            cnts[r[1]]++;
-            connected[r[0]][r[1]] = true;
-            connected[r[1]][r[0]] = true;  // cache if i and j directly connected
+public:
+    int maximalNetworkRank(int n, vector<vector<int>>& roads) {
+    vector<pair<int, unordered_set<int>>> graph(n);
+
+        for(auto &road : roads) {
+            graph[road[0]].first = road[0];
+            graph[road[0]].second.insert(road[1]);
+            graph[road[1]].first = road[1];
+            graph[road[1]].second.insert(road[0]);
         }
-        int res = 0;
-        for (int i = 0; i < n; i++) 
-            for (int j = i + 1; j < n; j++) 
-                res = Math.max(res, cnts[i] + cnts[j] - (connected[i][j] ? 1 : 0));  // loop all pairs
-        return res;
+
+        sort(graph.begin(), graph.end(), 
+            [](pair<int, unordered_set<int>>& lhs, pair<int, unordered_set<int>>& rhs) {
+                return lhs.second.size() > rhs.second.size();
+            });
+        
+        int secondGreater = graph[1].second.size();
+        int k;
+        // get all vertices w/ the second greater number of neighbors
+        for(k = 1; k < graph.size() && graph[k].second.size() == secondGreater; ++k) { }
+        int ans = 0;
+        
+        for(int i = 0; i < k; ++i) {
+            for(int j = i + 1; j < k; ++j) {
+                int curr = graph[i].second.size() + graph[j].second.size();
+                // if neighbor
+                if(graph[i].second.find(graph[j].first) != graph[i].second.end())
+                    --curr;
+                ans = max(ans, curr);
+            }
+        }
+
+        return ans;
     }
-}
+};
