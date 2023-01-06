@@ -5,7 +5,7 @@ class Solution {
         int answer = 0;
         
         while (answer < n && costs[answer] <= coins) {
-            // We can buy this icecream, reduce the cost from the coins. 
+          
             coins -= costs[answer];
             answer += 1;
         }
