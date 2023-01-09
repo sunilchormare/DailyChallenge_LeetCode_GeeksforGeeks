@@ -1,26 +1,26 @@
 class Solution {
-public:
-    int maxDistance(vector<int>& position, int m) {
-        sort(position.begin(), position.end());
-        int l = 0, r = position.back() - position.front();
-        while (l < r) {
-            int mid = r - (r - l) / 2;
-            if (count(position, mid) >= m)
-                l = mid;
+    public int maxDistance(int[] position, int m) {
+        int n = position.length;
+        Arrays.sort(position);
+        int left = 0, right = position[n-1] - position[0];
+        while (left < right) {
+            int mid = right - (right - left)/2;
+            if (count(mid, position) >= m)
+                left = mid;
             else
-                r = mid - 1;
+                right = mid - 1;
         }
-        return l;
+        return left;
     }
-private:
-    int count(vector<int>& position, int d) {
+    
+    private int count(int minDist, int[] position) {
         int ans = 1, cur = position[0];
-        for (int i = 1; i < position.size(); ++i) {
-            if (position[i] - cur >= d) {
+        for (int i = 1; i < position.length; i++) {
+            if (position[i] - cur >= minDist) {
                 ans++;
                 cur = position[i];
             }
         }
         return ans;
     }
-};
+}
