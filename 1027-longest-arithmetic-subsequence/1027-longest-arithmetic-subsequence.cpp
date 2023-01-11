@@ -1,15 +1,14 @@
 class Solution {
-    public int longestArithSeqLength(int[] A) {
-           int res = 2, n = A.length;
-        HashMap<Integer, Integer>[] dp = new HashMap[n];
-        for (int j = 0; j < A.length; j++) {
-            dp[j] = new HashMap<>();
-            for (int i = 0; i < j; i++) {
+public:
+    int longestArithSeqLength(vector<int>& A) {
+           unordered_map<int, unordered_map<int, int>> dp;
+        int res = 2, n = A.size();
+        for (int i = 0; i < n; ++i)
+            for (int j = i + 1; j < n; ++j)  {
                 int d = A[j] - A[i];
-                dp[j].put(d, dp[i].getOrDefault(d, 1) + 1);
-                res = Math.max(res, dp[j].get(d));
+                dp[d][j] = dp[d].count(i) ? dp[d][i] + 1 : 2;
+                res = max(res, dp[d][j]);
             }
-        }
         return res;
     }
-}
+};
