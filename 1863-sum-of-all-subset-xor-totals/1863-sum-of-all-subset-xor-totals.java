@@ -1,10 +1,14 @@
 class Solution {
-public:
-    int subsetXORSum(vector<int>& arr) {
-        int n = arr.size(), bits = 0;
-        for (int i=0; i < n; ++i)
-            bits |= arr[i];
-        int res = bits * pow(2, n-1);
-        return res;
+    int sum=0;
+    public int subsetXORSum(int[] nums) {
+        sum=0;
+        return getAns(nums,0,0);
     }
-};
+    
+    int getAns(int[] arr,int i,int cur){
+        if(i==arr.length){
+            return cur;
+        }
+        return getAns(arr,i+1,cur^arr[i]) + getAns(arr,i+1,cur);
+    }
+}
