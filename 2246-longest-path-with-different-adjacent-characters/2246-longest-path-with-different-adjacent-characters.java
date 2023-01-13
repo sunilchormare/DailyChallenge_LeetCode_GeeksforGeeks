@@ -1,23 +1,26 @@
 class Solution {
-public:
-   int longestPath(vector<int>& parent, string s) {
-        int n = s.size(), res = 0;
-        vector<vector<int>> children(n, vector<int>());
-        for (int i = 1; i < n; ++i)
-            children[parent[i]].push_back(i);
-        dfs(children, s, res, 0);
+      int res;
+    public int longestPath(int[] parent, String s) {
+        res = 0;
+        ArrayList<Integer>[] children = new ArrayList[parent.length];
+        for (int i = 0; i < parent.length; i++)
+            children[i] = new ArrayList<>();
+        for (int i = 1; i < parent.length; i++)
+            children[parent[i]].add(i);
+        dfs(children, s, 0);
         return res;
     }
 
-    int dfs(vector<vector<int>>& children, string& s, int& res, int i) {
-        int big1 = 0, big2 = 0;
-        for (int& j : children[i]) {
-            int cur = dfs(children, s, res, j);
-            if (s[i] == s[j]) continue;
-            if (cur > big2) big2 = cur;
-            if (big2 > big1) swap(big1, big2);
+    private int dfs(ArrayList<Integer>[] children, String s, int i) {
+        PriorityQueue<Integer> queue = new PriorityQueue<>();
+        for (int j : children[i]) {
+            int cur = dfs(children, s, j);
+            if (s.charAt(j) != s.charAt(i))
+                queue.offer(-cur);
         }
-        res = max(res, big1 + big2 + 1);
+        int big1 = queue.isEmpty() ? 0 : -queue.poll();
+        int big2 = queue.isEmpty() ? 0 : -queue.poll();
+        res = Math.max(res, big1 + big2 + 1);
         return big1 + 1;
     }
-};
+}
