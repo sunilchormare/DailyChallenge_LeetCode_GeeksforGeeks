@@ -1,16 +1,32 @@
 class Solution {
-public:
-    int ds_find(vector<int>& ds, int p) {
-  return ds[p] == -1 ? p : ds[p] = ds_find(ds, ds[p]);
+    public String smallestEquivalentString(String A, String B, String S) {
+        int[] graph = new int[26];
+        for(int i = 0; i < 26; i++) {
+            graph[i] = i;
+        }
+        for(int i = 0; i < A.length(); i++) {
+            int a = A.charAt(i) - 'a';
+            int b = B.charAt(i) - 'a';
+            int end1 = find(graph, b);
+            int end2 = find(graph, a);
+            if(end1 < end2) {
+                graph[end2] = end1;
+            } else {
+                graph[end1] = end2;
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < S.length(); i++) {
+            char c = S.charAt(i);
+            sb.append((char)('a' + find(graph, c - 'a')));
+        }
+        return sb.toString();
+    }
+    
+    private int find(int[] graph, int idx) {
+        while(graph[idx] != idx) {
+            idx = graph[idx];
+        }
+        return idx;
+    }
 }
-void ds_merge(vector<int>& ds, int p1, int p2) {
-  p1 = ds_find(ds, p1), p2 = ds_find(ds, p2);
-  if (p1 != p2) ds[max(p1, p2)] = min(p1, p2);
-}
-string smallestEquivalentString(string A, string B, string S) {
-  vector<int> ds(26, -1);
-  for (auto i = 0; i < A.size(); ++i) ds_merge(ds, A[i] - 'a', B[i] - 'a');
-  for (auto i = 0; i < S.size(); ++i) S[i] = ds_find(ds, S[i] - 'a') + 'a';
-  return S;
-}
-};
