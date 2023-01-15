@@ -1,7 +1,7 @@
 class Solution {
 public:
     int countArrangement(int n) {
-    vector<int>vis(n+1,0);
+    vector<int> vis(n+1,0);
     return helper(n,1,vis);
 }
 int helper(int n, int j, vector<int>vis) {
