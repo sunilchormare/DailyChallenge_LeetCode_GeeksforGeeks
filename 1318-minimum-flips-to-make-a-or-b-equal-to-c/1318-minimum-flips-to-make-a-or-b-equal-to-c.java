@@ -1,6 +1,5 @@
 class Solution {
-public:
-    int minFlips(int a, int b, int c) {
+    public int minFlips(int a, int b, int c) {
          int ai,bi,ci;
         int res=0;
         while(a>0 || b>0 || c>0){
@@ -13,4 +12,4 @@ public:
         }
         return res;
     }
-};
+}
