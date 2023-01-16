@@ -8,7 +8,7 @@ class Solution {
              if(newInterval == null || i[1] < newInterval[0]){
                  result.add(i);
              }else if(i[0] > newInterval[1]){
-                // be carefult the sequence here
+                // be careful the sequence here
                  result.add(newInterval);
                  result.add(i);
                  newInterval = null;
