@@ -1,30 +1,35 @@
 class TreeAncestor {
-public:
-   vector<vector<int>>v;
-    TreeAncestor(int n, vector<int>& parent) {
-        vector<vector<int>> par(n, vector<int>(20));
-        for (int i = 0; i < n; i++) par[i][0] = parent[i];
-        for (int j = 1; j < 20; j++) {
-            for (int i = 0; i < n; i++) {
-                if (par[i][j - 1] == -1) par[i][j] = -1;
-                else par[i][j] = par[par[i][j - 1]][j - 1];
+ int[][] jump;
+    int maxPow;
+
+    public TreeAncestor(int n, int[] parent) {
+        // log_base_2(n)
+        maxPow = (int) (Math.log(n) / Math.log(2)) + 1;
+        jump = new int[maxPow][n];
+        jump[0] = parent;
+        for (int p = 1; p < maxPow; p++) {
+            for (int j = 0; j < n; j++) {
+                int pre = jump[p - 1][j];
+                jump[p][j] = pre == -1 ? -1 : jump[p - 1][pre];
             }
         }
-        swap(v, par);
     }
-    int getKthAncestor(int node, int k) {
-        for (int i = 0; i < 20; i++) {
-            if ((k >> i) & 1) {
-                node = v[node][i];
-                if (node == -1) return -1;
-            }
+
+    public int getKthAncestor(int node, int k) {
+        int maxPow = this.maxPow;
+        while (k > 0 && node > -1) {
+            if (k >= 1 << maxPow) {
+                node = jump[maxPow][node];
+                k -= 1 << maxPow;
+            } else
+                maxPow -= 1;
         }
         return node;
     }
-};
+}
 
 /**
  * Your TreeAncestor object will be instantiated and called as such:
- * TreeAncestor* obj = new TreeAncestor(n, parent);
- * int param_1 = obj->getKthAncestor(node,k);
+ * TreeAncestor obj = new TreeAncestor(n, parent);
+ * int param_1 = obj.getKthAncestor(node,k);
  */
