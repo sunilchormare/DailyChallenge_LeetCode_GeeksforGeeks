@@ -1,12 +1,11 @@
 class Solution {
-public:
-    string removeOuterParentheses(string s) {
-         string res;
+    public String removeOuterParentheses(String S) {
+         StringBuilder s = new StringBuilder();
         int opened = 0;
-        for (char c : s) {
-            if (c == '(' && opened++ > 0) res += c;
-            if (c == ')' && opened-- > 1) res += c;
+        for (char c : S.toCharArray()) {
+            if (c == '(' && opened++ > 0) s.append(c);
+            if (c == ')' && opened-- > 1) s.append(c);
         }
-        return res;
+        return s.toString();
     }
-};
+}
