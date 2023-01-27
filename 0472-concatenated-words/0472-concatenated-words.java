@@ -1,7 +1,16 @@
 class Solution {
+    int min=0;
     public List<String> findAllConcatenatedWordsInADict(String[] words) {
         List<String> result=new ArrayList<>();
-        Set<String> dict=new HashSet<>(Arrays.asList(words));
+       Set<String> dict=new HashSet<>();
+        min=Integer.MAX_VALUE;
+        for(String word:words)
+        {
+             if(word.length()==0) continue;
+             dict.add(word);
+            min=Math.min(min,word.length());
+            
+        }
         for(String word:words)
         {
             if(canForm(word,dict))
@@ -15,7 +24,7 @@ class Solution {
     boolean canForm(String word,Set<String> dict)
     {
         
-        for(int i=0;i<word.length();++i)
+        for(int i=min;i<=word.length();++i)
         {
         String left=word.substring(0,i);
         String right=word.substring(i);
