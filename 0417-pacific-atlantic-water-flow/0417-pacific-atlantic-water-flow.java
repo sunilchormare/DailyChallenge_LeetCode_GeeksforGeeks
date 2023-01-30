@@ -1,39 +1,29 @@
 class Solution {
-   long idk = 0; int[][] grid;
-    boolean[] ocean = new boolean[2];
-    HashSet<Long> visited = new HashSet<>();
-
-    public List<List<Integer>> pacificAtlantic(int[][] heights) {
-        this.grid = heights;
-        idk = Math.max(heights.length, heights[0].length);
-        List<List<Integer>> res = new ArrayList<>();
-        for(int i=0;i<heights.length;i++)
-            for(int j=0;j<heights[0].length;j++){
-                dfs(i, j, Integer.MAX_VALUE);
-                if(ocean[0] && ocean[1])
-                    res.add(new ArrayList<>(Arrays.asList(i,j)));
-
-                ocean[0]=false; ocean[1]=false; 
-                visited = new HashSet<>();
-            }
-
-        return res;
+public:
+  int m, n;
+    vector<vector<bool> > atlantic, pacific;
+	vector<vector<int> > ans;    
+  
+    vector<vector<int> > pacificAtlantic(vector<vector<int>>& mat) {
+        if(!size(mat)) return ans;
+        m = size(mat), n = size(mat[0]);
+        atlantic = pacific = vector<vector<bool> >(m, vector<bool>(n, false));
+        for(int i = 0; i < m; i++) 
+            dfs(mat, pacific, i, 0), dfs(mat, atlantic, i, n - 1);
+        for(int i = 0; i < n; i++) 
+            dfs(mat, pacific, 0, i), dfs(mat, atlantic, m - 1, i);             
+        return ans;
     }
-
-    void dfs(int i, int j, int prev){
-        if(i==-1||j==-1){  // pacific
-            ocean[0] = true; return;
-        }
-        if(i==grid.length||j==grid[0].length){ // atlantic
-            ocean[1] = true; return;
-        }
-
-        if(visited.contains(i*idk+j)) return;
-        if(grid[i][j]>prev) return;
-
-        visited.add(i*idk+j);
-        prev = grid[i][j];
-        dfs(i-1,j,prev); dfs(i+1,j,prev);
-        dfs(i,j-1,prev); dfs(i, j+1,prev);
+   
+    void dfs(vector<vector<int> >& mat, vector<vector<bool> >& visited, int i, int j){     
+        if(visited[i][j]) return;
+        visited[i][j] = true;
+		
+        if(atlantic[i][j] && pacific[i][j]) ans.push_back(vector<int>{i, j});    
+		
+  if(i + 1 <  m && mat[i + 1][j] >= mat[i][j]) dfs(mat, visited, i + 1, j); 
+ if(i - 1 >= 0 && mat[i - 1][j] >= mat[i][j]) dfs(mat, visited, i - 1, j);
+  if(j + 1 <  n && mat[i][j + 1] >= mat[i][j]) dfs(mat, visited, i, j + 1); 
+  if(j - 1 >= 0 && mat[i][j - 1] >= mat[i][j]) dfs(mat, visited, i, j - 1);
     }
-}
+};
