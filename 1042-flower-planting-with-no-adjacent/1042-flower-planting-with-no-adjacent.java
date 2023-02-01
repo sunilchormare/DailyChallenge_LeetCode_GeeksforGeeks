@@ -1,20 +1,20 @@
 class Solution {
-public:
-    vector<int> gardenNoAdj(int N, vector<vector<int>>& paths) {
-          vector<int> res(N);
-        vector<vector<int>> G(N);
-        for (vector<int>& p : paths) {
-            G[p[0] - 1].push_back(p[1] - 1);
-            G[p[1] - 1].push_back(p[0] - 1);
+    public int[] gardenNoAdj(int N, int[][] paths) {
+         Map<Integer, Set<Integer>> G = new HashMap<>();
+        for (int i = 0; i < N; i++) G.put(i, new HashSet<>());
+        for (int[] p : paths) {
+            G.get(p[0] - 1).add(p[1] - 1);
+            G.get(p[1] - 1).add(p[0] - 1);
         }
-        for (int i = 0; i < N; ++i) {
-            int colors[5] = {};
-            for (int j : G[i])
+        int[] res = new int[N];
+        for (int i = 0; i < N; i++) {
+            int[] colors = new int[5];
+            for (int j : G.get(i))
                 colors[res[j]] = 1;
             for (int c = 4; c > 0; --c)
-                if (!colors[c])
+                if (colors[c] == 0)
                     res[i] = c;
         }
         return res;
     }
-};
+}
