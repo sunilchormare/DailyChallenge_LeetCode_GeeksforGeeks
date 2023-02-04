@@ -1,32 +1,38 @@
 
 class Solution {
-    public List<Integer> rightSideView(TreeNode root) {
-        List<Integer> res=new ArrayList<>();
+public:
+    vector<int> rightSideView(TreeNode* root) {
+        // vector<int> res;
         // helper(root,0,res);
-        if(root==null) return res;
+        // return res;
         
-        Queue<TreeNode> q=new LinkedList<>();
-        q.offer(root);
+         vector<int> res;
+        if(!root) return res;
         
-         while(!q.isEmpty()){            
+        queue<TreeNode*> q;
+        q.push(root);
+        
+         while(!q.empty()){            
             int size = q.size();
-            res.add(q.peek().val);
+            res.push_back(q.front()->val);
             
             for(int itr = 0; itr < size; itr++){
-                TreeNode temp = q.poll();                              
-                if(temp.right!=null) q.offer(temp.right);
-                 if(temp.left!=null) q.offer(temp.left);    
+                TreeNode* temp = q.front();
+                q.pop();                
+                                
+                if(temp->right) q.push(temp->right);
+                if(temp->left) q.push(temp->left);
             }
-         }
+        }
         return res;
     }
-//     public void helper(TreeNode root,int level,List<Integer> res)
+    
+//     void helper(TreeNode *root,int level,vector<int> &res)
 //     {
-//         if(root==null) return;
-//         if(res.size()==level) res.add(root.val);
-      
-        
-//           helper(root.right,level+1,res);helper(root.left,level+1,res);
-       
+//         if(root==NULL) return;
+//         if(res.size()==level) res.push_back(root->val);
+//         helper(root->right,level+1,res);
+//         helper(root->left,level+1,res);
+            
 //     }
-}
+};
