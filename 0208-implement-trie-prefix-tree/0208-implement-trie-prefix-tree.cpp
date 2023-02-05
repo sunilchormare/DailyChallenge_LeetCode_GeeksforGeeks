@@ -1,44 +1,45 @@
-class TrieNode {
-    public boolean isWord; 
-    public TrieNode[] children = new TrieNode[26];
-    public TrieNode() {}
+struct TrieNode{
+    struct TrieNode *child[26];
+    bool isEnd;
+};
+class Trie {
+
+private:
+
+TrieNode* node;
+public:
+
+Trie() {
+    node=new TrieNode();
 }
 
-public class Trie {
-    private TrieNode root;
-    public Trie() {
-        root = new TrieNode();
+void insert(string word) {
+    TrieNode* cur=node;
+    for(char c: word){
+        if(cur->child[c-'a']==NULL) cur->child[c-'a']=new TrieNode();
+        cur=cur->child[c-'a'];
     }
-
-    public void insert(String word) {
-        TrieNode ws = root;
-        for(int i = 0; i < word.length(); i++){
-            char c = word.charAt(i);
-            if(ws.children[c - 'a'] == null){
-                ws.children[c - 'a'] = new TrieNode();
-            }
-            ws = ws.children[c - 'a'];
-        }
-        ws.isWord = true;
-    }
-
-    public boolean search(String word) {
-        TrieNode ws = root; 
-        for(int i = 0; i < word.length(); i++){
-            char c = word.charAt(i);
-            if(ws.children[c - 'a'] == null) return false;
-            ws = ws.children[c - 'a'];
-        }
-        return ws.isWord;
-    }
-
-    public boolean startsWith(String prefix) {
-        TrieNode ws = root; 
-        for(int i = 0; i < prefix.length(); i++){
-            char c = prefix.charAt(i);
-            if(ws.children[c - 'a'] == null) return false;
-            ws = ws.children[c - 'a'];
-        }
-        return true;
-    }
+    cur->isEnd=true;
 }
+
+bool search(string word) {
+    TrieNode* cur=node;
+    for(char c: word){
+        if(cur->child[c-'a']==NULL)return false;
+        cur=cur->child[c-'a'];
+    }
+    if(cur->isEnd==true) return true;
+    return false;
+}
+
+bool startsWith(string prefix) 
+{
+    TrieNode* cur=node;
+    for(char c: prefix){
+        if(cur->child[c-'a']==NULL)return false;
+        cur=cur->child[c-'a'];
+    }
+    return true;
+ }
+
+};
