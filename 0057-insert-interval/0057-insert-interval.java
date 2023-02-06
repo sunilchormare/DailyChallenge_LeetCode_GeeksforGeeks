@@ -1,27 +1,28 @@
 class Solution {
-    
-    public int[][] insert(int[][] intervals, int[] newInterval) {
+public:
+    vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
+        vector<vector<int>> res;
+        size_t i = 0;
         
-         List<int[]> result = new ArrayList<>();
+        // Left part (no intersection with newInterval)
+        while (i < intervals.size() && intervals[i][1] < newInterval[0]) {
+            res.push_back(intervals[i]);
+            ++i;
+        }
         
-         for(int[] i : intervals){
-             if(newInterval == null || i[1] < newInterval[0]){
-                 result.add(i);
-             }else if(i[0] > newInterval[1]){
-                // be careful the sequence here
-                 result.add(newInterval);
-                 result.add(i);
-                 newInterval = null;
-             }else{
-                 
-                 newInterval[0] = Math.min(newInterval[0], i[0]);//get min
-                 newInterval[1] = Math.max(newInterval[1], i[1]);//get max
-             }
-         }
+        // newInterval part (with or without merge)
+        while (i < intervals.size() && intervals[i][0] <= newInterval[1]) {
+            newInterval[0] = min(newInterval[0], intervals[i][0]);
+            newInterval[1] = max(newInterval[1], intervals[i][1]);
+            ++i;
+        }
+        res.push_back(newInterval);
         
-        if(newInterval != null)
-            result.add(newInterval);
-        
-        return result.toArray(new int[result.size()][]);
+        // Right part (no intersection with newInterval)
+        while (i < intervals.size() && intervals[i][0] > newInterval[1]) {
+            res.push_back(intervals[i]);
+            ++i;
+        }
+        return res;
     }
-}
+};
