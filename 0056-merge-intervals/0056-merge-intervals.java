@@ -1,22 +1,25 @@
 class Solution {
-public:
-    vector<vector<int>> merge(vector<vector<int>>& intervals) {
-        vector<vector<int>> ans;
-        if(intervals.size()==0) return ans;
+    public int[][] merge(int[][] intervals) {
+        List<int[]> res = new ArrayList<>();
+        if(intervals.length == 0 || intervals == null) return res.toArray(new int[0][]);
         
-        sort(intervals.begin(),intervals.end());
-        vector<int> tem=intervals[0];
-        for(auto it : intervals)
-        {
-            if(it[0]<=tem[1])
-                tem[1]=max(it[1],tem[1]);
-            else
-            {
-                ans.push_back(tem);
-                tem=it;
+        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+        
+        int start = intervals[0][0];
+        int end = intervals[0][1];
+        
+        for(int[] i : intervals) {
+            //System.out.println("i[0] = "+i[0]+" i[1] = "+i[1]+" end = "+end);
+            if(i[0] <= end) {
+                end = Math.max(end, i[1]);
+            }
+            else {
+                res.add(new int[]{start, end});
+                start = i[0];
+                end = i[1];
             }
         }
-        ans.push_back(tem);
-        return ans;
+        res.add(new int[]{start, end});
+       return res.toArray(new int[0][]);
     }
-};
+}
