@@ -1,11 +1,11 @@
 class Solution {
-public:
-    int minTimeToType(string word) {
-         int res = word.size(), point = 'a';
-        for (auto ch : word) {
-            res += min(abs(ch - point), 26 - abs(point - ch));
+    public int minTimeToType(String word) {
+         int res = word.length(), point = 'a';
+        char w[]=word.toCharArray();
+        for (char ch : w) {
+            res += Math.min(Math.abs(ch - point), 26 - Math.abs(point - ch));
             point = ch;
         }
         return res;
     }
-};
+}
