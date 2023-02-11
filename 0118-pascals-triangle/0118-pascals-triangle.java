@@ -1,20 +1,17 @@
 class Solution {
-public:
-    vector<vector<int>> generate(int n) {
-  vector<vector<int>> res(n);
-        for(int i=0;i<n;++i)
+    public List<List<Integer>> generate(int n) {
+        List<List<Integer>> res = new ArrayList();
+        List<Integer> row = new ArrayList();
+        for(int i = 0; i < n; i++) 
         {
-            res[i].resize(i+1);
-            res[i][0]=res[i][i]=1;
-            for(int j=1;j<i;++j)
+            for(int j = row.size() - 1; j >= 1 ; j--) 
             {
-                res[i][j]=res[i-1][j-1]+res[i-1][j];
-               cout<<res[i][j]<<" = "<<res[i-1][j-1]<<" + "<<res[i-1][j]<<" ";
+                row.set(j, row.get(j) + row.get(j - 1));
             }
-            cout<<endl;
+            row.add(1);
+            res.add(new ArrayList(row));
         }
-        
         return res;
     }
-};
+}
 
