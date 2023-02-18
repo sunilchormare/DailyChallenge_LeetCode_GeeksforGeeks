@@ -8,7 +8,7 @@ public:
                     stack.pop_back();
             
             if (stack.size() < k)
-                stack.push_back(A[i]);
+                stack.push_back(A[i]),cout<<A[i]<<" ";
         }
         return stack;
     }
