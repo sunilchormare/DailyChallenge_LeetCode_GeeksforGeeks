@@ -1,18 +1,16 @@
 class Solution {
-       public String smallestSubsequence(String S) {
-        Stack<Integer> stack = new Stack<>();
-        int[] last = new int[26], seen = new int[26];
-        for (int i = 0; i < S.length(); ++i)
-            last[S.charAt(i) - 'a'] = i;
-        for (int i = 0; i < S.length(); ++i) {
-            int c = S.charAt(i) - 'a';
-            if (seen[c]++ > 0) continue;
-            while (!stack.isEmpty() && stack.peek() > c && i < last[stack.peek()])
-                seen[stack.pop()] = 0;
-            stack.push(c);
+public:
+       string smallestSubsequence(string s) {
+        string res = "";
+        int last[26] = {}, seen[26] = {}, n = s.size();
+        for (int i = 0; i < n; ++i)
+            last[s[i] - 'a'] = i;
+        for (int i = 0; i < n; ++i) {
+            if (seen[s[i] - 'a']++) continue;
+            while (!res.empty() && res.back() > s[i] && i < last[res.back() - 'a'])
+                seen[res.back() - 'a'] = 0, res.pop_back();
+            res.push_back(s[i]);
         }
-        StringBuilder sb = new StringBuilder();
-        for (int i : stack) sb.append((char)('a' + i));
-        return sb.toString();
+        return res;
     }
-}
+};
