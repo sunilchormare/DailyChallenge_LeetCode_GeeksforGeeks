@@ -1,22 +1,24 @@
 class Solution {
-public:
-    int findLeastNumOfUniqueInts(vector<int>& arr, int k) {
-         unordered_map<int, int> counter;
-        priority_queue<int, vector<int>, greater<>> pq;
+    public int findLeastNumOfUniqueInts(int[] arr, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
         
-        for (auto num : arr)
-            counter[num]++;
-        
-        for (auto it : counter)
-            pq.push(it.second);
-        
-        while (k) {
-            if (pq.top() > k)
-                break;
-            
-            k -= pq.top(); pq.pop();
+        for(int n : arr) {
+            map.put(n, map.getOrDefault(n, 0) + 1);
         }
         
-        return pq.size();     
+        List<Integer> values = new ArrayList<>(map.values());
+        Collections.sort(values);
+        
+        int count = 0;
+        for(int n : values) {
+            k -= n;
+            
+            if (k < 0)
+                break;
+            else 
+                count++;
+        }
+        
+        return map.keySet().size() - count; 
     }
-};
+}
