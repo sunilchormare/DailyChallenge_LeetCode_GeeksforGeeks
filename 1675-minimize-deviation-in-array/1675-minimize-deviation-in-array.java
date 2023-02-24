@@ -1,15 +1,19 @@
 class Solution {
-public:
-    int minimumDeviation(vector<int>& A) {
-        set<int> s;
-        for (int &a : A)
-            s.insert(a % 2 ? a * 2 : a);
-        int res = *s.rbegin() - *s.begin();
-        while (*s.rbegin() % 2 == 0) {
-            s.insert(*s.rbegin() / 2);
-            s.erase(*s.rbegin());
-            res = min(res, *s.rbegin() - *s.begin());
+   public int minimumDeviation(int[] A) {
+        PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+        int n = A.length, mi = Integer.MAX_VALUE, res = Integer.MAX_VALUE;
+        for (int a : A) {
+            if (a % 2 == 1) a *= 2;
+            pq.add(-a);
+            mi = Math.min(mi, a);
+        }
+        while (true) {
+            int a = -pq.poll();
+            res = Math.min(res, a - mi);
+            if (a % 2 == 1) break;
+            mi = Math.min(mi, a / 2);
+            pq.add(-a / 2);
         }
         return res;
     }
-};
+}
