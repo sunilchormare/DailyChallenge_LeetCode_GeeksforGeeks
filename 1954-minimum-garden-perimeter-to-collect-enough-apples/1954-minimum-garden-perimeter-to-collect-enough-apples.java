@@ -1,6 +1,5 @@
 class Solution {
-public:
-    long long minimumPerimeter(long long x) {
+    public long minimumPerimeter(long x) {
          long l = 1,  r = 100000, m;
         while (l < r) {
             m = (l + r) / 2;
@@ -11,4 +10,4 @@ public:
         }
         return l * 8;
     }
-};
+}
