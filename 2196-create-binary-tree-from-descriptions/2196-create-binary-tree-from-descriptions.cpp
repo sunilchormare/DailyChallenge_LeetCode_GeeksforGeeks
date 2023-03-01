@@ -1,23 +1,29 @@
 class Solution {
-    public TreeNode createBinaryTree(int[][] descriptions) {
-         TreeNode root = null;
-        Map<Integer,TreeNode> map = new HashMap<>();
-        for(int [] des : descriptions) {
-            map.put(des[1], new TreeNode(des[1]));
-        }
-        for(int [] des : descriptions) {
-            if(!map.containsKey(des[0])) {
-                root = new TreeNode(des[0]);
-                map.put(des[0],root);
+public:
+    TreeNode* createBinaryTree(vector<vector<int>>& descriptions) {
+         unordered_map<int, TreeNode*> getNode;                          
+        unordered_map<int, bool> isChild;     
+        
+        for(auto &v: descriptions){
+            if(getNode.count(v[0])==0){
+                TreeNode* par = new TreeNode(v[0]);
+                getNode[v[0]] = par;
             }
-            TreeNode parent = map.get(des[0]);
-            TreeNode cur =  map.get(des[1]);
-            if(des[2] == 1){
-                parent.left = cur;
-            }else{
-                parent.right = cur;
+            if(getNode.count(v[1])==0){
+                TreeNode* child = new TreeNode(v[1]);
+                getNode[v[1]] = child;
+            }
+            if(v[2]==1) getNode[v[0]]->left = getNode[v[1]];               
+            else getNode[v[0]]->right = getNode[v[1]];                     
+            isChild[v[1]] = true;
+        }
+        TreeNode* ans = NULL;
+        for(auto &v: descriptions){
+            if(isChild[v[0]] != true){                 
+                ans = getNode[v[0]]; 
+                break;
             }
         }
-        return root;
+        return ans;
     }
-}
+};
