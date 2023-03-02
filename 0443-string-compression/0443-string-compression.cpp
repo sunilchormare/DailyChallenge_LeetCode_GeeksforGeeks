@@ -1,18 +1,16 @@
 class Solution {
-   public int compress(char[] chars) {
-        int indexAns = 0, index = 0;
-        while(index < chars.length){
-            char currentChar = chars[index];
-            int count = 0;
-            while(index < chars.length && chars[index] == currentChar){
-                index++;
-                count++;
-            }
-            chars[indexAns++] = currentChar;
-            if(count != 1)
-                for(char c : Integer.toString(count).toCharArray()) 
-                    chars[indexAns++] = c;
-        }
-        return indexAns;
+public:
+    int compress(vector<char>& chars) {
+   int i = 0;
+	for(int j = 1, count = 1; j <= chars.size(); j++, count++) {
+		if(j == chars.size() || chars[j] != chars[j - 1]) {
+			chars[i++] = chars[j - 1];  
+			if(count >= 2) 
+				for(char digit : to_string(count)) 
+					chars[i++] = digit;
+			count = 0;
+		}
+	}
+	return i;
     }
-}
+};
