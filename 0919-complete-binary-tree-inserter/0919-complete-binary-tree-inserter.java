@@ -1,38 +1,27 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
+
 class CBTInserter {
-    public:
-vector<TreeNode*> tree;
-    CBTInserter(TreeNode* root) {
-        tree.push_back(root);
-        for(int i = 0; i < tree.size();++i) {
-            if (tree[i]->left) tree.push_back(tree[i]->left);
-            if (tree[i]->right) tree.push_back(tree[i]->right);
+ List<TreeNode> tree;
+    public CBTInserter(TreeNode root) {
+        tree = new ArrayList<>();
+        tree.add(root);
+        for (int i = 0; i < tree.size(); ++i) {
+            if (tree.get(i).left != null) tree.add(tree.get(i).left);
+            if (tree.get(i).right != null) tree.add(tree.get(i).right);
         }
     }
 
-    int insert(int v) {
+    public int insert(int v) {
         int N = tree.size();
-        TreeNode* node = new TreeNode(v);
-        tree.push_back(node);
-        if (N % 2)
-            tree[(N - 1) / 2]->left = node;
+        TreeNode node = new TreeNode(v);
+        tree.add(node);
+        if (N % 2 == 1)
+            tree.get((N - 1) / 2).left = node;
         else
-            tree[(N - 1) / 2]->right = node;
-        return tree[(N - 1) / 2]->val;
+            tree.get((N - 1) / 2).right = node;
+        return tree.get((N - 1) / 2).val;
     }
 
-    TreeNode* get_root() {
-        return tree[0];
+    public TreeNode get_root() {
+        return tree.get(0);
     }
-};
-
+}
