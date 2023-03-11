@@ -16,5 +16,5 @@ public:
     root->left = sortedListToBST(head);
     root->right = sortedListToBST(mid->next);
     return root;
-}
+ }
 };
