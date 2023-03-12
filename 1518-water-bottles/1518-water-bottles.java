@@ -1,6 +1,5 @@
 class Solution {
-public:
-    int numWaterBottles(int numBottles, int numExchange) {
+    public int numWaterBottles(int numBottles, int numExchange) {
          int initial = numBottles;
         while(numBottles >= numExchange){
 
@@ -10,4 +9,4 @@ public:
         }
         return initial;
     }
-};
+}
