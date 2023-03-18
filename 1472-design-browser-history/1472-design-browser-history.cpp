@@ -1,27 +1,20 @@
 class BrowserHistory {
-
-   String[] arr;
-    int pres, right;
-
-    public BrowserHistory(String homepage) {
-        arr = new String[5000];
-        pres=0; right=0;
-        arr[pres] = homepage;
+public:
+ stack<string>s1,s2;
+    BrowserHistory(string homepage) {
+        s1.push(homepage);
     }
-    
-    public void visit(String url) {
-        arr[++pres] = url;
-        right=pres;
+    void visit(string url) {
+        s1.push(url);
+        while(!s2.empty()) s2.pop();
     }
-    
-    public String back(int steps) {
-        pres=Math.max(pres-steps, 0);
-        return arr[pres];
+    string back(int steps) {
+        while(steps-- and s1.size()>1) {s2.push(s1.top());s1.pop();}
+        return s1.top();
     }
-    
-    public String forward(int steps) {
-        pres = Math.min(pres+steps, right);
-        return arr[pres];
+    string forward(int steps) {
+        while(steps-- and !s2.empty()){s1.push(s2.top());s2.pop();}
+        return s1.top();
     }
-}
+};
 
