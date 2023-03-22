@@ -1,18 +1,24 @@
 class Solution {
-    int[] dsu;
-public int minScore(int n, int[][] roads) {
-    dsu = new int[n+1];
-    int[] ans = new int[n+1];
-    for(int i = 0; i <= n; i++) dsu[i] = i;
-    Arrays.fill(ans, Integer.MAX_VALUE);
-    for(int[] r : roads){
-        int a = find(r[0]), b = find(r[1]);
-        dsu[a] = dsu[b];
-        ans[a] = ans[b] = Math.min(r[2],Math.min(ans[a],ans[b]));
+public:
+    int minScore(int n, vector<vector<int>>& roads) {
+    vector<pair<int, int>> G[n + 1];
+    for(auto i : roads)
+        G[i[0]].push_back({i[1], i[2]}),  G[i[1]].push_back({i[0], i[2]});
+    
+    vector<int> seen(n + 1);
+    int mini = 1e5;
+    queue<int> q{{{1}}};
+    seen[1] = 1;
+    while(q.size()){
+        int u = q.front(); q.pop();
+        for(auto &[v,w] : G[u]){
+            mini = min(mini, w);
+            if(!seen[v]){
+                seen[v] = 1;
+                q.push(v);
+            }
+        }
     }
-    return ans[find(1)];
+    return mini;
 }
-int find(int i){
-    return dsu[i]==i ? i : (dsu[i] = find(dsu[i]));
-}
-}
+};
