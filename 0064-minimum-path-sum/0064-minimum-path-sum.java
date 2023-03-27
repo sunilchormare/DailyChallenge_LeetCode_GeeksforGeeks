@@ -1,16 +1,15 @@
 class Solution {
-public:
-    int minPathSum(vector<vector<int>>& grid) {
-       int m = grid.size();
-        int n = grid[0].size(); 
-        vector<vector<int> > sum(m, vector<int>(n, grid[0][0]));
-        for (int i = 1; i < m; i++)
-            sum[i][0] = sum[i - 1][0] + grid[i][0];
-        for (int j = 1; j < n; j++)
-            sum[0][j] = sum[0][j - 1] + grid[0][j];
-        for (int i = 1; i < m; i++)
-            for (int j = 1; j < n; j++)
-                sum[i][j]  = min(sum[i - 1][j], sum[i][j - 1]) + grid[i][j];
-        return sum[m - 1][n - 1]; 
+    public int minPathSum(int[][] grid) {
+         int height = grid.length;
+            int width = grid[0].length;
+            for (int row = 0; row < height; row++) {
+                for (int col = 0; col < width; col++) {
+                    if(row == 0 && col == 0) grid[row][col] = grid[row][col];
+                    else if(row == 0 && col != 0) grid[row][col] = grid[row][col] + grid[row][col - 1];
+                    else if(col == 0 && row != 0) grid[row][col] = grid[row][col] + grid[row - 1][col];
+                    else grid[row][col] = grid[row][col] + Math.min(grid[row - 1][col], grid[row][col - 1]);
+                }
+            }
+            return grid[height - 1][width - 1];
     }
-};
+}
