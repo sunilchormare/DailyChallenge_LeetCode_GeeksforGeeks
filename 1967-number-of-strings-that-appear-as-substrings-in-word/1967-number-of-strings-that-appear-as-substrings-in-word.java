@@ -1,12 +1,11 @@
 class Solution {
-public:
-    int numOfStrings(vector<string>& patterns, string word) {
-       int res = 0;
-        for(string &p: patterns){
-            if(word.find(p) != std::string::npos){
+    public int numOfStrings(String[] patterns, String word) {
+        int res = 0;
+        for(String p: patterns){
+            if(word.contains(p)){
                 res ++;
             }
         }
-        return res;
+        return res; 
     }
-};
+}
