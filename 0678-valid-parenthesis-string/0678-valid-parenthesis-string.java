@@ -1,20 +1,16 @@
 class Solution {
-    public boolean checkValidString(String s) {
+public:
+    bool checkValidString(string s) {
          int cmin = 0, cmax = 0;
-        for (int i = 0; i < s.length(); ++i) {
-            char c = s.charAt(i);
-            if (c == '(') {
-                cmax++;
-                cmin++;
-            } else if (c == ')') {
-                cmax--;
-                cmin = Math.max(cmin - 1, 0);
-            } else {
-                cmax++;
-                cmin = Math.max(cmin - 1, 0);
-            }
+        for (char c : s) {
+            if (c == '(')
+                cmax++, cmin++;
+            if (c == ')')
+                cmax--, cmin = max(cmin - 1, 0);
+            if (c == '*')
+                cmax++, cmin = max(cmin - 1, 0);
             if (cmax < 0) return false;
         }
         return cmin == 0;
     }
-}
+};
