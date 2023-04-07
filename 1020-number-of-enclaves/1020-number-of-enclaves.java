@@ -1,30 +1,23 @@
 class Solution {
-    public int numEnclaves(int[][] A) {
-        int result = 0;
-        for(int i = 0; i < A.length; i++) {
-            for(int j = 0; j < A[i].length; j++) {
-                if(i == 0 || j == 0 || i == A.length - 1 || j == A[i].length - 1)
-                    dfs(A, i, j);
-            }
-        }
-        
-        for(int i = 0; i < A.length; i++) {
-            for(int j = 0; j < A[i].length; j++) {
-                if(A[i][j] == 1)
-                    result++;
-            }
-        }
-        
-        return result;
+public:
+    int numEnclaves(vector<vector<int>>& A, int res = 0) {
+  queue<pair<int, int>> q;
+  for (auto i = 0; i < A.size(); ++i)
+    for (auto j = 0; j < A[0].size(); ++j) 
+    {
+      res += A[i][j];
+      if (i * j == 0 || i == A.size() - 1 || j == A[i].size() - 1) 
+          q.push({ i, j });
     }
-    
-    public void dfs(int a[][], int i, int j) {
-        if(i >= 0 && i <= a.length - 1 && j >= 0 && j <= a[i].length - 1 && a[i][j] == 1) {
-            a[i][j] = 0;
-            dfs(a, i + 1, j);
-            dfs(a, i - 1, j);
-            dfs(a, i, j + 1);
-            dfs(a, i, j - 1);
-        }
-    }
+  while (!q.empty()) 
+  {
+    auto x = q.front().first, y = q.front().second; q.pop();
+    if (x < 0 || y < 0 || x == A.size() || y == A[x].size() || A[x][y] != 1) 
+        continue;
+    A[x][y] = 0;
+    --res;
+    q.push({ x + 1, y }), q.push({ x - 1, y }), q.push({ x, y + 1 }), q.push({ x, y - 1 });
+  }
+  return res;
 }
+};
