@@ -1,43 +1,45 @@
 class Solution {
-public:
-    int largestPathValue(string colors, vector<vector<int>>& edges) {
-        int n = colors.size();
+    public int largestPathValue(String colors, int[][] edges) {
+        int n = colors.length();
         int k = 26;
-        vector<int> indegrees(n, 0);
-        vector<vector<int>> graph(n, vector<int>());
-        for (vector<int>& edge : edges) {
+        int[] indegrees = new int[n];
+        List<List<Integer>> graph = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            graph.add(new ArrayList<>());
+        }
+        for (int[] edge : edges) {
             int u = edge[0];
             int v = edge[1];
-            graph[u].push_back(v);
+            graph.get(u).add(v);
             indegrees[v]++;
         }
-        unordered_set<int> zero_indegree;
+        Set<Integer> zero_indegree = new HashSet<>();
         for (int i = 0; i < n; i++) {
             if (indegrees[i] == 0) {
-                zero_indegree.insert(i);
+                zero_indegree.add(i);
             }
         }
-        vector<vector<int>> counts(n, vector<int>(k, 0));
+        int[][] counts = new int[n][k];
         for (int i = 0; i < n; i++) {
-            counts[i][colors[i] - 'a']++;
+            counts[i][colors.charAt(i) - 'a']++;
         }
         int max_count = 0;
         int visited = 0;
-        while (!zero_indegree.empty()) {
-            int u = *zero_indegree.begin();
-            zero_indegree.erase(u);
+        while (!zero_indegree.isEmpty()) {
+            int u = zero_indegree.iterator().next();
+            zero_indegree.remove(u);
             visited++;
-            for (int v : graph[u]) {
+            for (int v : graph.get(u)) {
                 for (int i = 0; i < k; i++) {
-                    counts[v][i] = max(counts[v][i], counts[u][i] + (colors[v] - 'a' == i ? 1 : 0));
+                    counts[v][i] = Math.max(counts[v][i], counts[u][i] + (colors.charAt(v) - 'a' == i ? 1 : 0));
                 }
                 indegrees[v]--;
                 if (indegrees[v] == 0) {
-                    zero_indegree.insert(v);
+                    zero_indegree.add(v);
                 }
             }
-            max_count = max(max_count, *max_element(counts[u].begin(), counts[u].end()));
+            max_count = Math.max(max_count, Arrays.stream(counts[u]).max().getAsInt());
         }
         return visited == n ? max_count : -1;
     }
-};
+}
