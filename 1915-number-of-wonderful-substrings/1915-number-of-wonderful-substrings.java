@@ -1,14 +1,15 @@
 class Solution {
-    public long wonderfulSubstrings(String word) {
-         long res = 0, count[]  = new long[1024];
-        int cur = 0;
+public:
+    long long wonderfulSubstrings(string word) {
+        vector<int> count(1024);
+        long long res = 0, cur = 0;
         count[0] = 1L;
-        for (int i = 0; i < word.length(); ++i) {
-            cur ^= 1 << (word.charAt(i) - 'a');
+        for (char& c: word) {
+            cur ^= 1 << (c - 'a');
             res += count[cur]++;
-            for (int j = 0; j < 10; ++j)
-                res += count[cur ^ (1 << j)];
+            for (int i = 0; i < 10; ++i)
+                res += count[cur ^ (1 << i)];
         }
         return res;
     }
-}
+};
