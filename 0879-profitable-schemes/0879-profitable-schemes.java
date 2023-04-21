@@ -9,7 +9,8 @@ class Solution {
                 for (int j = G - g; j >= 0; j--)
                     dp[Math.min(i + p, P)][j + g] = (dp[Math.min(i + p, P)][j + g] + dp[i][j]) % mod;
         }
-        for (int x : dp[P]) res = (res + x) % mod;
+        for (int x : dp[P])
+            res = (res + x) % mod;
         return res;
     }
 }
