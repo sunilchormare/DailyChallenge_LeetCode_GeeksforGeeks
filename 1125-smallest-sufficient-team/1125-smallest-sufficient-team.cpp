@@ -1,24 +1,25 @@
 class Solution {
-  public int[] smallestSufficientTeam(String[] req_skills, List<List<String>> people) {
-        int n = req_skills.length, m = people.size();
-        HashMap<String, Integer> skill_index = new HashMap<>();
-        for (int i = 0; i < n; ++i)
-            skill_index.put(req_skills[i], i);
-        List<Integer>[] dp = new List[1 << n];
-        dp[0] = new ArrayList<>();
-        for (int i = 0; i < m; ++i) {
+public:
+   vector<int> smallestSufficientTeam(vector<string>& req_skills, vector<vector<string>>& people) {
+        int n = req_skills.size();
+        unordered_map<int, vector<int>> dp;
+        dp.reserve(1 << n); // reserve space and avoid hash collisions
+        dp[0] = {};
+        unordered_map<string, int> skill_index;
+        for (int i = 0; i < req_skills.size(); ++i)
+            skill_index[req_skills[i]] = i;
+        for (int i = 0; i < people.size(); ++i) {
             int cur_skill = 0;
-            for (String s : people.get(i))
-                cur_skill |= 1 << skill_index.get(s);
-            for (int prev = 0; prev < dp.length; ++prev) {
-                if (dp[prev] == null) continue;
-                int comb = prev | cur_skill;
-                if (dp[comb] == null || dp[prev].size() + 1 < dp[comb].size()) {
-                    dp[comb] = new ArrayList<>(dp[prev]);
-                    dp[comb].add(i);
+            for (auto& skill: people[i])
+                cur_skill |= 1 << skill_index[skill];
+            for (auto it = dp.begin(); it != dp.end(); ++it) {
+                int comb = it->first | cur_skill;
+                if (dp.find(comb) == dp.end() || dp[comb].size() > 1 + dp[it->first].size()) {
+                    dp[comb] = it->second;
+                    dp[comb].push_back(i);
                 }
             }
         }
-        return dp[(1 << n) - 1].stream().mapToInt(i -> i).toArray();
+        return dp[(1 << n) - 1];
     }
-}
+};
