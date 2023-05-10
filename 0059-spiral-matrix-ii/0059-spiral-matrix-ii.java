@@ -1,31 +1,22 @@
 class Solution {
-public:
-    vector<vector<int> > generateMatrix(int n) {
-        vector<vector<int> > vv(n, vector<int>(n));
-    
-        int rowStart = 0, rowEnd = n - 1;
-        int colStart = 0, colEnd = n - 1;
-        int cnt = 1;
-    
-        while(rowStart <= rowEnd && colStart <= colEnd)
-        {
-            for(int i = colStart; i<= colEnd; i++)
-                vv[rowStart][i] = cnt++;
-            rowStart++;
+    public int[][] generateMatrix(int n) {
+        int[][] matrix = new int[n][n];
+        if (n <= 0) return matrix;
         
-            for(int i = rowStart; i<= rowEnd; i++)
-                vv[i][colEnd] = cnt++;
-            colEnd--;
-        
-            for(int i = colEnd; i>= colStart; i--)
-                vv[rowEnd][i] = cnt++;
-            rowEnd--;
-        
-            for(int i = rowEnd; i>= rowStart; i--)
-                vv[i][colStart] = cnt++;
-            colStart++;
+        int num = 1, rowbegin = 0, rowend = n - 1, colbegin = 0, colend = n - 1;
+        while (rowbegin <= rowend && colbegin <= colend) {
+            for (int i = colbegin; i <= colend; i++) matrix[rowbegin][i] = num++;
+            rowbegin++;
+            
+            for (int i = rowbegin; i <= rowend; i++) matrix[i][colend] = num++;
+            colend--;
+            
+            for (int i = colend; i >= colbegin; i--) matrix[rowend][i] = num++;
+            rowend--;
+            
+            for (int i = rowend; i >= rowbegin; i--) matrix[i][colbegin] = num++;
+            colbegin++;
         }
-    
-        return vv;
+        return matrix;
     }
-};
+}
