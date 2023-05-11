@@ -1,18 +1,16 @@
 class Solution {
-public:
-   int numFriendRequests(vector<int>& ages) {
-        unordered_map<int, int> count;
-        for (int &age : ages)
-            count[age]++;
+    public int numFriendRequests(int[] ages) {
+        Map<Integer, Integer> count = new HashMap<>();
+        for (int age : ages)
+            count.put(age, count.getOrDefault(age, 0) + 1);
         int res = 0;
-        for (auto &a : count)
-            for (auto &b : count)
-                if (request(a.first, b.first))
-                    res += a.second * (b.second - (a.first == b.first ? 1 : 0));
+        for (Integer a : count.keySet())
+            for (Integer b : count.keySet())
+                if (request(a, b)) res += count.get(a) * (count.get(b) - (a == b ? 1 : 0));
         return res;
     }
 
-    bool request(int a, int b) {
+    private boolean request(int a, int b) {
         return !(b <= 0.5 * a + 7 || b > a || (b > 100 && a < 100));
     }
-};
+}
