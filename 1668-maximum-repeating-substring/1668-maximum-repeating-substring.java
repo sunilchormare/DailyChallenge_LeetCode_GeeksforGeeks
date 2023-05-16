@@ -1,13 +1,7 @@
 class Solution {
-public:
-    int maxRepeating(string sequence, string word) {
-          int count=0;
-        string temp=word;
-        while(sequence.find(temp)!=string::npos)
-        {
-            count++;
-            temp+=word;
-        }
-        return count;
+    public int maxRepeating(String sequence, String word) {
+       String find="";
+        while(sequence.contains(find)) find += word;
+        return (find.length()-word.length())/word.length();  
     }
-};
+}
