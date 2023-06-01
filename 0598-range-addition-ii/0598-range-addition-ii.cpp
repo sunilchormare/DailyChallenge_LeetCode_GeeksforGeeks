@@ -1,15 +1,16 @@
-public class Solution {
-    public int maxCount(int m, int n, int[][] ops) {
-        if (ops == null || ops.length == 0) {
+class Solution {
+public:
+    int maxCount(int m, int n, vector<vector<int>>& ops) {
+        if (ops.size() == 0) {
             return m * n;
         }
         
-        int row = Integer.MAX_VALUE, col = Integer.MAX_VALUE;
-        for(int[] op : ops) {
-            row = Math.min(row, op[0]);
-            col = Math.min(col, op[1]);
+        int row = INT_MAX, col = INT_MAX;
+        for(vector<int> op : ops) {
+            row = min(row, op[0]);
+            col = min(col, op[1]);
         }
         
         return row * col;
     }
-}
+};
