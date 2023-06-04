@@ -1,17 +1,16 @@
 class Solution {
-public:
-  void dfs(vector<vector<int>>& M,  vector<int>&visited, int i) {
-        for (int j = 0; j < M.size(); j++) {
+   public void dfs(int[][] M, int[] visited, int i) {
+        for (int j = 0; j < M.length; j++) {
             if (M[i][j] == 1 && visited[j] == 0) {
                 visited[j] = 1;
                 dfs(M, visited, j);
             }
         }
     }
-    int findCircleNum(vector<vector<int>>& M) {
-        vector<int> visited(M.size(),0);
+    public int findCircleNum(int[][] M) {
+        int[] visited = new int[M.length];
         int count = 0;
-        for (int i = 0; i < M.size(); i++) {
+        for (int i = 0; i < M.length; i++) {
             if (visited[i] == 0) {
                 dfs(M, visited, i);
                 count++;
@@ -19,4 +18,4 @@ public:
         }
         return count;
     }
-};
+}
