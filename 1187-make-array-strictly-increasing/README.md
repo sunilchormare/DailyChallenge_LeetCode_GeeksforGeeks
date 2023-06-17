@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/make-array-strictly-increasing/">1187. Make Array Strictly Increasing</a></h2><h3>Hard</h3><hr><div><p>Given two integer arrays&nbsp;<code>arr1</code> and <code>arr2</code>, return the minimum number of operations (possibly zero) needed&nbsp;to make <code>arr1</code> strictly increasing.</p>
+<h2><a href="https://leetcode.com/problems/make-array-strictly-increasing/solution/">1187. Make Array Strictly Increasing</a></h2><h3>Hard</h3><hr><div><p>Given two integer arrays&nbsp;<code>arr1</code> and <code>arr2</code>, return the minimum number of operations (possibly zero) needed&nbsp;to make <code>arr1</code> strictly increasing.</p>
 
 <p>In one operation, you can choose two indices&nbsp;<code>0 &lt;=&nbsp;i &lt; arr1.length</code>&nbsp;and&nbsp;<code>0 &lt;= j &lt; arr2.length</code>&nbsp;and do the assignment&nbsp;<code>arr1[i] = arr2[j]</code>.</p>
 
