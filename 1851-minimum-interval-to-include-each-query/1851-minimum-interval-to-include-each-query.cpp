@@ -1,23 +1,23 @@
 class Solution {
-  public int[] minInterval(int[][] A, int[] queries) {
-        TreeMap<Integer, Integer> pq = new TreeMap<>();
-        HashMap<Integer, Integer> res = new HashMap<>();
-        int i = 0, n = A.length, m = queries.length;
-        int[] Q = queries.clone(), res2 = new int[m];
-        Arrays.sort(A, (a, b) -> Integer.compare(a[0] , b[0]));
-        Arrays.sort(Q);
+public:
+   vector<int> minInterval(vector<vector<int>>& A, vector<int>& queries) {
+        priority_queue<vector<int>> pq;
+        unordered_map<int, int> res;
+        vector<int> Q = queries, res2;
+        sort(A.begin(), A.end());
+        sort(Q.begin(), Q.end());
+        int i = 0, n = A.size();
         for (int q : Q) {
             while (i < n && A[i][0] <= q) {
                 int l = A[i][0], r = A[i++][1];
-                pq.put(r - l + 1, r);
+                pq.push({l - r - 1, r});
             }
-            while (!pq.isEmpty() && pq.firstEntry().getValue() < q)
-                pq.pollFirstEntry();
-            res.put(q, pq.isEmpty() ? -1 : pq.firstKey());
+            while (pq.size() && pq.top()[1] < q)
+                pq.pop();
+            res[q] = pq.size() ? -pq.top()[0] : -1;
         }
-        i = 0;
         for (int q : queries)
-            res2[i++] = res.get(q);
+            res2.push_back(res[q]);
         return res2;
     }
-}
+};
