@@ -1,16 +1,14 @@
 class Solution {
-public:
-   int tallestBillboard(vector<int>& rods) {
-        unordered_map<int, int> dp;
-        dp[0] = 0;
+    public int tallestBillboard(int[] rods) {
+      Map<Integer, Integer> dp = new HashMap<>(), cur;
+        dp.put(0, 0);
         for (int x : rods) {
-            unordered_map<int, int> cur(dp);
-            for (auto it: cur) {
-                int d = it.first;
-                dp[d + x] = max(dp[d + x],cur[d]);
-                dp[abs(d - x)] = max(dp[abs(d - x)], cur[d] + min(d, x));
+            cur = new HashMap<>(dp);
+            for (int d : cur.keySet()) {
+                dp.put(d + x, Math.max(cur.get(d), dp.getOrDefault(x + d, 0)));
+                dp.put(Math.abs(d - x), Math.max(cur.get(d) + Math.min(d, x), dp.getOrDefault(Math.abs(d - x), 0)));
             }
         }
-        return dp[0];
+        return dp.get(0);
     }
-};
+}
