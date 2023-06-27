@@ -1,42 +1,52 @@
 class Solution {
-public:
-    int n,m;
-    int ans = 0;
-    int dp[9][(1<<8)+2];  //dp[i][mask]: we are in row i(i is from [1,9]), state is mask
-    int avail[9];  //avail[i] is the mask representing available seats in row i
-        
-    int maxStudents(vector<vector<char>>& seats) {
-        n = seats.size(); m = seats[0].size();
-        memset(dp, -1, sizeof(dp));
-        for (int i = 1; i <= n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (seats[i-1][j] == '.') {
-                    avail[i] |= (1<<j);
-                }
-            }
+    
+    int r, c;
+    int[][] memo;
+    List<Integer> masks;
+    
+    public int maxStudents(char[][] seats) {
+        r = seats.length;
+        c = seats[0].length;
+        memo = new int[r][1<<c];
+        for (int i = 0; i < r; i++) {
+            Arrays.fill(memo[i], -1);
         }
-        
-        for (int mask = 0; mask < (1<<m); mask++) {
-            dp[0][mask] = 0;  //initialize all illegal states with 0
-        }
-        
-        for (int i = 1; i <= n; i++) {  //now we are at row i
-            for (int premask = 0; premask < (1<<m); premask++) {
-                if (dp[i-1][premask] == -1) continue;
-                for (int mask = 0; mask < (1<<m); mask++) {
-                    if ((mask & avail[i]) != mask) continue;
-                    if (mask&(mask>>1)) continue;  //if there is adjacent 1
-                    
-                    /*checking this row and last row*/
-                    if (mask&(premask<<1) || mask&(premask>>1)) continue;
-                    dp[i][mask] = max(dp[i][mask], dp[i-1][premask] + __builtin_popcount(mask));
-                }
-            }
-        }
-        
-        for (int mask = 0; mask < (1<<m); mask++) {
-            ans = max(ans, dp[n][mask]);
-        }
-        return ans;
+        return getMax(seats, 0, 0);
     }
-};
+    
+    private int getMax(char[][] seats, int curRow, int prevRowMask) {
+        if (curRow == r) {
+            return 0;
+        }
+        if (memo[curRow][prevRowMask] != -1){
+            return memo[curRow][prevRowMask];
+        }
+        masks = new LinkedList<>(); // reset the masks list for backtrack
+        backtrack(seats[curRow], 0, prevRowMask, 0); // backtrack results store in masks list
+        int res = 0;
+        for (int m : masks) {
+            res = Math.max(res, Integer.bitCount(m) + getMax(seats, curRow + 1, m));
+        }
+        memo[curRow][prevRowMask] = res;
+        return res;
+    }
+    
+    // this returns all combination of legal seat assignment for a given row based on prevous row's mask
+    private void backtrack(char[] seats, int cur, int prevRowMask, int curRowMask) {
+        if (cur == c) {
+            masks.add(curRowMask);
+            return;
+        }
+        // cur seat is not taken
+        backtrack(seats, cur + 1, prevRowMask, curRowMask);
+        
+        // cur seat is taken, check if left, upper left and upper right positions are empty
+        if (seats[cur] != '#' 
+            && (cur == 0 || (((curRowMask & (1 << (cur-1))) == 0) && (prevRowMask & (1 << (cur-1))) == 0))
+            && (cur == c - 1 || ((prevRowMask & (1 << (cur+1))) == 0))) {
+            curRowMask |= (1 << (cur));
+            backtrack(seats, cur + 1, prevRowMask, curRowMask);
+            curRowMask ^= (1 << (cur));
+        }
+    }
+}
