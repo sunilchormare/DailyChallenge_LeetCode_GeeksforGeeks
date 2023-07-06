@@ -1,26 +1,49 @@
-class Solution {
-public:
-    vector<int> busiestServers(int k, vector<int>& arrival, vector<int>& load) {
-    vector<int> cnt(k), avail(k), res;
-    map<int, int> m;
-    for (int i = 0, last_i = 0; ; ++i) {
-        if (i < arrival.size())
-            m[arrival[i]] = load[i];
-        else if (i - last_i > k)
-            break;
-        auto it = m.lower_bound(avail[i % k]);
-        while (it != end(m)) {
-            last_i = i;
-            ++cnt[i % k];
-            avail[i % k] = it->first + it->second;
-            m.erase(it);
-            it = m.lower_bound(avail[i % k]);
-        }
+class Server {
+    int tr = 0; // Total Requests
+    int ft = 0; // Finishing Time
+    int index; // Server Index
+    
+    public Server(int index) {
+        this.index = index;
     }
-    int max_req = *max_element(begin(cnt), end(cnt));
-    for (int i = 0; i < k; ++i)
-        if(cnt[i] == max_req)
-            res.push_back(i);
-    return res;
+    
 }
-};
+
+class Solution {
+    public List<Integer> busiestServers(int k, int[] arrival, int[] load) {
+       
+        TreeMap<Integer, Server> available = new TreeMap<>(); // Map of Available Servers
+        PriorityQueue<Server> busy = new PriorityQueue<>((Server a, Server b) -> {
+            return a.ft - b.ft;
+        });
+        List<Server> list = new ArrayList<>();
+        for(int i = 0; i < k; i++) {
+            Server server = new Server(i);
+            list.add(server);
+            available.put(i, server);
+        }
+       int max = 0;
+       for(int i = 0; i < arrival.length; i++) {
+            while(!busy.isEmpty() && busy.peek().ft <= arrival[i]){
+                Server server = busy.remove();
+                available.put(server.index, server);
+            }
+            if(available.size() == 0) continue;
+            int req = (i % k);
+            int serverIndex = -1;
+            if(available.ceilingKey(req) != null) serverIndex = available.ceilingKey(req);           
+            else serverIndex = available.firstKey();
+            Server server = available.get(serverIndex);
+            server.ft = arrival[i] + load[i];
+            server.tr += 1;
+            max = Math.max(max, server.tr);
+            busy.add(server);
+            available.remove(serverIndex);
+        }
+        List<Integer> result = new ArrayList<>();
+        for(int j =0; j < k; j++) {
+            if(list.get(j).tr == max) result.add(j);
+        }
+        return result;
+    }
+}
