@@ -1,11 +1,11 @@
 class Solution {
-public:
-    int longestSubsequence(vector<int>& arr, int difference) 
-    {
-        unordered_map<int,int> lengths;
-        int result=1;
-        for(int &i:arr)
-            result=max(result,lengths[i]=1+lengths[i-difference]); 
-        return result;
+    public int longestSubsequence(int[] nums, int diff) {
+        Map<Integer, Integer> dp = new HashMap<>();
+        int res = 1;
+        for (int n : nums) {
+            dp.put(n, dp.getOrDefault(n - diff, 0) + 1);
+            res = Math.max(res, dp.get(n));
+        }
+        return res;
     }
-};
+}
