@@ -2,6 +2,7 @@ class Solution {
 public:
    unordered_map<int, int> dp;
 int minDays(int n) {
+    
     if (n <= 1)
         return n;
     if (dp.count(n) == 0)
