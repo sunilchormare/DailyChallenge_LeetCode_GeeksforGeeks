@@ -1,39 +1,64 @@
 class Solution {
-public:
-     string shortestSuperstring(vector<string>& A) {
-        int n = A.size();
-        // dp[mask][i] : min superstring made by strings in mask,
-        // and the last one is A[i]
-        vector<vector<string>> dp(1<<n,vector<string>(n));
-        vector<vector<int>> overlap(n,vector<int>(n,0));
-        
-        // 1. calculate overlap for A[i]+A[j].substr(?)
-        for(int i=0; i<n; ++i) for(int j=0; j<n; ++j) if(i!=j){
-            for(int k = min(A[i].size(), A[j].size()); k>0; --k)
-                if(A[i].substr(A[i].size()-k)==A[j].substr(0,k)){
-                    overlap[i][j] = k; 
-                    break;
-                }
-        }
-        // 2. set inital val for dp
-        for(int i=0; i<n; ++i) dp[1<<i][i] += A[i];
-        // 3. fill the dp
-        for(int mask=1; mask<(1<<n); ++mask){
-            for(int j=0; j<n; ++j) if((mask&(1<<j))>0){
-                for(int i=0; i<n; ++i) if(i!=j && (mask&(1<<i))>0){
-                    string tmp = dp[mask^(1<<j)][i]+A[j].substr(overlap[i][j]);
-                    if(dp[mask][j].empty() || tmp.size()<dp[mask][j].size())
-                        dp[mask][j] = tmp;
+    public String shortestSuperstring(String[] words) {
+        int n=words.length;
+        int dist[][] = new int[n][n];
+        for(int i=0; i<n; i++){
+            for(int j=0; j<n; j++){
+                if(i==j) continue;
+                for(int k=0; k<words[i].length(); k++){
+                    if(words[j].startsWith(words[i].substring(k))){
+                        dist[i][j]=words[i].length()-k;
+                        break;
+                    }
                 }
             }
         }
-        // 4. get the result
-        int last = (1<<n)-1;
-        string res = dp[last][0];
-        for(int i=1; i<n; ++i) if(dp[last][i].size()<res.size()){
-            res = dp[last][i];
+
+        int dp[][] = new int[1<<n][n];
+        int path[][] = new int[1<<n][n];
+
+        for(int mask=0; mask<(1<<n); mask++){
+            for(int curNode=0; curNode<n; curNode++){
+                // check if mask contains curNode
+                if((mask&(1<<curNode))==0) continue;
+                for(int adjNode=0; adjNode<n; adjNode++){
+                    if((mask&(1<<adjNode))==0 && dp[mask|(1<<adjNode)][adjNode]<=dist[curNode][adjNode]+dp[mask][curNode]){
+                        dp[mask|(1<<adjNode)][adjNode]=dist[curNode][adjNode]+dp[mask][curNode];
+                        path[mask|(1<<adjNode)][adjNode]=curNode;
+                    }
+                }
+            }
         }
-        return res;
+        int mask=(1<<n)-1; int node=0; int maxVal=-1;
+
+        for(int i=0; i<n; i++){
+            if(dp[mask][i]>maxVal){
+                maxVal=dp[mask][i];
+                node=i;
+            }
+        }
+
+        String res[] = new String[n];
+        int idx=n-1;
+        while(idx>=0){
+            int temp = path[mask][node];
+            res[idx--]=words[node];
+            mask^=(1<<node);
+            node = temp;
+        }        
+
+        HashMap<String,Integer> map = new HashMap<>();
+        for(int i=0; i<n; i++)map.put(words[i],i);
+
+        StringBuilder ans = new StringBuilder();
+        ans.append(res[0]);
+        for(int k=1; k<n; k++){
+            int i=map.get(res[k-1]);
+            int j=map.get(res[k]);
+
+            ans.append(res[k].substring(dist[i][j]));
+        }
+
+        return ans.toString();
     }
-    
-};
+}
