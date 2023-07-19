@@ -1,7 +1,8 @@
 class Solution {
-    public long countSubarrays(int[] A, long k) {
-        long res = 0, cur = 0;
-        for (int j = 0, i = 0; j < A.length; ++j) {
+public:
+   long long countSubarrays(vector<int>& A, long long k) {
+        long long res = 0, cur = 0;
+        for (int j = 0, i = 0; j < A.size(); ++j) {
             cur += A[j];
             while (cur * (j - i + 1) >= k)
                 cur -= A[i++];
@@ -9,4 +10,4 @@ class Solution {
         }
         return res;
     }
-}
+};
