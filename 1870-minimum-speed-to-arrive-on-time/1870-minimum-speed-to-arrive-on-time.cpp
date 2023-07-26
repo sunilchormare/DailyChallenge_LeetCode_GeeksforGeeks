@@ -1,22 +1,23 @@
 class Solution {
-    public int minSpeedOnTime(int[] dist, double hour) {
-        int n = dist.length;
-        int min = 1, max = 10000000;
+public:
+    int minSpeedOnTime(vector<int>& dist, double hour) {
+         int n = dist.size();
+        int mini = 1, maxi = 10000000;
         int ans = -1;
-        while(min <= max){
-            int mid = (max + min)/2;
+        while(mini <= maxi){
+            int mid = (maxi + mini)/2;
             double sum = 0;
             for(int i = 0; i<n-1; ++i){
-                sum += Math.ceil( ( (double) dist[i]) /mid);
+                sum += ceil( ( (double) dist[i]) /mid);
             }
             sum = sum + ( ( (double) dist[n-1]) /mid);
             if(sum > hour){
-                min = mid+1;
+                mini = mid+1;
             }else{
                 ans = mid;
-                max = mid-1;
+                maxi = mid-1;
             }
         }
         return ans;
     }
-}
+};
