@@ -1,11 +1,12 @@
 class Solution {
-public:
-   long long maxRunTime(int n, vector<int>& A) {
-        sort(A.begin(), A.end());
-        long long sum = accumulate(A.begin(), A.end(), 0L);
-        int k = 0, na = A.size();
+   public long maxRunTime(int n, int[] A) {
+        Arrays.sort(A);
+        long sum = 0;
+        for (int a: A)
+            sum += a;
+        int k = 0, na = A.length;
         while (A[na - 1 - k] > sum / (n - k))
             sum -= A[na - 1 - k++];
         return sum / (n - k);
     }
-};
+}
