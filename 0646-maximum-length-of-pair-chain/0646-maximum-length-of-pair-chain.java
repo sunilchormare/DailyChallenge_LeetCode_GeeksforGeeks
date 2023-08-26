@@ -1,20 +1,16 @@
 class Solution {
-public:
-    int findLongestChain(vector<vector<int>>& pairs) {
-        sort(pairs.begin(), pairs.end(), cmp);
-        int cnt = 0;
-        vector<int>& pair = pairs[0];
-        for (int i = 0; i < pairs.size(); i++) {
-            if (i == 0 || pairs[i][0] > pair[1]) {
-                pair = pairs[i];
-                cnt++;
-            }
+    public int findLongestChain(int[][] pairs) {
+    Arrays.sort(pairs, (p1, p2)->p1[0]-p2[0]);
+    int len = 0;
+    int pre = Integer.MIN_VALUE;
+    for(int[] pair : pairs){
+        if(pair[0] > pre){  // not overlap
+            len++;
+            pre = pair[1];
+         }else if(pair[1] < pre){ // overlap but with smaller second element
+            pre = pair[1];
         }
-        return cnt;
     }
-
-private:
-    static bool cmp(vector<int>& a, vector<int>&b) {
-        return a[1] < b[1] || a[1] == b[1] && a[0] < b[0];
-    }
-};
+    return len;
+}
+}
