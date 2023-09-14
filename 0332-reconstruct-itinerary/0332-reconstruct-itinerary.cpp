@@ -9,6 +9,7 @@ public:
         reverse(result.begin(), result.end());
         return result;
     }
+    
     void dfs(unordered_map<string, multiset<string>>& adj, vector<string>& result, string s){
         while(adj[s].size()){
             string v = *(adj[s].begin());
