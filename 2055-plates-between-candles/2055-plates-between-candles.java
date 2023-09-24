@@ -1,15 +1,61 @@
 class Solution {
-public:
-   vector<int> platesBetweenCandles(string s, vector<vector<int>>& queries) {
-        vector<int> A, res;
-        for (int i = 0; i < s.size(); ++i)
-            if (s[i] == '|')
-                A.push_back(i);
-        for (int q = 0; q < queries.size(); ++q) {
-            int i = lower_bound(A.begin(), A.end(), queries[q][0]) - A.begin();
-            int j = upper_bound(A.begin(), A.end(), queries[q][1]) - A.begin() - 1;
-            res.push_back(i < j ? (A[j] - A[i]) - (j - i) : 0);
+    public int[] platesBetweenCandles(String s, int[][] queries) {
+
+
+        int n = s.length();
+
+        int[] nearestRightCandle = new int[n];
+        int[] nearestLeftCandle = new int[n];
+        int[] candleCount = new int[n];
+        int[] ans = new int[queries.length];
+
+        int candle = -1;
+        for (int i = 0; i < n; ++i) {
+            if (s.charAt(i) == '|') {
+                candle = i;
+            }
+            nearestLeftCandle[i] = candle;
         }
-        return res;
+
+        candle = -1;
+        for (int i = n - 1; i >= 0; --i) {
+            if (s.charAt(i) == '|') {
+                candle = i;
+            }
+            nearestRightCandle[i] = candle;
+        }
+
+        int count = 0;
+        for (int i = 0; i < n; ++i) {
+            if (s.charAt(i) == '|') {
+                ++count;
+            }
+            candleCount[i] = count;
+        }
+
+        int idx = 0;
+        for (int[] query : queries) {
+            int left = query[0];
+            int right = query[1];
+
+            int leftCandle = nearestRightCandle[left];
+            int rightCandle = nearestLeftCandle[right];
+
+            int d = 0;
+            if (leftCandle == -1 || rightCandle == -1) {
+                ans[idx] = 0;
+            } else {
+                d = rightCandle - leftCandle;
+                if (d > 1) {
+                    ans[idx] = rightCandle - leftCandle + 1 - (candleCount[rightCandle] - candleCount[leftCandle] + 1);
+                } else {
+                    ans[idx] = 0;
+                }
+            }
+
+            ++idx;
+        }
+
+        return ans;
     }
-};
+}
