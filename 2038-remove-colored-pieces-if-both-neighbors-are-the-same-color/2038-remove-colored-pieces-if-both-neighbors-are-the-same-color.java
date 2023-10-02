@@ -1,13 +1,17 @@
-class Solution:
-    def winnerOfGame(self, s: str) -> bool:
+class Solution {
+    public boolean winnerOfGame(String s) {
         
-        a = b = 0
+        int a = 0, b = 0;
         
-        for i in range(1,len(s)-1):
-            if s[i-1] == s[i] == s[i+1]:
-                if s[i] == 'A':
-                    a += 1
-                else:
-                    b += 1
+        for(int i=1; i<s.length()-1; i++){
+            if(s.charAt(i) == s.charAt(i-1) && s.charAt(i) == s.charAt(i+1)){
+                if(s.charAt(i) == 'A')
+                    a++;
+                else
+                    b++;
+			}
+        }
                     
-        return a>b
+        return a>b;
+    }
+}
