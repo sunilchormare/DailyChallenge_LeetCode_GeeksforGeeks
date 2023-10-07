@@ -1,36 +1,49 @@
 class Solution {
-public:
-    int numOfArrays(int n, int m, int k) {
-        vector<vector<int>> dp(vector(m + 1, vector(k + 1, 0)));
-        vector<vector<int>> prevDp(vector(m + 1, vector(k + 1, 0)));
-        int MOD = 1e9 + 7;
-        
-        for (int num = 0; num < dp.size(); num++) {
-            prevDp[num][0] = 1;
+    int[][][] memo;
+    int MOD = (int) 1e9 + 7;
+    int n;
+    int m;
+    
+    public int numOfArrays(int n, int m, int k) {
+        memo = new int[n][m + 1][k + 1];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= m; j++) {
+                Arrays.fill(memo[i][j], -1);
+            }
         }
         
-        for (int i = n - 1; i >= 0; i--) {
-            dp = vector(m + 1, vector(k + 1, 0));
-            for (int maxSoFar = m; maxSoFar >= 0; maxSoFar--) {
-                for (int remain = 0; remain <= k; remain++) {
-                    int ans = 0;
-                    for (int num = 1; num <= maxSoFar; num++) {
-                        ans = (ans + prevDp[maxSoFar][remain]) % MOD;
-                    }
-                    
-                    if (remain > 0) {
-                        for (int num = maxSoFar + 1; num <= m; num++) {
-                            ans = (ans + prevDp[num][remain - 1]) % MOD;
-                        }
-                    }
-                    
-                    dp[maxSoFar][remain] = ans;
-                }
+        this.n = n;
+        this.m = m;
+        return dp(0, 0, k);
+    }
+    
+    public int dp(int i, int maxSoFar, int remain) {
+        if (i == n) {
+            if (remain == 0) {
+                return 1;
             }
             
-            prevDp = dp;
+            return 0;
+        }
+        
+        if (remain < 0) {
+            return 0;
+        }
+        
+        if (memo[i][maxSoFar][remain] != -1) {
+            return memo[i][maxSoFar][remain];
+        }
+        
+        int ans = 0;
+        for (int num = 1; num <= maxSoFar; num++) {
+            ans = (ans + dp(i + 1, maxSoFar, remain)) % MOD;
         }
 
-        return dp[0][k];
+        for (int num = maxSoFar + 1; num <= m; num++) {
+            ans = (ans + dp(i + 1, num, remain - 1)) % MOD;
+        }
+        
+        memo[i][maxSoFar][remain] = ans;
+        return ans;
     }
-};
+}
