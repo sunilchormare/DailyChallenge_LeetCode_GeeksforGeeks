@@ -1,21 +1,26 @@
 class Solution {
-public:
-    string sortVowels(string s) {
-        int n = s.size();
-        vector<char> vow;
-        vector<int> pos;
-        for(int i=0;i<n;i++){
-            if(s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] =='o' || 
-               s[i] == 'u' || s[i] == 'A' || s[i] == 'E' || s[i] == 'O' || s[i] == 'I' || s[i] == 'U') { // condition to check for vowel
-                vow.push_back(s[i]);
-                pos.push_back(i); //storing positions of vowel 
+    public String sortVowels(String s) {
+        int n = s.length();
+        ArrayList<Character> vow = new ArrayList<>();
+        ArrayList<Integer> pos = new ArrayList<>();
+        
+        for (int i = 0; i < n; i++) {
+            char ch = s.charAt(i);
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || 
+                ch == 'u' || 
+ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') { // condition to check for vowel
+                vow.add(ch);
+                pos.add(i); // storing positions of vowel
             }
         }
-        sort(vow.begin(),vow.end());
-        string answer = s;
-        for(int i=0;i<pos.size();i++){
-            answer[pos[i]] = vow[i];
+        
+        Collections.sort(vow);
+        
+        char[] answer = s.toCharArray();
+        for (int i = 0; i < pos.size(); i++) {
+            answer[pos.get(i)] = vow.get(i);
         }
-        return answer;
+        
+        return new String(answer);
     }
-};
+}
