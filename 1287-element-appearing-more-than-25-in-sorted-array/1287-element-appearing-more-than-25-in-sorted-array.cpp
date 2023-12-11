@@ -1,15 +1,13 @@
 class Solution {
 public:
     int findSpecialInteger(vector<int>& arr) {
-        unordered_map<int, int> counts;
-        int target = arr.size() / 4;
-        for (int num : arr) {
-            counts[num]++;
-            if (counts[num] > target) {
-                return num;
+        int size = arr.size() / 4;
+        for (int i = 0; i < arr.size() - size; i++) {
+            if (arr[i] == arr[i + size]) {
+                return arr[i];
             }
         }
-
+        
         return -1;
     }
 };
