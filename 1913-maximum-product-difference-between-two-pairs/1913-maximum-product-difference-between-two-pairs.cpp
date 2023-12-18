@@ -25,3 +25,6 @@ public:
         return biggest * secondBiggest - smallest * secondSmallest;
     }
 };
+
+//Time O(n)
+//Space O(1)
