@@ -1,17 +1,14 @@
 class Solution {
-public:
-    int kthFactor(int n, int k) {
-        vector<int> ans;
-        
-        for(int i=1;i<=n;++i)
-        {
-            
-            if(n%i==0)
-                ans.push_back(i);
+    public int kthFactor(int n, int k) {
+        int cnt = 0;
+        List<Integer> l = new ArrayList<>();
+        for(int i = 1; i * i <= n; i++) {
+            if (n % i == 0) {
+                if (i * i != n) l.add(n / i);
+                if (++cnt == k) return i;
+            }
         }
-        if(ans.size()<k) return -1;
-        sort(ans.begin(),ans.end());
-        
-        return ans[k-1];
+        if (l.size() + cnt < k) return -1;
+        return l.get(l.size() - (k - cnt));
     }
-};
+}
