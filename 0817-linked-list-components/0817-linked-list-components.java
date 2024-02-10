@@ -1,22 +1,22 @@
 /**
  * Definition for singly-linked list.
- * struct ListNode {
+ * public class ListNode {
  *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
  */
 class Solution {
-public:
-    int numComponents(ListNode* head, vector<int>& G) {
-        unordered_set<int> setG (G.begin(), G.end());
+    public int numComponents(ListNode head, int[] G) {
+       Set<Integer> setG = new HashSet<>();
+        for (int i: G) setG.add(i);
         int res = 0;
-        while (head != NULL) {
-            if (setG.count(head->val) && (head->next == NULL || !setG.count(head->next->val))) res++;
-            head = head->next;
+        while (head != null) {
+            if (setG.contains(head.val) && (head.next == null || !setG.contains(head.next.val))) res++;
+            head = head.next;
         }
-        return res;
+        return res; 
     }
-};
+}
