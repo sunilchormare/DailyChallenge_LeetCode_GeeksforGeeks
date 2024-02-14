@@ -1,9 +1,10 @@
 class Solution {
-    public int countMatchingSubarrays(int[] nums, int[] pattern) {
-         int len=pattern.length+1,ans=0;
-        for(int i=0;i<=nums.length-len;i++)
+public:
+    int countMatchingSubarrays(vector<int>& nums, vector<int>& pattern) {
+         int len=pattern.size()+1,ans=0;
+        for(int i=0;i<=nums.size()-len;i++)
         {
-            boolean flag=true;
+            bool flag=true;
             for(int j=i,k=0;j<i+len-1;j++,k++)
             {
                 if(pattern[k]==1 && (nums[j]>=nums[j+1]))
@@ -26,4 +27,4 @@ class Solution {
         }
         return ans;
     }
-}
+};
