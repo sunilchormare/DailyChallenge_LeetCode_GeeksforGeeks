@@ -1,26 +1,22 @@
 class Solution {
-public:
-    vector<int> findDuplicates(vector<int>& nums) {
-//BRUTE FORCE
-//         vector<int> res;
-//         map<int,int> m;
-//         for(int a:nums)
-//             m[a]++;
-
-//       for(auto i : m )
-//           if(i.second==2)
-//               res.push_back(i.first);
-        
-//        return res;
-        
-       if(nums.empty())return {};
-        vector<int>ans;
-        for(int i=0;i<nums.size();i++)
+    public List<Integer> findDuplicates(int[] nums) {
+        //if(nums.empty())return {};
+        List<Integer> ans=new ArrayList<>();
+        for(int i=0;i<nums.length;i++)
         {
-            if(nums[abs(nums[i])-1]<0)
-                ans.push_back(abs(nums[i]));
-            nums[abs(nums[i])-1]=-nums[abs(nums[i])-1];
+            if(nums[Math.abs(nums[i])-1]<0)
+                ans.add(Math.abs(nums[i]));
+            nums[Math.abs(nums[i])-1]=-nums[Math.abs(nums[i])-1];
         }
         return ans;
     }
-};
+}
+
+//  List<Integer> res = new ArrayList<>();
+//         for (int i = 0; i < nums.length; ++i) {
+//             int index = Math.abs(nums[i])-1;
+//             if (nums[index] < 0)
+//                 res.add(Math.abs(index+1));
+//             nums[index] = -nums[index];
+//         }
+//         return res;
