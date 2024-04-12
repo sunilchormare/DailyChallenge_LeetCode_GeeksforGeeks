@@ -1,22 +1,23 @@
 class Solution {
-public:
-   int maximizeSquareArea(int m, int n, vector<int>& hFences, vector<int>& vFences) {
-    long long ans = 0, mod= 1e9 + 7;
-    unordered_set<int> st;
-    hFences.push_back(1); hFences.push_back(m); 
-    vFences.push_back(1); vFences.push_back(n); 
-    for(int i = 0; i < hFences.size(); ++i){
-        for(int j = 0; j < hFences.size(); ++j){
-            st.insert(abs(hFences[i] - hFences[j]));
+    public int maximizeSquareArea(int m, int n, int[] hFences, int[] vFences) {
+    long ans = 0, mod = 1000000007;
+    HashSet<Integer> hs = new HashSet<>();
+    int[] hFen = Arrays.copyOf(hFences, hFences.length + 2); 
+    int[] vFen = Arrays.copyOf(vFences, vFences.length + 2);
+    hFen[hFences.length] = 1; hFen[hFences.length + 1] = m;
+    vFen[vFences.length] = 1; vFen[vFences.length + 1] = n;
+    for(int i = 0; i < hFen.length; ++i){
+        for(int j = 0; j < hFen.length; ++j){
+            if(i != j ) hs.add(Math.abs(hFen[i] - hFen[j]));
         }
     }
-    for(int i = 0; i < vFences.size(); ++i){
-        for(int j = 0; j < vFences.size(); ++j){
-            if(i != j  && st.find(abs(vFences[i] - vFences[j])) != st.end()) {
-                ans = max(ans, (long long)abs(vFences[i] - vFences[j]));
+    for(int i = 0; i < vFen.length; ++i){
+        for(int j = 0; j < vFen.length; ++j){
+            if(hs.contains(Math.abs(vFen[i] - vFen[j])) == true) {
+                ans = Math.max(ans, Math.abs(vFen[i] - vFen[j]));
             }
         }
     }
-    return (ans == 0)?-1: ((ans * ans) % mod);
+    return (ans == 0)?-1: (int)((ans * ans) % mod);
 }
-};
+}
