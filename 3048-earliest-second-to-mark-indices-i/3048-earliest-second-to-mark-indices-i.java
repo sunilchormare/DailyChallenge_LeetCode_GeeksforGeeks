@@ -1,36 +1,35 @@
 class Solution {
-public:
-    bool binarySearch(vector<int>& nums, vector<int>& changeIndices, int idx) {
-        unordered_map<int, int> last;
-        for (int i = 0; i < idx; i++) {
+    public int earliestSecondToMarkIndices(int[] nums, int[] changeIndices) {
+        int n = nums.length;
+        int[] changeIndicesAdjusted = Arrays.stream(changeIndices).map(index -> index - 1).toArray();
+        int low = 0, high = changeIndices.length - 1;
+        while (low < high) {
+            int mid = (low + high) / 2;
+            if (isPossible(nums, changeIndicesAdjusted, mid)) high = mid;
+            else low = mid + 1;
+        }
+		// Delay Marking as Much as Possible
+        return isPossible(nums, changeIndicesAdjusted, low) ? low + 1 : -1;
+    }
+
+	// isPossible method is called to check if it's possible to mark all indices in s seconds while delaying marking as much as possible.
+    private boolean isPossible(int[] nums, int[] changeIndices, int s) {
+        int n = nums.length;
+        int[] last = new int[n];
+        Arrays.fill(last, -1);
+        for (int i = 0; i <= s; i++) { // Latest Point to Mark an Index
             last[changeIndices[i]] = i;
         }
-        if (last.size() != nums.size()) return false;
-        int cnt = 0; // record we can reduce how many number
-        for (int i = 0; i < idx; i++) {
-            // if it is last time we visit this idx, we must mark
-            // so check whether this idx already reduce to zero, if not, then return false.
+        int marked = 0, operations = 0;
+        for (int i = 0; i <= s; i++) { // Store Decrement Operations
             if (i == last[changeIndices[i]]) {
-                if (cnt < nums[changeIndices[i] - 1]) return false;
-                else cnt -= nums[changeIndices[i] - 1];
+                if (nums[changeIndices[i]] > operations) return false;
+                operations -= nums[changeIndices[i]];
+                marked++;
             } else {
-                cnt++;
+                operations++;
             }
         }
-        return true;
+        return marked == n;
     }
-    
-    int earliestSecondToMarkIndices(vector<int>& nums, vector<int>& changeIndices) {
-        int n = nums.size(), m = changeIndices.size();
-        int l = 0, r = m + 1;
-        while (l < r) {
-            int mid = l + (r - l) / 2;
-            if (binarySearch(nums, changeIndices, mid)) {
-                r = mid;
-            } else {
-                l = mid + 1;
-            }
-        }
-        return r == m + 1? -1 : r;
-    }
-};
+}
