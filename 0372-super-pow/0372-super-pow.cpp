@@ -1,15 +1,20 @@
 class Solution {
-     public int superPow(int a, int[] b) {
-      int res = 1;
-      for(int i : b){
-        res = pow(res, 10) * pow(a, i) % 1337;  
-      }
-      return res;
+const int c = 1337;
+public:
+    int superPow(int a, vector<int>& b) {
+        int r = 1;
+        a %= c;
+        for(int i=0;i<b.size();i++){
+            r = (powmod(r,10)*powmod(a,b[i]))%c;
+        }
+        return r;
     }
-    
-    int pow(int x, int y){
-        if(y == 0) return 1;
-        if(y == 1) return x % 1337;
-        return pow(x % 1337, y / 2) * pow(x % 1337, y - y / 2) % 1337;
+private:
+    int powmod(int r,int k) {
+        int x = 1;
+        for(int i=1;i<=k;i++){
+            x = (x*r) % c;
+        }
+        return x;
     }
-}
+};
