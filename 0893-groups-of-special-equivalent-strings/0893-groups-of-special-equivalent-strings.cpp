@@ -1,16 +1,17 @@
 class Solution {
-    public int numSpecialEquivGroups(String[] A) {
-        Set<String> set= new HashSet<>();
-        for (String s: A){
-            int[] odd= new int[26];
-            int[] even= new int[26];
-            for (int i=0; i<s.length(); i++){
-                if (i%2==1) odd[s.charAt(i)-'a']++;
-                else even[s.charAt(i)-'a']++;
-            }
-            String sig= Arrays.toString(odd)+Arrays.toString(even);
-            set.add(sig);
+public:
+    int numSpecialEquivGroups(vector<string>& A) {
+         set<pair<string,string>> s;
+    for (const auto& w : A) {
+        pair<string,string> p;
+        for (int i = 0; i < w.size (); ++i) {
+            if (i % 2) p.first  += w[i];
+            else       p.second += w[i];
         }
-        return set.size();
+        sort (p.first.begin  (), p.first.end ());
+        sort (p.second.begin (), p.second.end ());
+        s.insert (p);
     }
-}
+    return s.size ();
+    }
+};
