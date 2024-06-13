@@ -1,12 +1,14 @@
 class Solution {
-public:
-    int minMovesToSeat(vector<int>& seats, vector<int>& students) {
-         sort(seats.begin(), seats.end());
-        sort(students.begin(), students.end());
-        
-        int res = 0;
-        for (int i = 0; i < seats.size(); i++) res += abs(seats[i] - students[i]);
-        
-        return res;
+
+    public int minMovesToSeat(int[] seats, int[] students) {
+        Arrays.sort(seats);
+        Arrays.sort(students);
+        int moves = 0;
+        for (int i = 0; i < seats.length; i++) {
+            // Add the absolute value of the difference
+            // between the position of the seat and the student
+            moves += Math.abs(seats[i] - students[i]);
+        }
+        return moves;
     }
-};
+}
