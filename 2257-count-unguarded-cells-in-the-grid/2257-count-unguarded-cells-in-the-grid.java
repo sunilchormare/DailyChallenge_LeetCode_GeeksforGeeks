@@ -1,43 +1,36 @@
-class Solution {
-public:
-    int countUnguarded(int m, int n, vector<vector<int>>& g, vector<vector<int>>& w) {
-        // m is no. of rows, n is no. of columns, g is guards vector and w is walls vector
-        vector<vector<int>> v(m, vector<int> (n,0));
-        int k = w.size();
-        for(int i=0;i<k;i++){
-            int x = w[i][0], y = w[i][1];
-            v[x][y] = -2;
+class Solution
+{
+    public int countUnguarded(int m, int n, int[][] guards, int[][] walls)
+    {
+        int[][] dirs = {{1,0},{-1,0},{0,1},{0,-1}};
+        char[][] grid= new char[m][n];
+        int count = m*n - guards.length - walls.length;
+        for(int[] wall : walls)
+        {
+            int x = wall[0], y = wall[1];
+            grid[x][y] = 'W';
         }
-        k = g.size();
-        for(int i=0;i<k;i++){
-            int x = g[i][0], y = g[i][1];
-            v[x][y] = 2;
+        for(int[] guard : guards)
+        {
+            int x = guard[0], y = guard[1];
+            grid[x][y] = 'G';
         }
-        for(int j=0;j<k;j++){
-            int x = g[j][0], y = g[j][1];
-            for(int i=x-1;i>=0;i--){ // up
-                if(v[i][y]==-2 || v[i][y]==2) break;
-                v[i][y] = 1;
-            }
-            for(int i=x+1;i<m;i++){ // down
-                if(v[i][y]==-2 || v[i][y]==2) break;
-                v[i][y] = 1;
-            }
-            for(int i=y-1;i>=0;i--){ // left
-                if(v[x][i]==-2 || v[x][i]==2) break;
-                v[x][i] = 1;
-            }
-            for(int i=y+1;i<n;i++){ // right
-                if(v[x][i]==-2 || v[x][i]==2) break;
-                v[x][i] = 1;
-            }
-        }
-        int ans = 0;
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                if(!v[i][j]) ans++;
+        for(int[] point : guards)
+        {
+            for(int dir[] : dirs)
+            {
+                int x = point[0] + dir[0];
+                int y = point[1] + dir[1];
+                while(!(x < 0 || y < 0 || x >= m || y >= n || grid[x][y] == 'G' || grid[x][y] == 'W'))
+                {
+                    if(grid[x][y] != 'P')
+                        count--;
+                    grid[x][y] = 'P';
+                    x += dir[0];
+                    y += dir[1];
+                }
             }
         }
-        return ans;
+        return count;
     }
-};
+}
