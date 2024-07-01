@@ -13,10 +13,10 @@ public:
                 
             
         }
-        if(c>=3) return true;
-        else return false;
+        // if(c>=3) return true;
+        // else return false;
         
-        return false;
+        return (c>=3)?true:false;
         
     }
 };
