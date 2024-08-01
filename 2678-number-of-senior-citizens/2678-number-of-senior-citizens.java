@@ -1,13 +1,13 @@
 class Solution {
-public:
-    int countSeniors(vector<string>& details) {
+
+    public int countSeniors(String[] details) {
         int seniorCount = 0;
 
         // Iterate through each passenger's details
-        for (string& passengerInfo : details) {
+        for (String passengerInfo : details) {
             // Extract the digits of age
-            int ageTens = passengerInfo[11] - '0';
-            int ageOnes = passengerInfo[12] - '0';
+            int ageTens = passengerInfo.charAt(11) - '0';
+            int ageOnes = passengerInfo.charAt(12) - '0';
 
             // Calculate the full age
             int age = ageTens * 10 + ageOnes;
@@ -20,4 +20,4 @@ public:
 
         return seniorCount;
     }
-};
+}
