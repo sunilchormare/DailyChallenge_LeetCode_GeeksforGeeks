@@ -1,17 +1,17 @@
 class Solution {
-public:
-    string kthDistinct(vector<string>& arr, int k) {
-        unordered_map<string, int> frequencyMap;
+
+    public String kthDistinct(String[] arr, int k) {
+        Map<String, Integer> frequencyMap = new HashMap<>();
 
         // First pass: Populate the frequency map
-        for (string& str : arr) {
-            frequencyMap[str]++;
+        for (String str : arr) {
+            frequencyMap.put(str, frequencyMap.getOrDefault(str, 0) + 1);
         }
 
         // Second pass: Find the k-th distinct string
-        for (string& str : arr) {
+        for (String str : arr) {
             // Check if the current string is distinct
-            if (frequencyMap[str] == 1) {
+            if (frequencyMap.get(str) == 1) {
                 k--;
             }
             // When k reaches 0, we have found the k-th distinct string
@@ -22,4 +22,4 @@ public:
 
         return "";
     }
-};
+}
