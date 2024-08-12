@@ -1,18 +1,24 @@
-class Solution
-{
-public:
-    int maximumLengthSubstring(string s)
-    {
-        int n = s.size(), ans = 0, begin = 0, end = 0;
-        map<char, int> mp;
-        while (end < n)
-        {
-            mp[s[end]]++;
-            while (mp[s[end]] == 3)
-                mp[s[begin++]]--;
-            ans = max(ans, end - begin + 1);
-            end++;
-        }
-        return ans;
+class Solution {
+    public int maximumLengthSubstring(String s) {
+        int max = 0,
+    len = s.length(),
+    left = 0,
+    right = 0;
+Map<Character,Integer> map = new HashMap<>();
+
+while(right < len){
+    char end = s.charAt(right);
+
+    map.put(end, map.getOrDefault(end,0) + 1);
+    while(map.get(end) == 3){
+        char begin = s.charAt(left++);
+        map.put(begin, map.getOrDefault(begin,0)-1);
     }
-};
+
+    max = Math.max(max, right - left + 1);
+    right++;
+}
+
+return max;
+    }
+}
