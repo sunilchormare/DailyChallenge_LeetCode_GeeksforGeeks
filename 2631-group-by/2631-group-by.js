@@ -1,15 +1,9 @@
-declare global {
-    interface Array<T> {
-        groupBy(fn: (item: T) => string): Record<string, T[]>
-    }
-}
-
 Array.prototype.groupBy = function(fn) {
-    const hash = {}
-    for (let item of this){
-        const key = fn(item)
-        hash[key] ||= []
-        hash[key].push(item)
+    const ans = {}
+    for(let e of this){
+        const key = fn((e))
+        ans[key] ||=[]
+        ans[key].push(e)
     }
-    return hash
-}
+    return ans
+};
