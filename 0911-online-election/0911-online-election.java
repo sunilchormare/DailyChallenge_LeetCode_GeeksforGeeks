@@ -1,16 +1,20 @@
 class TopVotedCandidate {
-public:
- map<int, int> m;
-    TopVotedCandidate(vector<int> persons, vector<int> times) {
-        int n = persons.size(), lead = -1;
-        unordered_map<int, int> count;
+
+    Map<Integer, Integer> m = new HashMap<>();
+    int[] time;
+    public TopVotedCandidate(int[] persons, int[] times) {
+        int n = persons.length, lead = -1;
+        Map<Integer, Integer> count = new HashMap<>();
+        time = times;
         for (int i = 0; i < n; ++i) {
-            lead = ++count[persons[i]] >= count[lead] ? persons[i] : lead;
-            m[times[i]] = lead;
+            count.put(persons[i], count.getOrDefault(persons[i], 0) + 1);
+            if (i == 0 || count.get(persons[i]) >= count.get(lead)) lead = persons[i];
+            m.put(times[i], lead);
         }
     }
 
-    int q(int t) {
-        return (--m.upper_bound(t))-> second;
+    public int q(int t) {
+        int i = Arrays.binarySearch(time, t);
+        return i < 0 ? m.get(time[-i-2]) : m.get(time[i]);
     }
-};
+}
