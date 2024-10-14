@@ -1,16 +1,21 @@
 class Solution {
-    public long maxKelements(int[] nums, int k) {
-          PriorityQueue<Integer> pqq=new PriorityQueue<>((a,b)->b-a);
-        for(int ii:nums){
-            pqq.add(ii);
+public:
+    long long maxKelements(vector<int>& nums, int k) {
+        long long int ans = 0;
+        // Create max-heap to store the elements.
+        priority_queue<int> pq;
+        for (auto& i : nums) {
+            pq.push(i);
         }
-        long max=0;
-        for(int i=k;i>0;i--){
-            int cq=pqq.poll();
-            max+=cq;
-            int f=(int)Math.ceil(cq/3.0);
-            pqq.add(f);
+
+        while (k--) {
+            // Add the maxElement in ans and push it's one-third value in the
+            // priority queue.
+            int maxElement = pq.top();
+            ans += maxElement;
+            pq.pop();
+            pq.push(ceil(maxElement / 3.0));
         }
-        return max;
+        return ans;
     }
-}
+};
