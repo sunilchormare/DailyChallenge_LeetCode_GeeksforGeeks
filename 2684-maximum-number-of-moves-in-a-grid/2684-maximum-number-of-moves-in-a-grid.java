@@ -1,23 +1,45 @@
 class Solution {
-    int dirs[][] = {{0, 1}, {1, 1}, {-1, 1}}, m, n, cache[][];
-    public int maxMoves(int[][] grid) {
-        m = grid.length; n = grid[0].length; cache = new int[m][n];
-        Arrays.stream(cache).forEach(row -> Arrays.fill(row, -1));
 
-        int res = 0;
-        for (int i = 0; i < m; i++)
-            res = Math.max(res, dp(grid, i, 0));
-        return res;
-    }
-    
-    private int dp(int[][] grid, int i, int j) {
-        if (cache[i][j] != -1) return cache[i][j];
-        int ans = 0;
-        for (int[] dir : dirs) {
-            int ni = i + dir[0], nj = j + dir[1];
-            if (ni >= 0 && ni < m && nj < n && grid[i][j] < grid[ni][nj])
-                ans = Math.max(ans, 1 + dp(grid, ni, nj));
+    public int maxMoves(int[][] grid) {
+        int M = grid.length, N = grid[0].length;
+
+        int[][] dp = new int[M][N];
+        // Cells in the first column will have the moves as 1.
+        // This is required to ensure we have a way if the cell is reachable or not
+        // from the first column.
+        for (int i = 0; i < M; i++) {
+            dp[i][0] = 1;
         }
-        return cache[i][j] = ans;
+
+        int maxMoves = 0;
+        for (int j = 1; j < N; j++) {
+            for (int i = 0; i < M; i++) {
+                // Check all the three next possible cells
+                // Check if the next cell is greater than the previous one
+                // Check if the previous cell was reachable,
+                // if the value is > 0
+                if (grid[i][j] > grid[i][j - 1] && dp[i][j - 1] > 0) {
+                    dp[i][j] = Math.max(dp[i][j], dp[i][j - 1] + 1);
+                }
+                if (
+                    i - 1 >= 0 &&
+                    grid[i][j] > grid[i - 1][j - 1] &&
+                    dp[i - 1][j - 1] > 0
+                ) {
+                    dp[i][j] = Math.max(dp[i][j], dp[i - 1][j - 1] + 1);
+                }
+                if (
+                    i + 1 < M &&
+                    grid[i][j] > grid[i + 1][j - 1] &&
+                    dp[i + 1][j - 1] > 0
+                ) {
+                    dp[i][j] = Math.max(dp[i][j], dp[i + 1][j - 1] + 1);
+                }
+
+                maxMoves = Math.max(maxMoves, dp[i][j] - 1);
+            }
+        }
+
+        return maxMoves;
     }
 }
