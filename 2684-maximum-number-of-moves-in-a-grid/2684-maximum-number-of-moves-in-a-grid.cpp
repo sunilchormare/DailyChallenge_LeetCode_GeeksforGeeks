@@ -1,23 +1,38 @@
 class Solution {
 public:
     int maxMoves(vector<vector<int>>& grid) {
-    int m = grid.size(), n = grid[0].size();
-    vector<pair<int, int>> dirs = {{0, 1}, {1, 1}, {-1, 1}};
-    vector<vector<int>> cache(m, vector<int>(n, -1));
+        int M = grid.size(), N = grid[0].size();
 
-    function<int(int, int)> dp = [&](int i, int j) {
-        if (cache[i][j] != -1) return cache[i][j];
-        int ans = 0;
-        for (auto [x, y] : dirs) {
-            int ni = i + x, nj = j + y;
-            if (ni >= 0 && ni < m && nj < n && grid[i][j] < grid[ni][nj])
-                ans = max(ans, 1 + dp(ni, nj));
+        vector<vector<int>> dp(M, vector<int>(N, 0));
+        // Cells in the first column will have the moves as 1.
+        // This is required to ensure we have a way if the cell reachable or not
+        // from the first column.
+        for (int i = 0; i < M; i++) {
+            dp[i][0] = 1;
         }
-        return cache[i][j] = ans;
-    };
-    int res = 0;
-    for (int i = 0; i < m; i++)
-        res = max(res, dp(i, 0));
-    return res;
-}
+
+        int maxMoves = 0;
+        for (int j = 1; j < N; j++) {
+            for (int i = 0; i < M; i++) {
+                // Check all the three next possible cells
+                // Check if the next cell is greater than the previous one
+                // Check if the previous cell was reachable, if the value is > 0
+                if (grid[i][j] > grid[i][j - 1] && dp[i][j - 1] > 0) {
+                    dp[i][j] = max(dp[i][j], dp[i][j - 1] + 1);
+                }
+                if (i - 1 >= 0 && grid[i][j] > grid[i - 1][j - 1] &&
+                    dp[i - 1][j - 1] > 0) {
+                    dp[i][j] = max(dp[i][j], dp[i - 1][j - 1] + 1);
+                }
+                if (i + 1 < M && grid[i][j] > grid[i + 1][j - 1] &&
+                    dp[i + 1][j - 1] > 0) {
+                    dp[i][j] = max(dp[i][j], dp[i + 1][j - 1] + 1);
+                }
+
+                maxMoves = max(maxMoves, dp[i][j] - 1);
+            }
+        }
+
+        return maxMoves;
+    }
 };
