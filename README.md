@@ -19,4 +19,5 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
+| [2562-count-ways-to-build-good-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2562-count-ways-to-build-good-strings) |
 <!---LeetCode Topics End-->
