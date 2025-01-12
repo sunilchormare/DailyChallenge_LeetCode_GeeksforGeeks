@@ -64,4 +64,8 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
+## Math
+|  |
+| ------- |
+| [2955-account-balance-after-rounded-purchase](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2955-account-balance-after-rounded-purchase) |
 <!---LeetCode Topics End-->
