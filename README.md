@@ -83,6 +83,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [2448-count-number-of-bad-pairs](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2448-count-number-of-bad-pairs) |
+| [2802-find-the-punishment-number-of-an-integer](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2802-find-the-punishment-number-of-an-integer) |
 | [2955-account-balance-after-rounded-purchase](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2955-account-balance-after-rounded-purchase) |
 ## Breadth-First Search
 |  |
@@ -138,4 +139,5 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
+| [2802-find-the-punishment-number-of-an-integer](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2802-find-the-punishment-number-of-an-integer) |
 <!---LeetCode Topics End-->
