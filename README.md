@@ -45,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
+| [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2691-count-vowel-strings-in-ranges) |
 | [3447-clear-digits](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3447-clear-digits) |
 ## Prefix Sum
@@ -187,4 +188,8 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [2610-closest-prime-numbers-in-range](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2610-closest-prime-numbers-in-range) |
+## Sliding Window
+|  |
+| ------- |
+| [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 <!---LeetCode Topics End-->
