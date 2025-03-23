@@ -46,6 +46,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2562-count-ways-to-build-good-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2562-count-ways-to-build-good-strings) |
 ## String
 |  |
@@ -139,6 +140,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2246-maximum-employees-to-be-invited-to-a-meeting](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2246-maximum-employees-to-be-invited-to-a-meeting) |
 | [2564-most-profitable-path-in-a-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2564-most-profitable-path-in-a-tree) |
@@ -158,6 +160,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 ## Union Find
 |  |
 | ------- |
@@ -178,6 +181,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Topological Sort
 |  |
 | ------- |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2246-maximum-employees-to-be-invited-to-a-meeting](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2246-maximum-employees-to-be-invited-to-a-meeting) |
 ## Simulation
