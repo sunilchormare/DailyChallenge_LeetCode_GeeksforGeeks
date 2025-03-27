@@ -35,6 +35,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2691-count-vowel-strings-in-ranges](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
+| [2888-minimum-index-of-a-valid-split](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3227-find-missing-and-repeated-values](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3227-find-missing-and-repeated-values) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
@@ -88,6 +89,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2448-count-number-of-bad-pairs](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2448-count-number-of-bad-pairs) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
+| [2888-minimum-index-of-a-valid-split](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3227-find-missing-and-repeated-values](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3227-find-missing-and-repeated-values) |
 | [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
 ## Bit Manipulation
@@ -176,6 +178,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
+| [2888-minimum-index-of-a-valid-split](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3430-count-days-without-meetings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3430-count-days-without-meetings) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
