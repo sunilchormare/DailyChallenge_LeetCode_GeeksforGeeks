@@ -37,6 +37,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2888-minimum-index-of-a-valid-split) |
+| [3001-apply-operations-to-maximize-score](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3001-apply-operations-to-maximize-score) |
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3227-find-missing-and-repeated-values](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3227-find-missing-and-repeated-values) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
@@ -113,6 +114,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1502-construct-k-palindrome-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1502-construct-k-palindrome-strings) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2509-minimize-xor](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2509-minimize-xor) |
+| [3001-apply-operations-to-maximize-score](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3001-apply-operations-to-maximize-score) |
 ## Counting
 |  |
 | ------- |
@@ -124,6 +126,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
+| [3001-apply-operations-to-maximize-score](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3001-apply-operations-to-maximize-score) |
 | [3447-clear-digits](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3447-clear-digits) |
 ## Math
 |  |
@@ -136,6 +139,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2649-count-total-number-of-colored-cells](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2649-count-total-number-of-colored-cells) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2802-find-the-punishment-number-of-an-integer) |
 | [2955-account-balance-after-rounded-purchase](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2955-account-balance-after-rounded-purchase) |
+| [3001-apply-operations-to-maximize-score](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3001-apply-operations-to-maximize-score) |
 | [3227-find-missing-and-repeated-values](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3227-find-missing-and-repeated-values) |
 ## Breadth-First Search
 |  |
@@ -185,6 +189,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2888-minimum-index-of-a-valid-split) |
+| [3001-apply-operations-to-maximize-score](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3001-apply-operations-to-maximize-score) |
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3430-count-days-without-meetings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3430-count-days-without-meetings) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
@@ -244,6 +249,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [2610-closest-prime-numbers-in-range](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2610-closest-prime-numbers-in-range) |
+| [3001-apply-operations-to-maximize-score](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3001-apply-operations-to-maximize-score) |
 ## Sliding Window
 |  |
 | ------- |
@@ -265,4 +271,8 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
+## Monotonic Stack
+|  |
+| ------- |
+| [3001-apply-operations-to-maximize-score](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3001-apply-operations-to-maximize-score) |
 <!---LeetCode Topics End-->
