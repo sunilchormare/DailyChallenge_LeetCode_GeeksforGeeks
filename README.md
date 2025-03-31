@@ -32,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2665-minimum-time-to-repair-cars](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2665-minimum-time-to-repair-cars) |
+| [2681-put-marbles-in-bags](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2681-put-marbles-in-bags) |
 | [2690-house-robber-iv](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2690-house-robber-iv) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
@@ -117,6 +118,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1502-construct-k-palindrome-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1502-construct-k-palindrome-strings) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2509-minimize-xor](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2509-minimize-xor) |
+| [2681-put-marbles-in-bags](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2681-put-marbles-in-bags) |
 | [3001-apply-operations-to-maximize-score](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3001-apply-operations-to-maximize-score) |
 ## Counting
 |  |
@@ -167,6 +169,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [2434-design-a-number-container-system](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2434-design-a-number-container-system) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2588-maximum-number-of-points-from-grid-queries) |
+| [2681-put-marbles-in-bags](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2681-put-marbles-in-bags) |
 ## Matrix
 |  |
 | ------- |
@@ -191,6 +194,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2588-maximum-number-of-points-from-grid-queries) |
+| [2681-put-marbles-in-bags](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2681-put-marbles-in-bags) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3001-apply-operations-to-maximize-score](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3001-apply-operations-to-maximize-score) |
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
