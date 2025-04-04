@@ -89,6 +89,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0768-partition-labels](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0768-partition-labels) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
+| [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1502-construct-k-palindrome-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1502-construct-k-palindrome-strings) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2059-unique-length-3-palindromic-subsequences) |
@@ -153,6 +154,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Breadth-First Search
 |  |
 | ------- |
+| [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [2564-most-profitable-path-in-a-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2564-most-profitable-path-in-a-tree) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2588-maximum-number-of-points-from-grid-queries) |
@@ -208,6 +210,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1093-recover-a-tree-from-preorder-traversal) |
+| [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [2246-maximum-employees-to-be-invited-to-a-meeting](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2246-maximum-employees-to-be-invited-to-a-meeting) |
 | [2564-most-profitable-path-in-a-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2564-most-profitable-path-in-a-tree) |
 | [2793-count-the-number-of-complete-components](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2793-count-the-number-of-complete-components) |
@@ -240,12 +243,14 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1093-recover-a-tree-from-preorder-traversal) |
+| [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [2564-most-profitable-path-in-a-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2564-most-profitable-path-in-a-tree) |
 ## Binary Tree
 |  |
 | ------- |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1093-recover-a-tree-from-preorder-traversal) |
+| [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 ## Divide and Conquer
 |  |
 | ------- |
