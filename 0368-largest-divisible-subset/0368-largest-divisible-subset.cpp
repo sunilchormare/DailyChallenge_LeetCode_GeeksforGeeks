@@ -4,7 +4,7 @@ public:
        if(nums.size()==0){
             return nums;
         }
-        sort(nums.begin(),nums.end());
+        //sort(nums.begin(),nums.end());
         int flag=1;
         if(nums[0]==1){
             flag=0;
