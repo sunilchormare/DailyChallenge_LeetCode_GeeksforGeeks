@@ -22,6 +22,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1524-string-matching-in-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1524-string-matching-in-an-array) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
+| [1656-count-good-triplets](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1656-count-good-triplets) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1993-sum-of-all-subset-xor-totals) |
@@ -321,6 +322,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Enumeration
 |  |
 | ------- |
+| [1656-count-good-triplets](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1656-count-good-triplets) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2998-count-symmetric-integers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2998-count-symmetric-integers) |
 | [3548-find-the-count-of-good-integers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3548-find-the-count-of-good-integers) |
