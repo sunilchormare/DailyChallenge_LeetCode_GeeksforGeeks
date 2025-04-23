@@ -111,6 +111,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [1500-count-largest-group](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1500-count-largest-group) |
 | [1502-construct-k-palindrome-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1502-construct-k-palindrome-strings) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
@@ -169,6 +170,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0368-largest-divisible-subset](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0368-largest-divisible-subset) |
 | [0797-rabbits-in-forest](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0797-rabbits-in-forest) |
+| [1500-count-largest-group](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1500-count-largest-group) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1993-sum-of-all-subset-xor-totals) |
