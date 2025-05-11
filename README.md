@@ -21,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1227-number-of-equivalent-domino-pairs) |
+| [1293-three-consecutive-odds](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1293-three-consecutive-odds) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
