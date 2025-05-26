@@ -97,6 +97,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0806-domino-and-tromino-tiling](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0806-domino-and-tromino-tiling) |
 | [0868-push-dominoes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0868-push-dominoes) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2061-painting-a-grid-with-three-different-colors](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2061-painting-a-grid-with-three-different-colors) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2262-solving-questions-with-brainpower](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2262-solving-questions-with-brainpower) |
@@ -160,6 +161,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1500-count-largest-group](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1500-count-largest-group) |
 | [1502-construct-k-palindrome-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1502-construct-k-palindrome-strings) |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2215-finding-3-digit-even-numbers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2215-finding-3-digit-even-numbers) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
@@ -218,6 +220,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1502-construct-k-palindrome-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1502-construct-k-palindrome-strings) |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2308-divide-array-into-equal-pairs](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2308-divide-array-into-equal-pairs) |
 | [2448-count-number-of-bad-pairs](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2448-count-number-of-bad-pairs) |
@@ -269,6 +272,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2246-maximum-employees-to-be-invited-to-a-meeting](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2246-maximum-employees-to-be-invited-to-a-meeting) |
@@ -340,6 +344,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Topological Sort
 |  |
 | ------- |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2246-maximum-employees-to-be-invited-to-a-meeting](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2246-maximum-employees-to-be-invited-to-a-meeting) |
@@ -471,4 +476,8 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2527-count-subarrays-with-fixed-bounds) |
+## Memoization
+|  |
+| ------- |
+| [1986-largest-color-value-in-a-directed-graph](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1986-largest-color-value-in-a-directed-graph) |
 <!---LeetCode Topics End-->
