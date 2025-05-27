@@ -253,6 +253,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2955-account-balance-after-rounded-purchase](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2955-account-balance-after-rounded-purchase) |
 | [2998-count-symmetric-integers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2998-count-symmetric-integers) |
 | [3001-apply-operations-to-maximize-score](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3001-apply-operations-to-maximize-score) |
+| [3172-divisible-and-non-divisible-sums-difference](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3172-divisible-and-non-divisible-sums-difference) |
 | [3227-find-missing-and-repeated-values](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3227-find-missing-and-repeated-values) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3243-count-the-number-of-powerful-integers) |
 | [3321-type-of-triangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3321-type-of-triangle) |
