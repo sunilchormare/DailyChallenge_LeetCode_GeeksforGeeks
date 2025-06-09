@@ -514,4 +514,8 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1986-largest-color-value-in-a-directed-graph) |
+## Trie
+|  |
+| ------- |
+| [0440-k-th-smallest-in-lexicographical-order](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0440-k-th-smallest-in-lexicographical-order) |
 <!---LeetCode Topics End-->
