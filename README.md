@@ -32,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1293-three-consecutive-odds](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1293-three-consecutive-odds) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1350-remove-sub-folders-from-the-filesystem) |
+| [1402-count-square-submatrices-with-all-ones](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
@@ -145,6 +146,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0867-new-21-game](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0867-new-21-game) |
 | [0868-push-dominoes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0868-push-dominoes) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0934-bitwise-ors-of-subarrays) |
+| [1402-count-square-submatrices-with-all-ones](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1986-largest-color-value-in-a-directed-graph) |
@@ -461,6 +463,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0945-snakes-and-ladders](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0945-snakes-and-ladders) |
+| [1402-count-square-submatrices-with-all-ones](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2588-maximum-number-of-points-from-grid-queries) |
