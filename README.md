@@ -19,6 +19,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0135-candy](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0135-candy) |
 | [0368-largest-divisible-subset](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0368-largest-divisible-subset) |
 | [0416-partition-equal-subset-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0416-partition-equal-subset-sum) |
+| [0498-diagonal-traverse](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0498-diagonal-traverse) |
 | [0594-longest-harmonious-subsequence](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0594-longest-harmonious-subsequence) |
 | [0679-24-game](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0679-24-game) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
@@ -469,6 +470,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Matrix
 |  |
 | ------- |
+| [0498-diagonal-traverse](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0498-diagonal-traverse) |
 | [0945-snakes-and-ladders](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0945-snakes-and-ladders) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
@@ -550,6 +552,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Simulation
 |  |
 | ------- |
+| [0498-diagonal-traverse](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0498-diagonal-traverse) |
 | [2048-build-array-from-permutation](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2048-build-array-from-permutation) |
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2260-divide-a-string-into-groups-of-size-k) |
 | [2479-meeting-rooms-iii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2479-meeting-rooms-iii) |
