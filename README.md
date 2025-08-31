@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0036-valid-sudoku) |
+| [0037-sudoku-solver](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0037-sudoku-solver) |
 | [0075-sort-colors](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0075-sort-colors) |
 | [0118-pascals-triangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0118-pascals-triangle) |
 | [0135-candy](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0135-candy) |
@@ -249,6 +250,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0036-valid-sudoku) |
+| [0037-sudoku-solver](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0037-sudoku-solver) |
 | [0594-longest-harmonious-subsequence](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0594-longest-harmonious-subsequence) |
 | [0768-partition-labels](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0768-partition-labels) |
 | [0797-rabbits-in-forest](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0797-rabbits-in-forest) |
@@ -478,6 +480,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0036-valid-sudoku) |
+| [0037-sudoku-solver](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0037-sudoku-solver) |
 | [0498-diagonal-traverse](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0498-diagonal-traverse) |
 | [0945-snakes-and-ladders](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0945-snakes-and-ladders) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1402-count-square-submatrices-with-all-ones) |
@@ -586,6 +589,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Backtracking
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0037-sudoku-solver) |
 | [0679-24-game](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0679-24-game) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1993-sum-of-all-subset-xor-totals) |
