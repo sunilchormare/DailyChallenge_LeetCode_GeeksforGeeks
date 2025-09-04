@@ -440,6 +440,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3637-count-number-of-balanced-permutations](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3637-count-number-of-balanced-permutations) |
 | [3682-count-the-number-of-arrays-with-k-matching-adjacent-elements](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3682-count-the-number-of-arrays-with-k-matching-adjacent-elements) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
+| [3830-find-closest-person](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3830-find-closest-person) |
 ## Breadth-First Search
 |  |
 | ------- |
