@@ -172,6 +172,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2262-solving-questions-with-brainpower](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2262-solving-questions-with-brainpower) |
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
+| [2408-number-of-people-aware-of-a-secret](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2415-count-the-number-of-ideal-arrays) |
 | [2562-count-ways-to-build-good-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2562-count-ways-to-build-good-strings) |
 | [2882-ways-to-express-an-integer-as-sum-of-powers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2882-ways-to-express-an-integer-as-sum-of-powers) |
@@ -586,6 +587,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0498-diagonal-traverse](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0498-diagonal-traverse) |
 | [2048-build-array-from-permutation](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2048-build-array-from-permutation) |
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2260-divide-a-string-into-groups-of-size-k) |
+| [2408-number-of-people-aware-of-a-secret](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2479-meeting-rooms-iii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2479-meeting-rooms-iii) |
 | [2551-apply-operations-to-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2551-apply-operations-to-an-array) |
 | [3447-clear-digits](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3447-clear-digits) |
@@ -702,6 +704,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+| [2408-number-of-people-aware-of-a-secret](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 ## Monotonic Stack
