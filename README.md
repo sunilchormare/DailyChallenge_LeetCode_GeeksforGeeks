@@ -191,6 +191,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3797-design-spreadsheet](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3797-design-spreadsheet) |
 | [3827-implement-router](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3827-implement-router) |
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
+| [3863-power-grid-maintenance](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3863-power-grid-maintenance) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -392,6 +393,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 | [3797-design-spreadsheet](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3797-design-spreadsheet) |
 | [3827-implement-router](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3827-implement-router) |
+| [3863-power-grid-maintenance](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3863-power-grid-maintenance) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Bit Manipulation
 |  |
@@ -590,6 +592,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2793-count-the-number-of-complete-components](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2793-count-the-number-of-complete-components) |
 | [3633-maximize-the-number-of-target-nodes-after-connecting-trees-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3633-maximize-the-number-of-target-nodes-after-connecting-trees-i) |
 | [3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii) |
+| [3863-power-grid-maintenance](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3863-power-grid-maintenance) |
 ## Graph
 |  |
 | ------- |
@@ -605,6 +608,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
+| [3863-power-grid-maintenance](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3863-power-grid-maintenance) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -629,6 +633,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 | [3647-zero-array-transformation-iii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3647-zero-array-transformation-iii) |
 | [3678-design-task-manager](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3678-design-task-manager) |
+| [3863-power-grid-maintenance](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3863-power-grid-maintenance) |
 ## Matrix
 |  |
 | ------- |
@@ -671,6 +676,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2793-count-the-number-of-complete-components](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2793-count-the-number-of-complete-components) |
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
+| [3863-power-grid-maintenance](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3863-power-grid-maintenance) |
 ## Sorting
 |  |
 | ------- |
@@ -730,6 +736,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2793-count-the-number-of-complete-components](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2793-count-the-number-of-complete-components) |
 | [3633-maximize-the-number-of-target-nodes-after-connecting-trees-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3633-maximize-the-number-of-target-nodes-after-connecting-trees-i) |
 | [3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii) |
+| [3863-power-grid-maintenance](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3863-power-grid-maintenance) |
 ## Topological Sort
 |  |
 | ------- |
@@ -780,6 +787,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3790-fruits-into-baskets-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3790-fruits-into-baskets-ii) |
 | [3791-fruits-into-baskets-iii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3791-fruits-into-baskets-iii) |
 | [3827-implement-router](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3827-implement-router) |
+| [3863-power-grid-maintenance](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3863-power-grid-maintenance) |
 ## Backtracking
 |  |
 | ------- |
