@@ -31,6 +31,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0611-valid-triangle-number](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0611-valid-triangle-number) |
 | [0679-24-game](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0679-24-game) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
+| [0717-1-bit-and-2-bit-characters](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0717-1-bit-and-2-bit-characters) |
 | [0794-swim-in-rising-water](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0794-swim-in-rising-water) |
 | [0797-rabbits-in-forest](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0797-rabbits-in-forest) |
 | [0830-largest-triangle-area](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0830-largest-triangle-area) |
