@@ -42,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0945-snakes-and-ladders](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0945-snakes-and-ladders) |
 | [1006-vowel-spellchecker](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1006-vowel-spellchecker) |
 | [1018-largest-perimeter-triangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1018-largest-perimeter-triangle) |
+| [1018-binary-prefix-divisible-by-5](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1111-minimum-score-triangulation-of-polygon](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1111-minimum-score-triangulation-of-polygon) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1227-number-of-equivalent-domino-pairs) |
@@ -422,6 +423,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0231-power-of-two](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0231-power-of-two) |
 | [0342-power-of-four](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0342-power-of-four) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0934-bitwise-ors-of-subarrays) |
+| [1018-binary-prefix-divisible-by-5](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
