@@ -326,6 +326,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 | [2429-design-a-food-rating-system](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2429-design-a-food-rating-system) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
+| [2483-minimum-penalty-for-a-shop](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2483-minimum-penalty-for-a-shop) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2887-sort-vowels-in-a-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2887-sort-vowels-in-a-string) |
@@ -365,6 +366,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2229-maximum-fruits-harvested-after-at-most-k-steps](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2229-maximum-fruits-harvested-after-at-most-k-steps) |
 | [2249-count-the-hidden-sequences](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2249-count-the-hidden-sequences) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2394-count-subarrays-with-score-less-than-k) |
+| [2483-minimum-penalty-for-a-shop](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2483-minimum-penalty-for-a-shop) |
 | [2529-range-product-queries-of-powers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2529-range-product-queries-of-powers) |
 | [2618-maximize-the-minimum-powered-city](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2618-maximize-the-minimum-powered-city) |
 | [2625-increment-submatrices-by-one](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2625-increment-submatrices-by-one) |
