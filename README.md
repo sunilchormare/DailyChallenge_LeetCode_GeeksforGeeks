@@ -293,6 +293,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0165-compare-version-numbers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0165-compare-version-numbers) |
 | [0166-fraction-to-recurring-decimal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0166-fraction-to-recurring-decimal) |
 | [0474-ones-and-zeroes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0474-ones-and-zeroes) |
+| [0756-pyramid-transition-matrix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0756-pyramid-transition-matrix) |
 | [0768-partition-labels](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0768-partition-labels) |
 | [0868-push-dominoes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0868-push-dominoes) |
 | [0944-delete-columns-to-make-sorted](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0944-delete-columns-to-make-sorted) |
@@ -397,6 +398,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0037-sudoku-solver](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0037-sudoku-solver) |
 | [0166-fraction-to-recurring-decimal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0166-fraction-to-recurring-decimal) |
 | [0594-longest-harmonious-subsequence](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0594-longest-harmonious-subsequence) |
+| [0756-pyramid-transition-matrix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0756-pyramid-transition-matrix) |
 | [0768-partition-labels](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0768-partition-labels) |
 | [0797-rabbits-in-forest](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0797-rabbits-in-forest) |
 | [0900-reordered-power-of-2](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0900-reordered-power-of-2) |
@@ -478,6 +480,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0231-power-of-two](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0231-power-of-two) |
 | [0342-power-of-four](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0342-power-of-four) |
+| [0756-pyramid-transition-matrix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0756-pyramid-transition-matrix) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0934-bitwise-ors-of-subarrays) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1993-sum-of-all-subset-xor-totals) |
@@ -928,6 +931,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0037-sudoku-solver](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0037-sudoku-solver) |
 | [0679-24-game](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0679-24-game) |
+| [0756-pyramid-transition-matrix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0756-pyramid-transition-matrix) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2140-longest-subsequence-repeated-k-times) |
