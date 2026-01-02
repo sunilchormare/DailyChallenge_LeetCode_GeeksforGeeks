@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/n-repeated-element-in-size-2n-array/">961. N-Repeated Element in Size 2N Array</a></h2><h3>Easy</h3><hr><div><p>You are given an integer array <code>nums</code> with the following properties:</p>
+<h2><a href="https://leetcode.com/problems/n-repeated-element-in-size-2n-array">1001. N-Repeated Element in Size 2N Array</a></h2><h3>Easy</h3><hr><p>You are given an integer array <code>nums</code> with the following properties:</p>
 
 <ul>
 	<li><code>nums.length == 2 * n</code>.</li>
@@ -28,4 +28,3 @@
 	<li><code>0 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
 	<li><code>nums</code> contains <code>n + 1</code> <strong>unique</strong> elements and one of them is repeated exactly <code>n</code> times.</li>
 </ul>
-</div>
