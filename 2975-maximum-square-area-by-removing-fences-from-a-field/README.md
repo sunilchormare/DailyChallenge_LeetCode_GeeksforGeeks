@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/">2975. Maximum Square Area by Removing Fences From a Field</a></h2><h3>Medium</h3><hr><div><p>There is a large <code>(m - 1) x (n - 1)</code> rectangular field with corners at <code>(1, 1)</code> and <code>(m, n)</code> containing some horizontal and vertical fences given in arrays <code>hFences</code> and <code>vFences</code> respectively.</p>
+<h2><a href="https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field">3250. Maximum Square Area by Removing Fences From a Field</a></h2><h3>Medium</h3><hr><p>There is a large <code>(m - 1) x (n - 1)</code> rectangular field with corners at <code>(1, 1)</code> and <code>(m, n)</code> containing some horizontal and vertical fences given in arrays <code>hFences</code> and <code>vFences</code> respectively.</p>
 
 <p>Horizontal fences are from the coordinates <code>(hFences[i], 1)</code> to <code>(hFences[i], n)</code> and vertical fences are from the coordinates <code>(1, vFences[i])</code> to <code>(m, vFences[i])</code>.</p>
 
@@ -11,18 +11,20 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2023/11/05/screenshot-from-2023-11-05-22-40-25.png"></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2023/11/05/screenshot-from-2023-11-05-22-40-25.png" /></p>
 
-<pre><strong>Input:</strong> m = 4, n = 3, hFences = [2,3], vFences = [2]
+<pre>
+<strong>Input:</strong> m = 4, n = 3, hFences = [2,3], vFences = [2]
 <strong>Output:</strong> 4
 <strong>Explanation:</strong> Removing the horizontal fence at 2 and the vertical fence at 2 will give a square field of area 4.
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2023/11/22/maxsquareareaexample1.png" style="width: 285px; height: 242px;"></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2023/11/22/maxsquareareaexample1.png" style="width: 285px; height: 242px;" /></p>
 
-<pre><strong>Input:</strong> m = 6, n = 7, hFences = [2], vFences = [4]
+<pre>
+<strong>Input:</strong> m = 6, n = 7, hFences = [2], vFences = [4]
 <strong>Output:</strong> -1
 <strong>Explanation:</strong> It can be proved that there is no way to create a square field by removing fences.
 </pre>
@@ -37,4 +39,3 @@
 	<li><code><font face="monospace">1 &lt; vFences[i] &lt; n</font></code></li>
 	<li><code><font face="monospace">hFences</font></code><font face="monospace"> and </font><code><font face="monospace">vFences</font></code><font face="monospace"> are unique.</font></li>
 </ul>
-</div>
