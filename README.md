@@ -334,6 +334,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0038-count-and-say](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0038-count-and-say) |
+| [0067-add-binary](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0067-add-binary) |
 | [0165-compare-version-numbers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0165-compare-version-numbers) |
 | [0166-fraction-to-recurring-decimal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0166-fraction-to-recurring-decimal) |
 | [0474-ones-and-zeroes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0474-ones-and-zeroes) |
@@ -544,6 +545,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Bit Manipulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0067-add-binary) |
 | [0231-power-of-two](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0231-power-of-two) |
 | [0342-power-of-four](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0342-power-of-four) |
 | [0756-pyramid-transition-matrix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0756-pyramid-transition-matrix) |
@@ -680,6 +682,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0066-plus-one](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0066-plus-one) |
+| [0067-add-binary](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0067-add-binary) |
 | [0166-fraction-to-recurring-decimal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0166-fraction-to-recurring-decimal) |
 | [0231-power-of-two](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0231-power-of-two) |
 | [0326-power-of-three](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0326-power-of-three) |
@@ -989,6 +992,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Simulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0067-add-binary) |
 | [0498-diagonal-traverse](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0498-diagonal-traverse) |
 | [1642-water-bottles](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1642-water-bottles) |
 | [2048-build-array-from-permutation](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2048-build-array-from-permutation) |
