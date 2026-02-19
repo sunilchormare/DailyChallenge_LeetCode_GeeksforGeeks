@@ -338,6 +338,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0165-compare-version-numbers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0165-compare-version-numbers) |
 | [0166-fraction-to-recurring-decimal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0166-fraction-to-recurring-decimal) |
 | [0474-ones-and-zeroes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0474-ones-and-zeroes) |
+| [0696-count-binary-substrings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0696-count-binary-substrings) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [0756-pyramid-transition-matrix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0756-pyramid-transition-matrix) |
 | [0768-partition-labels](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0768-partition-labels) |
@@ -1105,6 +1106,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0075-sort-colors](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0075-sort-colors) |
 | [0165-compare-version-numbers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0165-compare-version-numbers) |
 | [0611-valid-triangle-number](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0611-valid-triangle-number) |
+| [0696-count-binary-substrings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0696-count-binary-substrings) |
 | [0768-partition-labels](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0768-partition-labels) |
 | [0868-push-dominoes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0868-push-dominoes) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
