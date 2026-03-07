@@ -298,6 +298,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1653-minimum-deletions-to-make-string-balanced) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1700-minimum-time-to-make-rope-colorful) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
+| [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2054-two-best-non-overlapping-events](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2054-two-best-non-overlapping-events) |
 | [2061-painting-a-grid-with-three-different-colors](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2061-painting-a-grid-with-three-different-colors) |
@@ -371,6 +372,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1758-minimum-changes-to-make-alternating-binary-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1758-minimum-changes-to-make-alternating-binary-string) |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1784-check-if-binary-string-has-at-most-one-segment-of-ones) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1818-maximum-score-from-removing-substrings) |
+| [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2079-delete-duplicate-folders-in-system](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2079-delete-duplicate-folders-in-system) |
@@ -1175,6 +1177,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1813-maximum-erasure-value](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1813-maximum-erasure-value) |
+| [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [1984-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1984-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2229-maximum-fruits-harvested-after-at-most-k-steps](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2229-maximum-fruits-harvested-after-at-most-k-steps) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2394-count-subarrays-with-score-less-than-k) |
