@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/construct-product-matrix/">2906. Construct Product Matrix</a></h2><h3>Medium</h3><hr><div><p>Given a <strong>0-indexed</strong> 2D integer matrix <code><font face="monospace">grid</font></code><font face="monospace"> </font>of size <code>n * m</code>, we define a <strong>0-indexed</strong> 2D matrix <code>p</code> of size <code>n * m</code> as the <strong>product</strong> matrix of <code>grid</code> if the following condition is met:</p>
+<h2><a href="https://leetcode.com/problems/construct-product-matrix">3031. Construct Product Matrix</a></h2><h3>Medium</h3><hr><p>Given a <strong>0-indexed</strong> 2D integer matrix <code><font face="monospace">grid</font></code><font face="monospace"> </font>of size <code>n * m</code>, we define a <strong>0-indexed</strong> 2D matrix <code>p</code> of size <code>n * m</code> as the <strong>product</strong> matrix of <code>grid</code> if the following condition is met:</p>
 
 <ul>
 	<li>Each element <code>p[i][j]</code> is calculated as the product of all elements in <code>grid</code> except for the element <code>grid[i][j]</code>. This product is then taken modulo <code><font face="monospace">12345</font></code>.</li>
@@ -9,7 +9,8 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input:</strong> grid = [[1,2],[3,4]]
+<pre>
+<strong>Input:</strong> grid = [[1,2],[3,4]]
 <strong>Output:</strong> [[24,12],[8,6]]
 <strong>Explanation:</strong> p[0][0] = grid[0][1] * grid[1][0] * grid[1][1] = 2 * 3 * 4 = 24
 p[0][1] = grid[0][0] * grid[1][0] * grid[1][1] = 1 * 3 * 4 = 12
@@ -19,7 +20,8 @@ So the answer is [[24,12],[8,6]].</pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> grid = [[12345],[2],[1]]
+<pre>
+<strong>Input:</strong> grid = [[12345],[2],[1]]
 <strong>Output:</strong> [[2],[0],[0]]
 <strong>Explanation:</strong> p[0][0] = grid[0][1] * grid[0][2] = 2 * 1 = 2.
 p[0][1] = grid[0][0] * grid[0][2] = 12345 * 1 = 12345. 12345 % 12345 = 0. So p[0][1] = 0.
@@ -35,4 +37,3 @@ So the answer is [[2],[0],[0]].</pre>
 	<li><code>2 &lt;= n * m &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= grid[i][j] &lt;= 10<sup>9</sup></code></li>
 </ul>
-</div>
