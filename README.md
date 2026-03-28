@@ -153,6 +153,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2529-range-product-queries-of-powers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2529-range-product-queries-of-powers) |
 | [2551-apply-operations-to-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2551-apply-operations-to-an-array) |
 | [2564-most-profitable-path-in-a-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2564-most-profitable-path-in-a-tree) |
+| [2573-find-the-string-with-lcp](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2573-find-the-string-with-lcp) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2618-maximize-the-minimum-powered-city](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2618-maximize-the-minimum-powered-city) |
@@ -327,6 +328,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2415-count-the-number-of-ideal-arrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2415-count-the-number-of-ideal-arrays) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 | [2562-count-ways-to-build-good-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2562-count-ways-to-build-good-strings) |
+| [2573-find-the-string-with-lcp](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2573-find-the-string-with-lcp) |
 | [2882-ways-to-express-an-integer-as-sum-of-powers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2882-ways-to-express-an-integer-as-sum-of-powers) |
 | [2977-minimum-cost-to-convert-string-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2977-minimum-cost-to-convert-string-ii) |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3129-find-all-possible-stable-binary-arrays-i) |
@@ -410,6 +412,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2483-minimum-penalty-for-a-shop](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2483-minimum-penalty-for-a-shop) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
+| [2573-find-the-string-with-lcp](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2573-find-the-string-with-lcp) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2887-sort-vowels-in-a-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2887-sort-vowels-in-a-string) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2976-minimum-cost-to-convert-string-i) |
@@ -671,6 +674,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2509-minimize-xor](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2509-minimize-xor) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
+| [2573-find-the-string-with-lcp](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2573-find-the-string-with-lcp) |
 | [2618-maximize-the-minimum-powered-city](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2618-maximize-the-minimum-powered-city) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [2681-put-marbles-in-bags](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2681-put-marbles-in-bags) |
@@ -937,6 +941,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
+| [2573-find-the-string-with-lcp](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2573-find-the-string-with-lcp) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2625-increment-submatrices-by-one](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2625-increment-submatrices-by-one) |
 | [2906-construct-product-matrix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2906-construct-product-matrix) |
@@ -1481,6 +1486,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Union-Find
 |  |
 | ------- |
+| [2573-find-the-string-with-lcp](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2573-find-the-string-with-lcp) |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3600-maximize-spanning-tree-stability-with-upgrades) |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3666-minimum-operations-to-equalize-binary-string) |
 ## Minimum Spanning Tree
