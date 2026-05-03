@@ -399,6 +399,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0756-pyramid-transition-matrix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0756-pyramid-transition-matrix) |
 | [0761-special-binary-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0761-special-binary-string) |
 | [0768-partition-labels](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0768-partition-labels) |
+| [0796-rotate-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0796-rotate-string) |
 | [0868-push-dominoes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0868-push-dominoes) |
 | [0944-delete-columns-to-make-sorted](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0944-delete-columns-to-make-sorted) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0955-delete-columns-to-make-sorted-ii) |
@@ -684,6 +685,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## String Matching
 |  |
 | ------- |
+| [0796-rotate-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0796-rotate-string) |
 | [1524-string-matching-in-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1524-string-matching-in-an-array) |
 | [3474-lexicographically-smallest-generated-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3474-lexicographically-smallest-generated-string) |
 ## Greedy
