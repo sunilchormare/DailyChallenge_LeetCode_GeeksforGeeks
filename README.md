@@ -25,6 +25,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0120-triangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0120-triangle) |
 | [0135-candy](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0135-candy) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0368-largest-divisible-subset](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0368-largest-divisible-subset) |
 | [0396-rotate-function](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0396-rotate-function) |
 | [0407-trapping-rain-water-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0407-trapping-rain-water-ii) |
@@ -1391,6 +1392,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0611-valid-triangle-number](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0611-valid-triangle-number) |
 | [0744-find-smallest-letter-greater-than-target](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0794-swim-in-rising-water](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0794-swim-in-rising-water) |
