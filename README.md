@@ -66,6 +66,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1293-three-consecutive-odds](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1293-three-consecutive-odds) |
 | [1306-jump-game-iii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1306-jump-game-iii) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1335-maximum-candies-allocated-to-k-children) |
+| [1345-jump-game-iv](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1345-jump-game-iv) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1353-find-resultant-array-after-removing-anagrams) |
@@ -573,6 +574,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1264-maximum-number-of-words-you-can-type) |
+| [1345-jump-game-iv](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1345-jump-game-iv) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
@@ -935,6 +937,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1306-jump-game-iii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1306-jump-game-iii) |
+| [1345-jump-game-iv](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1345-jump-game-iv) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
