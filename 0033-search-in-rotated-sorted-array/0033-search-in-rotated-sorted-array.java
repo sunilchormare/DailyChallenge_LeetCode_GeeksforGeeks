@@ -23,3 +23,4 @@ class Solution {
       return nums[low] == target ? low : -1;
     }
 }
+
