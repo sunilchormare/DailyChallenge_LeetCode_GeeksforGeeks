@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0011-container-with-most-water) |
+| [0033-search-in-rotated-sorted-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0033-search-in-rotated-sorted-array) |
 | [0036-valid-sudoku](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0037-sudoku-solver) |
 | [0048-rotate-image](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0048-rotate-image) |
@@ -1406,6 +1407,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Binary Search
 |  |
 | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0033-search-in-rotated-sorted-array) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0611-valid-triangle-number](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0611-valid-triangle-number) |
