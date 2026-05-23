@@ -100,6 +100,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1700-minimum-time-to-make-rope-colorful) |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1727-largest-submatrix-with-rearrangements) |
+| [1752-check-if-array-is-sorted-and-rotated](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1813-maximum-erasure-value](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1813-maximum-erasure-value) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1834-minimum-number-of-people-to-teach](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1834-minimum-number-of-people-to-teach) |
