@@ -425,6 +425,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3660-jump-game-ix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3660-jump-game-ix) |
 | [3661-maximum-walls-destroyed-by-robots](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3661-maximum-walls-destroyed-by-robots) |
 | [3699-number-of-zigzag-arrays-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3699-number-of-zigzag-arrays-i) |
+| [3700-number-of-zigzag-arrays-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3700-number-of-zigzag-arrays-ii) |
 | [3733-length-of-longest-v-shaped-diagonal-segment](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3733-length-of-longest-v-shaped-diagonal-segment) |
 | [3742-maximum-path-score-in-a-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3742-maximum-path-score-in-a-grid) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3751-total-waviness-of-numbers-in-range-i) |
@@ -984,6 +985,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3666-minimum-operations-to-equalize-binary-string) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3676-smallest-number-with-all-set-bits) |
 | [3682-count-the-number-of-arrays-with-k-matching-adjacent-elements](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3682-count-the-number-of-arrays-with-k-matching-adjacent-elements) |
+| [3700-number-of-zigzag-arrays-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3700-number-of-zigzag-arrays-ii) |
 | [3744-minimum-operations-to-make-array-elements-zero](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3744-minimum-operations-to-make-array-elements-zero) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3753-total-waviness-of-numbers-in-range-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3753-total-waviness-of-numbers-in-range-ii) |
