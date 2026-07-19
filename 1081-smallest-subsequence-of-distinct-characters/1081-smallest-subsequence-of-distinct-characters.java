@@ -4,6 +4,7 @@ class Solution {
         int[] last = new int[26], seen = new int[26];
         for (int i = 0; i < S.length(); ++i)
             last[S.charAt(i) - 'a'] = i;
+            
         for (int i = 0; i < S.length(); ++i) {
             int c = S.charAt(i) - 'a';
             if (seen[c]++ > 0) continue;
