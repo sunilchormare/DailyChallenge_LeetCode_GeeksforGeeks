@@ -1,24 +1,44 @@
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 class Solution {
     public int maximalRectangle(char[][] matrix) {
-         if (matrix.length == 0) return 0;
-    int ans = 0, m = matrix.length, n = matrix[0].length;
-    int[] height = new int[n]; // height
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) return 0;
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        int[] heights = new int[cols];
+        int maxArea = 0;
 
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
-            if (matrix[i][j] == '0') {
-                height[j] = 0;
-                continue;
+        for (int r = 0; r < rows; r++) {
+            // Update continuous heights histogram for current row
+            for (int c = 0; c < cols; c++) {
+                if (matrix[r][c] == '1') {
+                    heights[c]++;
+                } else {
+                    heights[c] = 0;
+                }
             }
-            height[j]++;
-            for (int cur = j - 1, pre = height[j]; cur >= 0; cur--) {
-                if (height[cur] == 0) break;
-                pre = Math.min(pre, height[cur]);
-                ans = Math.max(ans, (j - cur + 1) * pre);
-            }
-            ans = Math.max(ans, height[j]);
+            // Calculate max area in current row histogram
+            maxArea = Math.max(maxArea, largestRectangleArea(heights));
         }
+
+        return maxArea;
     }
-    return ans;
+
+    private int largestRectangleArea(int[] heights) {
+        Deque<Integer> stack = new ArrayDeque<>();
+        int maxArea = 0;
+        int n = heights.length;
+
+        for (int i = 0; i <= n; i++) {
+            int currentHeight = (i == n) ? 0 : heights[i];
+            while (!stack.isEmpty() && currentHeight < heights[stack.peek()]) {
+                int h = heights[stack.pop()];
+                int w = stack.isEmpty() ? i : i - stack.peek() - 1;
+                maxArea = Math.max(maxArea, h * w);
+            }
+            stack.push(i);
+        }
+        return maxArea;
     }
 }
