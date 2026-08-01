@@ -1,36 +1,46 @@
+#include <vector>
+#include <stack>
+#include <algorithm>
+
 class Solution {
 public:
-   int maxAreaHistogram(vector<int>& histogram){
-    histogram.push_back(0); //sentinal node to check area again at last index.
-    int area = 0, n = histogram.size();
-    stack<int> st;
+    int maximalRectangle(std::vector<std::vector<char>>& matrix) {
+        if (matrix.empty() || matrix[0].empty()) return 0;
+        int rows = matrix.size();
+        int cols = matrix[0].size();
+        std::vector<int> heights(cols, 0);
+        int maxArea = 0;
 
-    for(int i=0; i<n; i++){
-        while(!st.empty() && histogram[st.top()] >= histogram[i]){
-            int h = histogram[st.top()]; st.pop();
-            int left = st.empty() ? -1 : st.top();
-            int right = i;
-            area = max(area, h*(right-left-1));
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
+                if (matrix[r][c] == '1') {
+                    heights[c]++;
+                } else {
+                    heights[c] = 0;
+                }
+            }
+            maxArea = std::max(maxArea, largestRectangleArea(heights));
         }
-        st.push(i);
-    }
-    return area;
-}
 
-int maximalRectangle(vector<vector<char>>& grid) {
-    int m = grid.size(), n = grid[0].size(), res = 0;
-    vector<int> histogram(n, 0);
-    for(int i=0; i<m; i++){
-        //we are stacking up '1's to make histogram
-        for(int j=0; j<n; j++){
-            if(grid[i][j] == '1')
-                histogram[j] += 1;
-            else
-                histogram[j] = 0;
-        }
-        //check area each time, cuz you need area even at smaller 1x blocks
-        res = max(res, maxAreaHistogram(histogram));
+        return maxArea;
     }
-    return res;
-}
+
+private:
+    int largestRectangleArea(const std::vector<int>& heights) {
+        std::stack<int> st;
+        int maxArea = 0;
+        int n = heights.size();
+
+        for (int i = 0; i <= n; i++) {
+            int currentHeight = (i == n) ? 0 : heights[i];
+            while (!st.empty() && currentHeight < heights[st.top()]) {
+                int h = heights[st.top()];
+                st.pop();
+                int w = st.empty() ? i : i - st.top() - 1;
+                maxArea = std::max(maxArea, h * w);
+            }
+            st.push(i);
+        }
+        return maxArea;
+    }
 };
