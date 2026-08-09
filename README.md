@@ -22,6 +22,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0066-plus-one](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0066-plus-one) |
 | [0075-sort-colors](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0075-sort-colors) |
 | [0085-maximal-rectangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0085-maximal-rectangle) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0118-pascals-triangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0120-triangle) |
 | [0135-candy](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0135-candy) |
@@ -1503,6 +1504,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0110-balanced-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0110-balanced-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0226-invert-binary-tree) |
 | [0257-binary-tree-paths](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0257-binary-tree-paths) |
@@ -1528,6 +1530,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0110-balanced-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0110-balanced-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0226-invert-binary-tree) |
 | [0257-binary-tree-paths](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0257-binary-tree-paths) |
@@ -1543,6 +1546,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Divide and Conquer
 |  |
 | ------- |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0190-reverse-bits](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0190-reverse-bits) |
 | [0761-special-binary-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0761-special-binary-string) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
@@ -1905,6 +1909,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Binary Search Tree
 |  |
 | ------- |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [1382-balance-a-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1382-balance-a-binary-search-tree) |
 ## Rolling Hash
 |  |
