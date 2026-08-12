@@ -229,6 +229,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2915-count-of-interesting-subarrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2915-count-of-interesting-subarrays) |
 | [2943-maximize-area-of-square-hole-in-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2943-maximize-area-of-square-hole-in-grid) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
+| [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2975-maximum-square-area-by-removing-fences-from-a-field](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2975-maximum-square-area-by-removing-fences-from-a-field) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2976-minimum-cost-to-convert-string-i) |
 | [2977-minimum-cost-to-convert-string-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2977-minimum-cost-to-convert-string-ii) |
@@ -723,6 +724,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2856-count-complete-subarrays-in-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2856-count-complete-subarrays-in-an-array) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2888-minimum-index-of-a-valid-split) |
 | [2915-count-of-interesting-subarrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2915-count-of-interesting-subarrays) |
+| [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2975-maximum-square-area-by-removing-fences-from-a-field](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2975-maximum-square-area-by-removing-fences-from-a-field) |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
 | [3013-divide-an-array-into-subarrays-with-minimum-cost-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3013-divide-an-array-into-subarrays-with-minimum-cost-ii) |
@@ -1656,6 +1658,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2618-maximize-the-minimum-powered-city](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2618-maximize-the-minimum-powered-city) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2856-count-complete-subarrays-in-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2856-count-complete-subarrays-in-an-array) |
+| [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [3013-divide-an-array-into-subarrays-with-minimum-cost-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3013-divide-an-array-into-subarrays-with-minimum-cost-ii) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
