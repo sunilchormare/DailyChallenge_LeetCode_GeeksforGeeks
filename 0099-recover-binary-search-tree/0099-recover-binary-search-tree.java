@@ -28,7 +28,7 @@ private void inorder(TreeNode root) {
     if (first == null && pre != null && root.val < pre.val) {
         first = pre;
     }
-    if (first != null && pre.val > root.val) {
+    if (first != null && root.val < pre.val ) {
         second = root;
     }
     pre = root;
