@@ -42,10 +42,11 @@ class Solution {
             }
 
             map.get(x).get(y).offer(node.val);
-            
+
             if(node.left!=null){
                q.offer(new Tuple(node.left, x-1,y+1));
             }
+            
             if(node.right!=null){
                q.offer(new Tuple(node.right, x+1,y+1));
             }
