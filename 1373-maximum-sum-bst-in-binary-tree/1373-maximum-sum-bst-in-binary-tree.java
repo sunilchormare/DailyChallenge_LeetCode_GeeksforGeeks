@@ -1,3 +1,17 @@
+class NodeWrapper {
+        final TreeNode node;
+        int sum;
+        int max;
+        int min;
+        boolean validBST = true;
+        public NodeWrapper(TreeNode node) {
+            this.node = node;
+            this.sum = node.val;
+            this.max = node.val;
+            this.min = node.val;
+        }
+}
+
 class Solution {
     
     int maxSum = 0;
@@ -33,19 +47,5 @@ class Solution {
             maxSum = Math.max(maxSum, curNode.sum);   
         }
         return curNode;
-    }
-        
-    static class NodeWrapper {
-        final TreeNode node;
-        int sum;
-        int max;
-        int min;
-        boolean validBST = true;
-        public NodeWrapper(TreeNode node) {
-            this.node = node;
-            this.sum = node.val;
-            this.max = node.val;
-            this.min = node.val;
-        }
     }
 }
