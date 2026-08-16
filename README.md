@@ -674,6 +674,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0768-partition-labels](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0768-partition-labels) |
 | [0797-rabbits-in-forest](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0797-rabbits-in-forest) |
 | [0840-magic-squares-in-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0840-magic-squares-in-grid) |
+| [0863-all-nodes-distance-k-in-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0874-walking-robot-simulation](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0874-walking-robot-simulation) |
 | [0900-reordered-power-of-2](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0900-reordered-power-of-2) |
@@ -1129,6 +1130,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0429-n-ary-tree-level-order-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0429-n-ary-tree-level-order-traversal) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0794-swim-in-rising-water](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0794-swim-in-rising-water) |
+| [0863-all-nodes-distance-k-in-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0945-snakes-and-ladders](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0945-snakes-and-ladders) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
@@ -1410,6 +1412,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0572-subtree-of-another-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0572-subtree-of-another-tree) |
 | [0652-find-duplicate-subtrees](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0652-find-duplicate-subtrees) |
 | [0794-swim-in-rising-water](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0794-swim-in-rising-water) |
+| [0863-all-nodes-distance-k-in-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [1022-sum-of-root-to-leaf-binary-numbers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1022-sum-of-root-to-leaf-binary-numbers) |
@@ -1563,6 +1566,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0530-minimum-absolute-difference-in-bst](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0572-subtree-of-another-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0572-subtree-of-another-tree) |
 | [0652-find-duplicate-subtrees](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0652-find-duplicate-subtrees) |
+| [0863-all-nodes-distance-k-in-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
@@ -1602,6 +1606,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0530-minimum-absolute-difference-in-bst](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0572-subtree-of-another-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0572-subtree-of-another-tree) |
 | [0652-find-duplicate-subtrees](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0652-find-duplicate-subtrees) |
+| [0863-all-nodes-distance-k-in-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
