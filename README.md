@@ -141,6 +141,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1993-sum-of-all-subset-xor-totals](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2023-design-movie-rental-system](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2023-design-movie-rental-system) |
+| [2029-stone-game-ix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2029-stone-game-ix) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2048-build-array-from-permutation](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2048-build-array-from-permutation) |
 | [2054-two-best-non-overlapping-events](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2054-two-best-non-overlapping-events) |
@@ -880,6 +881,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1917-maximum-average-pass-ratio](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1917-maximum-average-pass-ratio) |
 | [1975-maximum-matrix-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1975-maximum-matrix-sum) |
+| [2029-stone-game-ix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2029-stone-game-ix) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2126-destroying-asteroids](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2126-destroying-asteroids) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2140-longest-subsequence-repeated-k-times) |
@@ -939,6 +941,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1502-construct-k-palindrome-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1502-construct-k-palindrome-strings) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1986-largest-color-value-in-a-directed-graph) |
+| [2029-stone-game-ix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2029-stone-game-ix) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2174-next-greater-numerically-balanced-number](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2174-next-greater-numerically-balanced-number) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
@@ -1033,6 +1036,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1925-count-square-sum-triples](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1925-count-square-sum-triples) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1993-sum-of-all-subset-xor-totals) |
+| [2029-stone-game-ix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2029-stone-game-ix) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2050-count-good-numbers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2050-count-good-numbers) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
@@ -1951,6 +1955,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1140-stone-game-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1510-stone-game-iv) |
+| [2029-stone-game-ix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2029-stone-game-ix) |
 | [3462-vowels-game-in-a-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3462-vowels-game-in-a-string) |
 ## Bitmask
 |  |
@@ -2021,15 +2026,18 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [1140-stone-game-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1510-stone-game-iv) |
+| [2029-stone-game-ix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2029-stone-game-ix) |
 ## Zero-Sum Game
 |  |
 | ------- |
 | [1140-stone-game-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1510-stone-game-iv) |
+| [2029-stone-game-ix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2029-stone-game-ix) |
 ## Nim Game
 |  |
 | ------- |
 | [1510-stone-game-iv](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1510-stone-game-iv) |
+| [2029-stone-game-ix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2029-stone-game-ix) |
 ## Sprague–Grundy Theorem
 |  |
 | ------- |
