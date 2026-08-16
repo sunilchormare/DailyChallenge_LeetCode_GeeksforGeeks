@@ -968,6 +968,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0085-maximal-rectangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0085-maximal-rectangle) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1628-count-submatrices-with-all-ones](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1628-count-submatrices-with-all-ones) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
@@ -1399,6 +1400,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0099-recover-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0099-recover-binary-search-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0110-balanced-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0110-balanced-binary-tree) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0226-invert-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0257-binary-tree-paths](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0257-binary-tree-paths) |
@@ -1551,6 +1553,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0104-maximum-depth-of-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0110-balanced-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0110-balanced-binary-tree) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0222-count-complete-tree-nodes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0222-count-complete-tree-nodes) |
 | [0226-invert-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
@@ -1590,6 +1593,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0104-maximum-depth-of-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0110-balanced-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0110-balanced-binary-tree) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0222-count-complete-tree-nodes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0222-count-complete-tree-nodes) |
 | [0226-invert-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
@@ -1912,6 +1916,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0061-rotate-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0061-rotate-list) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
