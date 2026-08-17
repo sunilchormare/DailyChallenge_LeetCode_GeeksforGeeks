@@ -61,6 +61,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1006-vowel-spellchecker](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1006-vowel-spellchecker) |
 | [1018-largest-perimeter-triangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1018-largest-perimeter-triangle) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1018-binary-prefix-divisible-by-5) |
+| [1046-last-stone-weight](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1046-last-stone-weight) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1111-minimum-score-triangulation-of-polygon](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1111-minimum-score-triangulation-of-polygon) |
 | [1140-stone-game-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1140-stone-game-ii) |
@@ -1186,6 +1187,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0407-trapping-rain-water-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0407-trapping-rain-water-ii) |
 | [0794-swim-in-rising-water](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0794-swim-in-rising-water) |
+| [1046-last-stone-weight](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1046-last-stone-weight) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
