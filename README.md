@@ -33,6 +33,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0407-trapping-rain-water-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0407-trapping-rain-water-ii) |
 | [0416-partition-equal-subset-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0417-pacific-atlantic-water-flow) |
+| [0435-non-overlapping-intervals](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0435-non-overlapping-intervals) |
 | [0474-ones-and-zeroes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0474-ones-and-zeroes) |
 | [0486-predict-the-winner](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0486-predict-the-winner) |
 | [0498-diagonal-traverse](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0498-diagonal-traverse) |
@@ -392,6 +393,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0368-largest-divisible-subset](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0368-largest-divisible-subset) |
 | [0396-rotate-function](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0396-rotate-function) |
 | [0416-partition-equal-subset-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0416-partition-equal-subset-sum) |
+| [0435-non-overlapping-intervals](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0435-non-overlapping-intervals) |
 | [0474-ones-and-zeroes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0474-ones-and-zeroes) |
 | [0486-predict-the-winner](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0486-predict-the-winner) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
@@ -864,6 +866,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0011-container-with-most-water](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0011-container-with-most-water) |
 | [0135-candy](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0135-candy) |
+| [0435-non-overlapping-intervals](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0435-non-overlapping-intervals) |
 | [0611-valid-triangle-number](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0611-valid-triangle-number) |
 | [0759-set-intersection-size-at-least-two](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0759-set-intersection-size-at-least-two) |
 | [0768-partition-labels](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0768-partition-labels) |
@@ -1323,6 +1326,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0075-sort-colors](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0075-sort-colors) |
 | [0368-largest-divisible-subset](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0368-largest-divisible-subset) |
+| [0435-non-overlapping-intervals](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0435-non-overlapping-intervals) |
 | [0594-longest-harmonious-subsequence](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0594-longest-harmonious-subsequence) |
 | [0611-valid-triangle-number](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0611-valid-triangle-number) |
 | [0628-maximum-product-of-three-numbers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0628-maximum-product-of-three-numbers) |
