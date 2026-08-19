@@ -1,27 +1,29 @@
+#include <vector>
+#include <algorithm>
+
 class Solution {
 public:
-    int eraseOverlapIntervals(vector<vector<int>>& intervals) {
-        int count=0,left=0,right=1,n=intervals.size();
-        sort(intervals.begin(),intervals.end());
-        while(right<n)
-        {
-            if(intervals[left][1]<=intervals[right][0])
-            {
-                left=right;
-                right++;
-            }
-            else if(intervals[left][1]<=intervals[right][1])
-            {
-                count++;
-                right++;
-                
-            }else if(intervals[left][1]>intervals[right][1])
-            {
-                count++;
-                left=right;
-                right++;
+    int eraseOverlapIntervals(std::vector<std::vector<int>>& intervals) {
+        if (intervals.empty()) return 0;
+
+        // Sort intervals based on their end times
+        std::sort(intervals.begin(), intervals.end(), [](const std::vector<int>& a, const std::vector<int>& b) {
+            return a[1] < b[1];
+        });
+
+        int removals = 0;
+        int prevEnd = intervals[0][1];
+
+        for (size_t i = 1; i < intervals.size(); ++i) {
+            // If current interval starts before the previous accepted interval ends, it's an overlap
+            if (intervals[i][0] < prevEnd) {
+                removals++;
+            } else {
+                // No overlap, update the reference end time
+                prevEnd = intervals[i][1];
             }
         }
-        return count;
+
+        return removals;
     }
 };
