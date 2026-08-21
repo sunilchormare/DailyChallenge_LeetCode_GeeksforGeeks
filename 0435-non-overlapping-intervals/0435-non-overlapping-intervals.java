@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class Solution {
     public int eraseOverlapIntervals(int[][] intervals) {
         if (intervals == null || intervals.length == 0) {
