@@ -1,31 +1,51 @@
 class Solution {
 public:
     vector<int> rearrangeBarcodes(vector<int>& barcodes) {
-         vector<int> ans(barcodes.size(), 0);
-		// step 1
-        unordered_map<int, int> m;
-        for (int i: barcodes) {
-            m[i]++;
+
+        unordered_map<int, int> freq;
+
+        // Count frequencies
+        for (int barcode : barcodes) {
+            freq[barcode]++;
         }
-		// step 2
-        priority_queue<pair<int, int>> pq;
-        for (auto it=m.begin(); it != m.end(); ++it) {
-            pq.push({it->second, it->first});
+
+        // Convert to {barcode, frequency}
+        vector<pair<int, int>> items;
+
+        for (auto& [barcode, count] : freq) {
+            items.push_back({barcode, count});
         }
-		// step 3
+
+        // Sort by frequency descending
+        sort(items.begin(), items.end(),
+             [](const pair<int, int>& a,
+                const pair<int, int>& b) {
+                 return a.second > b.second;
+             });
+
+        vector<int> result(barcodes.size());
+
         int index = 0;
-        int key, value;
-        while (!pq.empty()) {
-            key = pq.top().second;
-            value = pq.top().first;
-            pq.pop();
-            while (value != 0) {
-                if (index >= ans.size()) index = 1;  // All the even positions have been used.
-                ans[index] = key;
-                --value;
+
+        for (auto& [barcode, count] : items) {
+
+            while (count > 0) {
+
+                result[index] = barcode;
+
+                count--;
+
+                // Move to next even position
                 index += 2;
+
+                // If even positions are exhausted,
+                // start from the first odd position.
+                if (index >= result.size()) {
+                    index = 1;
+                }
             }
         }
-        return ans;
+
+        return result;
     }
 };
