@@ -25,34 +25,68 @@
 // }
 
 //QUICK SELECT
-class Solution{
-public int[][] kClosest(int[][] points, int K) {
-    int len =  points.length, l = 0, r = len - 1;
-    while (l <= r) {
-        int mid = helper(points, l, r);
-        if (mid == K) break;
-        if (mid < K) {
-            l = mid + 1;
-        } else {
-            r = mid - 1;
+class Solution {
+
+    public int[][] kClosest(int[][] points, int k) {
+
+        quickSelect(points, 0, points.length - 1, k);
+
+        int[][] result = new int[k][2];
+
+        for (int i = 0; i < k; i++) {
+            result[i] = points[i];
+        }
+
+        return result;
+    }
+
+    private void quickSelect(int[][] points, int left, int right, int k) {
+
+        while (left <= right) {
+
+            int pivotIndex = partition(points, left, right);
+
+            if (pivotIndex == k - 1) {
+                return;
+            }
+
+            if (pivotIndex > k - 1) {
+                right = pivotIndex - 1;
+            } else {
+                left = pivotIndex + 1;
+            }
         }
     }
-    return Arrays.copyOfRange(points, 0, K);
-}
 
-private int helper(int[][] A, int l, int r) {
-    int[] pivot = A[l];
-    while (l < r) {
-        while (l < r && compare(A[r], pivot) >= 0) r--;
-        A[l] = A[r];
-        while (l < r && compare(A[l], pivot) <= 0) l++;
-        A[r] = A[l];
+    private int partition(int[][] points, int left, int right) {
+
+        long pivotDistance =
+            (long) points[right][0] * points[right][0] +
+            (long) points[right][1] * points[right][1];
+
+        int smaller = left;
+
+        for (int i = left; i < right; i++) {
+
+            long currentDistance =
+                (long) points[i][0] * points[i][0] +
+                (long) points[i][1] * points[i][1];
+
+            if (currentDistance <= pivotDistance) {
+                swap(points, smaller, i);
+                smaller++;
+            }
+        }
+
+        swap(points, smaller, right);
+
+        return smaller;
     }
-    A[l] = pivot;
-    return l;
-}
 
-private int compare(int[] p1, int[] p2) {
-    return p1[0] * p1[0] + p1[1] * p1[1] - p2[0] * p2[0] - p2[1] * p2[1];
-}
+    private void swap(int[][] points, int i, int j) {
+
+        int[] temp = points[i];
+        points[i] = points[j];
+        points[j] = temp;
+    }
 }
