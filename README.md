@@ -60,6 +60,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [0960-delete-columns-to-make-sorted-iii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0961-n-repeated-element-in-size-2n-array) |
+| [0973-k-closest-points-to-origin](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0973-k-closest-points-to-origin) |
 | [1006-vowel-spellchecker](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1006-vowel-spellchecker) |
 | [1018-largest-perimeter-triangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1018-largest-perimeter-triangle) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1018-binary-prefix-divisible-by-5) |
@@ -1052,6 +1053,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0867-new-21-game](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0867-new-21-game) |
 | [0877-stone-game](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0877-stone-game) |
 | [0900-reordered-power-of-2](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0900-reordered-power-of-2) |
+| [0973-k-closest-points-to-origin](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0973-k-closest-points-to-origin) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1018-largest-perimeter-triangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1018-largest-perimeter-triangle) |
 | [1140-stone-game-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1140-stone-game-ii) |
@@ -1230,6 +1232,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0407-trapping-rain-water-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0407-trapping-rain-water-ii) |
 | [0794-swim-in-rising-water](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0794-swim-in-rising-water) |
+| [0973-k-closest-points-to-origin](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1046-last-stone-weight) |
 | [1054-distant-barcodes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1054-distant-barcodes) |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1337-the-k-weakest-rows-in-a-matrix) |
@@ -1367,6 +1370,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0759-set-intersection-size-at-least-two](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0759-set-intersection-size-at-least-two) |
 | [0761-special-binary-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0761-special-binary-string) |
 | [0900-reordered-power-of-2](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0900-reordered-power-of-2) |
+| [0973-k-closest-points-to-origin](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0973-k-closest-points-to-origin) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [1018-largest-perimeter-triangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1018-largest-perimeter-triangle) |
 | [1054-distant-barcodes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1054-distant-barcodes) |
@@ -1689,6 +1693,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0190-reverse-bits](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0190-reverse-bits) |
 | [0761-special-binary-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0761-special-binary-string) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
+| [0973-k-closest-points-to-origin](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0973-k-closest-points-to-origin) |
 | [1382-balance-a-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1382-balance-a-binary-search-tree) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [2280-count-good-triplets-in-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2280-count-good-triplets-in-an-array) |
@@ -2020,6 +2025,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0830-largest-triangle-area](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0830-largest-triangle-area) |
+| [0973-k-closest-points-to-origin](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0973-k-closest-points-to-origin) |
 | [1266-minimum-time-visiting-all-points](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1266-minimum-time-visiting-all-points) |
 | [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
@@ -2145,4 +2151,12 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
+## Quickselect
+|  |
+| ------- |
+| [0973-k-closest-points-to-origin](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0973-k-closest-points-to-origin) |
+## K-D Tree
+|  |
+| ------- |
+| [0973-k-closest-points-to-origin](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0973-k-closest-points-to-origin) |
 <!---LeetCode Topics End-->
