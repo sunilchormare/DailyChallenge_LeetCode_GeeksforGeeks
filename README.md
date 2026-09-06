@@ -407,6 +407,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0045-jump-game-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0045-jump-game-ii) |
 | [0085-maximal-rectangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0085-maximal-rectangle) |
+| [0115-distinct-subsequences](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0115-distinct-subsequences) |
 | [0118-pascals-triangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0120-triangle) |
 | [0368-largest-divisible-subset](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0368-largest-divisible-subset) |
@@ -510,6 +511,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0038-count-and-say](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0038-count-and-say) |
 | [0067-add-binary](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0067-add-binary) |
+| [0115-distinct-subsequences](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0115-distinct-subsequences) |
 | [0165-compare-version-numbers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0165-compare-version-numbers) |
 | [0166-fraction-to-recurring-decimal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0166-fraction-to-recurring-decimal) |
 | [0257-binary-tree-paths](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0257-binary-tree-paths) |
