@@ -30,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0135-candy](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0135-candy) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
+| [0218-the-skyline-problem](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0218-the-skyline-problem) |
 | [0368-largest-divisible-subset](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0368-largest-divisible-subset) |
 | [0396-rotate-function](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0396-rotate-function) |
 | [0407-trapping-rain-water-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0407-trapping-rain-water-ii) |
@@ -1252,6 +1253,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0218-the-skyline-problem](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0218-the-skyline-problem) |
 | [0295-find-median-from-data-stream](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0295-find-median-from-data-stream) |
 | [0407-trapping-rain-water-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0407-trapping-rain-water-ii) |
 | [0794-swim-in-rising-water](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0794-swim-in-rising-water) |
@@ -1387,6 +1389,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0075-sort-colors) |
+| [0218-the-skyline-problem](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0218-the-skyline-problem) |
 | [0295-find-median-from-data-stream](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0295-find-median-from-data-stream) |
 | [0368-largest-divisible-subset](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0368-largest-divisible-subset) |
 | [0435-non-overlapping-intervals](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0435-non-overlapping-intervals) |
@@ -1610,6 +1613,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Ordered Set
 |  |
 | ------- |
+| [0218-the-skyline-problem](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0218-the-skyline-problem) |
 | [2023-design-movie-rental-system](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2023-design-movie-rental-system) |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2213-longest-substring-of-one-repeating-character) |
 | [2280-count-good-triplets-in-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2280-count-good-triplets-in-an-array) |
@@ -1719,6 +1723,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0190-reverse-bits](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0190-reverse-bits) |
+| [0218-the-skyline-problem](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0218-the-skyline-problem) |
 | [0761-special-binary-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0761-special-binary-string) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0973-k-closest-points-to-origin](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0973-k-closest-points-to-origin) |
@@ -1973,11 +1978,13 @@ Collection of LeetCode questions to ace the coding interview!
 ## Binary Indexed Tree
 |  |
 | ------- |
+| [0218-the-skyline-problem](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0218-the-skyline-problem) |
 | [2280-count-good-triplets-in-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2280-count-good-triplets-in-an-array) |
 | [3161-block-placement-queries](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3161-block-placement-queries) |
 ## Segment Tree
 |  |
 | ------- |
+| [0218-the-skyline-problem](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0218-the-skyline-problem) |
 | [1622-fancy-sequence](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1622-fancy-sequence) |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2213-longest-substring-of-one-repeating-character) |
 | [2280-count-good-triplets-in-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2280-count-good-triplets-in-an-array) |
@@ -2193,4 +2200,8 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0295-find-median-from-data-stream) |
+## Sweep Line
+|  |
+| ------- |
+| [0218-the-skyline-problem](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0218-the-skyline-problem) |
 <!---LeetCode Topics End-->
