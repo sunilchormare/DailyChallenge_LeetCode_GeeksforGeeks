@@ -1072,6 +1072,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0797-rabbits-in-forest](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0797-rabbits-in-forest) |
 | [0826-soup-servings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0826-soup-servings) |
 | [0830-largest-triangle-area](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0830-largest-triangle-area) |
+| [0836-rectangle-overlap](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0836-rectangle-overlap) |
 | [0840-magic-squares-in-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0840-magic-squares-in-grid) |
 | [0867-new-21-game](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0867-new-21-game) |
 | [0877-stone-game](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0877-stone-game) |
@@ -2075,6 +2076,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0830-largest-triangle-area](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0830-largest-triangle-area) |
+| [0836-rectangle-overlap](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0836-rectangle-overlap) |
 | [0973-k-closest-points-to-origin](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0973-k-closest-points-to-origin) |
 | [1266-minimum-time-visiting-all-points](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1266-minimum-time-visiting-all-points) |
 | [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
