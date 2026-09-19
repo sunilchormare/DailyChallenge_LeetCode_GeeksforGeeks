@@ -1272,6 +1272,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0023-merge-k-sorted-lists) |
 | [0218-the-skyline-problem](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0218-the-skyline-problem) |
 | [0295-find-median-from-data-stream](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0295-find-median-from-data-stream) |
 | [0407-trapping-rain-water-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0407-trapping-rain-water-ii) |
@@ -1746,6 +1747,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Divide and Conquer
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0023-merge-k-sorted-lists) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0190-reverse-bits](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0190-reverse-bits) |
 | [0218-the-skyline-problem](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0218-the-skyline-problem) |
@@ -2034,6 +2036,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Merge Sort
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0023-merge-k-sorted-lists) |
 | [2280-count-good-triplets-in-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2280-count-good-triplets-in-an-array) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3739-count-subarrays-with-majority-element-ii) |
@@ -2063,6 +2066,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Linked List
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0023-merge-k-sorted-lists) |
 | [0061-rotate-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0061-rotate-list) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
@@ -2238,4 +2242,8 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0218-the-skyline-problem](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0218-the-skyline-problem) |
+## Tournament Sort
+|  |
+| ------- |
+| [0023-merge-k-sorted-lists](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0023-merge-k-sorted-lists) |
 <!---LeetCode Topics End-->
