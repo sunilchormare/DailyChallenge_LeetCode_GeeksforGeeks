@@ -625,6 +625,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3474-lexicographically-smallest-generated-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3474-lexicographically-smallest-generated-string) |
 | [3479-count-the-number-of-substrings-with-dominant-ones](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3479-count-the-number-of-substrings-with-dominant-ones) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
+| [3498-reverse-degree-of-a-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3498-reverse-degree-of-a-string) |
 | [3499-maximize-active-section-with-trade-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3499-maximize-active-section-with-trade-i) |
 | [3501-maximize-active-section-with-trade-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3501-maximize-active-section-with-trade-ii) |
 | [3517-smallest-palindromic-rearrangement-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3517-smallest-palindromic-rearrangement-i) |
@@ -1607,6 +1608,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3379-transformed-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3379-transformed-array) |
 | [3433-count-mentions-per-user](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3433-count-mentions-per-user) |
 | [3447-clear-digits](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3447-clear-digits) |
+| [3498-reverse-degree-of-a-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3498-reverse-degree-of-a-string) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3510-minimum-pair-removal-to-sort-array-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3510-minimum-pair-removal-to-sort-array-ii) |
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3600-find-the-k-th-character-in-string-game-i) |
