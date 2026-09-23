@@ -123,6 +123,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1656-count-good-triplets](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1656-count-good-triplets) |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1700-minimum-time-to-make-rope-colorful) |
@@ -666,6 +667,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1590-make-sum-divisible-by-p](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1590-make-sum-divisible-by-p) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1732-find-the-highest-altitude](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1732-find-the-highest-altitude) |
 | [1871-jump-game-vii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1871-jump-game-vii) |
@@ -761,6 +763,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1520-maximum-number-of-non-overlapping-substrings) |
 | [1590-make-sum-divisible-by-p](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1590-make-sum-divisible-by-p) |
 | [1612-avoid-flood-in-the-city](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1612-avoid-flood-in-the-city) |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1813-maximum-erasure-value](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1813-maximum-erasure-value) |
 | [1834-minimum-number-of-people-to-teach](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1834-minimum-number-of-people-to-teach) |
@@ -1838,6 +1841,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 | [1813-maximum-erasure-value](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1813-maximum-erasure-value) |
 | [1871-jump-game-vii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1871-jump-game-vii) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
@@ -1886,6 +1890,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1612-avoid-flood-in-the-city](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1612-avoid-flood-in-the-city) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
+| [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 | [1760-minimum-limit-of-balls-in-a-bag](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1760-minimum-limit-of-balls-in-a-bag) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1855-maximum-distance-between-a-pair-of-values) |
