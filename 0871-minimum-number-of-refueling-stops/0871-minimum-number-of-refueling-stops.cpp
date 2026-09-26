@@ -1,17 +1,51 @@
 class Solution {
 public:
-    int minRefuelStops(int target, int startFuel, vector<vector<int>>& stations) {
-        if (startFuel >= target) return 0;
-        priority_queue<int> queue;
-        int i = 0, n = stations.size(), stops = 0, maxDistance = startFuel;
-        while (maxDistance < target) 
-        {
-            while (i < n && stations[i][0] <= maxDistance)
-                queue.push(stations[i++][1]);
-            if (queue.empty()) return -1;
-            maxDistance += queue.top(); queue.pop();
+    int minRefuelStops(int target, int startFuel,
+                       vector<vector<int>>& stations) {
+
+        // Max heap.
+        priority_queue<int> maxHeap;
+
+        long long fuel = startFuel;
+        int previousPosition = 0;
+        int stops = 0;
+
+        for (const auto& station : stations) {
+
+            int position = station[0];
+            int stationFuel = station[1];
+
+            // Fuel consumed to reach this station.
+            fuel -= position - previousPosition;
+
+            // If we cannot reach this station,
+            // use the largest previously available fuel.
+            while (fuel < 0 && !maxHeap.empty()) {
+                fuel += maxHeap.top();
+                maxHeap.pop();
+                stops++;
+            }
+
+            // Still cannot reach the station.
+            if (fuel < 0) {
+                return -1;
+            }
+
+            // We reached the station.
+            maxHeap.push(stationFuel);
+
+            previousPosition = position;
+        }
+
+        // Try to reach destination.
+        fuel -= target - previousPosition;
+
+        while (fuel < 0 && !maxHeap.empty()) {
+            fuel += maxHeap.top();
+            maxHeap.pop();
             stops++;
         }
-        return stops;
+
+        return fuel >= 0 ? stops : -1;
     }
 };
