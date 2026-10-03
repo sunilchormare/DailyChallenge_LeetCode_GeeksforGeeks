@@ -418,6 +418,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0022-generate-parentheses) |
+| [0032-longest-valid-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0032-longest-valid-parentheses) |
 | [0045-jump-game-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0045-jump-game-ii) |
 | [0085-maximal-rectangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0085-maximal-rectangle) |
 | [0115-distinct-subsequences](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0115-distinct-subsequences) |
@@ -531,6 +532,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0022-generate-parentheses) |
+| [0032-longest-valid-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0032-longest-valid-parentheses) |
 | [0038-count-and-say](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0038-count-and-say) |
 | [0067-add-binary](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0067-add-binary) |
 | [0115-distinct-subsequences](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0115-distinct-subsequences) |
@@ -1069,6 +1071,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Stack
 |  |
 | ------- |
+| [0032-longest-valid-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0032-longest-valid-parentheses) |
 | [0085-maximal-rectangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0085-maximal-rectangle) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1081-smallest-subsequence-of-distinct-characters) |
@@ -2290,6 +2293,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0022-generate-parentheses) |
+| [0032-longest-valid-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0032-longest-valid-parentheses) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
