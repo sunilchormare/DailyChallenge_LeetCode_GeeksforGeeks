@@ -5,7 +5,8 @@ class Solution {
         for(char c:s.toCharArray())
         {  if(c=='(')
         {   
-         st.push(score);score=0;}
+         st.push(score);score=0;
+         }
             else
             {
                 score=st.pop()+Math.max(2*score,1);   
