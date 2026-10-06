@@ -552,6 +552,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0796-rotate-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0796-rotate-string) |
 | [0856-score-of-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0856-score-of-parentheses) |
 | [0868-push-dominoes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0868-push-dominoes) |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [0940-distinct-subsequences-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0940-distinct-subsequences-ii) |
 | [0944-delete-columns-to-make-sorted](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0944-delete-columns-to-make-sorted) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0955-delete-columns-to-make-sorted-ii) |
@@ -955,6 +956,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0797-rabbits-in-forest](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0797-rabbits-in-forest) |
 | [0857-minimum-cost-to-hire-k-workers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0857-minimum-cost-to-hire-k-workers) |
 | [0871-minimum-number-of-refueling-stops](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0871-minimum-number-of-refueling-stops) |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [1018-largest-perimeter-triangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1018-largest-perimeter-triangle) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1049-minimum-domino-rotations-for-equal-row) |
@@ -1080,6 +1082,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0678-valid-parenthesis-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0678-valid-parenthesis-string) |
 | [0856-score-of-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0856-score-of-parentheses) |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1096-brace-expansion-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1096-brace-expansion-ii) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
@@ -2302,6 +2305,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0032-longest-valid-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0032-longest-valid-parentheses) |
 | [0678-valid-parenthesis-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0678-valid-parenthesis-string) |
 | [0856-score-of-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0856-score-of-parentheses) |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1190-reverse-substrings-between-each-pair-of-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
