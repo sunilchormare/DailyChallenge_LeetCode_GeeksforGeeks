@@ -541,6 +541,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0166-fraction-to-recurring-decimal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0166-fraction-to-recurring-decimal) |
 | [0257-binary-tree-paths](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0257-binary-tree-paths) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0301-remove-invalid-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0301-remove-invalid-parentheses) |
 | [0474-ones-and-zeroes](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0474-ones-and-zeroes) |
 | [0657-robot-return-to-origin](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0657-robot-return-to-origin) |
 | [0678-valid-parenthesis-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0678-valid-parenthesis-string) |
@@ -1258,6 +1259,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0104-maximum-depth-of-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0226-invert-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0301-remove-invalid-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0301-remove-invalid-parentheses) |
 | [0407-trapping-rain-water-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0407-trapping-rain-water-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0417-pacific-atlantic-water-flow) |
 | [0429-n-ary-tree-level-order-traversal](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0429-n-ary-tree-level-order-traversal) |
@@ -1704,6 +1706,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0022-generate-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0022-generate-parentheses) |
 | [0037-sudoku-solver](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0037-sudoku-solver) |
 | [0257-binary-tree-paths](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0257-binary-tree-paths) |
+| [0301-remove-invalid-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0301-remove-invalid-parentheses) |
 | [0401-binary-watch](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0401-binary-watch) |
 | [0679-24-game](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0679-24-game) |
 | [0756-pyramid-transition-matrix](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0756-pyramid-transition-matrix) |
