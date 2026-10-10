@@ -198,6 +198,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2316-count-hills-and-valleys-in-an-array) |
 | [2320-find-all-k-distant-indices-in-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2320-find-all-k-distant-indices-in-an-array) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2324-find-triangular-sum-of-an-array) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2383-minimum-hours-of-training-to-win-a-competition](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2383-minimum-hours-of-training-to-win-a-competition) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
@@ -999,6 +1000,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2383-minimum-hours-of-training-to-win-a-competition](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2383-minimum-hours-of-training-to-win-a-competition) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
@@ -1343,6 +1345,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2054-two-best-non-overlapping-events](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2054-two-best-non-overlapping-events) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2402-meeting-rooms-iii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2402-meeting-rooms-iii) |
 | [2429-design-a-food-rating-system](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2429-design-a-food-rating-system) |
 | [2434-design-a-number-container-system](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2434-design-a-number-container-system) |
@@ -1510,6 +1513,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2215-finding-3-digit-even-numbers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2215-finding-3-digit-even-numbers) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2274-keep-multiplying-found-values-by-two) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2402-meeting-rooms-iii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2402-meeting-rooms-iii) |
@@ -1944,6 +1948,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2229-maximum-fruits-harvested-after-at-most-k-steps](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2229-maximum-fruits-harvested-after-at-most-k-steps) |
 | [2280-count-good-triplets-in-an-array](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2280-count-good-triplets-in-an-array) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2394-count-subarrays-with-score-less-than-k) |
 | [2498-smallest-subarrays-with-maximum-bitwise-or](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2498-smallest-subarrays-with-maximum-bitwise-or) |
