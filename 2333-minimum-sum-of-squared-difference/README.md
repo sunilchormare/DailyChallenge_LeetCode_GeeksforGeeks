@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/minimum-sum-of-squared-difference/">2333. Minimum Sum of Squared Difference</a></h2><h3>Medium</h3><hr><div><p>You are given two positive <strong>0-indexed</strong> integer arrays <code>nums1</code> and <code>nums2</code>, both of length <code>n</code>.</p>
+<h2><a href="https://leetcode.com/problems/minimum-sum-of-squared-difference">2418. Minimum Sum of Squared Difference</a></h2><h3>Medium</h3><hr><p>You are given two positive <strong>0-indexed</strong> integer arrays <code>nums1</code> and <code>nums2</code>, both of length <code>n</code>.</p>
 
 <p>The <strong>sum of squared difference</strong> of arrays <code>nums1</code> and <code>nums2</code> is defined as the <strong>sum</strong> of <code>(nums1[i] - nums2[i])<sup>2</sup></code> for each <code>0 &lt;= i &lt; n</code>.</p>
 
@@ -11,7 +11,8 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input:</strong> nums1 = [1,2,3,4], nums2 = [2,10,20,19], k1 = 0, k2 = 0
+<pre>
+<strong>Input:</strong> nums1 = [1,2,3,4], nums2 = [2,10,20,19], k1 = 0, k2 = 0
 <strong>Output:</strong> 579
 <strong>Explanation:</strong> The elements in nums1 and nums2 cannot be modified because k1 = 0 and k2 = 0. 
 The sum of square difference will be: (1 - 2)<sup>2 </sup>+ (2 - 10)<sup>2 </sup>+ (3 - 20)<sup>2 </sup>+ (4 - 19)<sup>2</sup>&nbsp;= 579.
@@ -19,7 +20,8 @@ The sum of square difference will be: (1 - 2)<sup>2 </sup>+ (2 - 10)<sup>2 </sup
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> nums1 = [1,4,10,12], nums2 = [5,8,6,9], k1 = 1, k2 = 1
+<pre>
+<strong>Input:</strong> nums1 = [1,4,10,12], nums2 = [5,8,6,9], k1 = 1, k2 = 1
 <strong>Output:</strong> 43
 <strong>Explanation:</strong> One way to obtain the minimum sum of square difference is: 
 - Increase nums1[0] once.
@@ -37,4 +39,3 @@ Note that, there are other ways to obtain the minimum of the sum of square diffe
 	<li><code>0 &lt;= nums1[i], nums2[i] &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= k1, k2 &lt;= 10<sup>9</sup></code></li>
 </ul>
-</div>
