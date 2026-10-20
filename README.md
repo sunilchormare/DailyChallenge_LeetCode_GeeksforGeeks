@@ -1100,6 +1100,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0032-longest-valid-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0032-longest-valid-parentheses) |
 | [0085-maximal-rectangle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0085-maximal-rectangle) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0114-flatten-binary-tree-to-linked-list) |
+| [0234-palindrome-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0234-palindrome-linked-list) |
 | [0678-valid-parenthesis-string](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0678-valid-parenthesis-string) |
 | [0856-score-of-parentheses](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0856-score-of-parentheses) |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0921-minimum-add-to-make-parentheses-valid) |
@@ -1850,6 +1851,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0061-rotate-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0075-sort-colors) |
 | [0165-compare-version-numbers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0165-compare-version-numbers) |
+| [0234-palindrome-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0234-palindrome-linked-list) |
 | [0295-find-median-from-data-stream](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0295-find-median-from-data-stream) |
 | [0611-valid-triangle-number](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0611-valid-triangle-number) |
 | [0696-count-binary-substrings](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0696-count-binary-substrings) |
@@ -2087,6 +2089,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0231-power-of-two) |
+| [0234-palindrome-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0234-palindrome-linked-list) |
 | [0326-power-of-three](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0342-power-of-four) |
 | [0486-predict-the-winner](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0486-predict-the-winner) |
@@ -2160,6 +2163,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0023-merge-k-sorted-lists](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0023-merge-k-sorted-lists) |
 | [0061-rotate-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0061-rotate-list) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0114-flatten-binary-tree-to-linked-list) |
+| [0234-palindrome-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0234-palindrome-linked-list) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
