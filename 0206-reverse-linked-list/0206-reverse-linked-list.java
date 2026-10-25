@@ -4,7 +4,7 @@ class Solution {
         while(head!=null)
         {
             next=head.next;
-            head.next=prev;
+            head.next=prev;  //CRUCIAL STEPS
             prev=head;
             head=next;
         }
