@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/">1606. Find Servers That Handled Most Number of Requests</a></h2><h3>Hard</h3><hr><div><p>You have <code>k</code> servers numbered from <code>0</code> to <code>k-1</code> that are being used to handle multiple requests simultaneously. Each server has infinite computational capacity but <strong>cannot handle more than one request at a time</strong>. The requests are assigned to servers according to a specific algorithm:</p>
+<h2><a href="https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests">1710. Find Servers That Handled Most Number of Requests</a></h2><h3>Hard</h3><hr><p>You have <code>k</code> servers numbered from <code>0</code> to <code>k-1</code> that are being used to handle multiple requests simultaneously. Each server has infinite computational capacity but <strong>cannot handle more than one request at a time</strong>. The requests are assigned to servers according to a specific algorithm:</p>
 
 <ul>
 	<li>The <code>i<sup>th</sup></code> (0-indexed) request arrives.</li>
@@ -13,20 +13,22 @@
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/09/08/load-1.png" style="width: 389px; height: 221px;">
-<pre><strong>Input:</strong> k = 3, arrival = [1,2,3,4,5], load = [5,2,3,3,3] 
+<img alt="" src="https://assets.leetcode.com/uploads/2020/09/08/load-1.png" style="width: 389px; height: 221px;" />
+<pre>
+<strong>Input:</strong> k = 3, arrival = [1,2,3,4,5], load = [5,2,3,3,3] 
 <strong>Output:</strong> [1] 
 <strong>Explanation:</strong> 
 All of the servers start out available.
 The first 3 requests are handled by the first 3 servers in order.
-Request 3 comes in. Server 0 is busy, so it's assigned to the next available server, which is 1.
+Request 3 comes in. Server 0 is busy, so it&#39;s assigned to the next available server, which is 1.
 Request 4 comes in. It cannot be handled since all servers are busy, so it is dropped.
 Servers 0 and 2 handled one request each, while server 1 handled two requests. Hence server 1 is the busiest server.
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> k = 3, arrival = [1,2,3,4], load = [1,2,1,2]
+<pre>
+<strong>Input:</strong> k = 3, arrival = [1,2,3,4], load = [1,2,1,2]
 <strong>Output:</strong> [0]
 <strong>Explanation:</strong> 
 The first 3 requests are handled by first 3 servers.
@@ -36,7 +38,8 @@ Server 0 handled two requests, while servers 1 and 2 handled one request each. H
 
 <p><strong class="example">Example 3:</strong></p>
 
-<pre><strong>Input:</strong> k = 3, arrival = [1,2,3], load = [10,12,11]
+<pre>
+<strong>Input:</strong> k = 3, arrival = [1,2,3], load = [10,12,11]
 <strong>Output:</strong> [0,1,2]
 <strong>Explanation:</strong> Each server handles a single request, so they are all considered the busiest.
 </pre>
@@ -51,4 +54,3 @@ Server 0 handled two requests, while servers 1 and 2 handled one request each. H
 	<li><code>1 &lt;= arrival[i], load[i] &lt;= 10<sup>9</sup></code></li>
 	<li><code>arrival</code> is <strong>strictly increasing</strong>.</li>
 </ul>
-</div>
