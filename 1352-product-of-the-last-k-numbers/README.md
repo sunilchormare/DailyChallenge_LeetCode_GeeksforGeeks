@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/product-of-the-last-k-numbers/">1352. Product of the Last K Numbers</a></h2><h3>Medium</h3><hr><div><p>Design an algorithm that accepts a stream of integers and retrieves the product of the last <code>k</code> integers of the stream.</p>
+<h2><a href="https://leetcode.com/problems/product-of-the-last-k-numbers">1477. Product of the Last K Numbers</a></h2><h3>Medium</h3><hr><p>Design an algorithm that accepts a stream of integers and retrieves the product of the last <code>k</code> integers of the stream.</p>
 
 <p>Implement the <code>ProductOfNumbers</code> class:</p>
 
@@ -13,8 +13,9 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example:</strong></p>
 
-<pre><strong>Input</strong>
-["ProductOfNumbers","add","add","add","add","add","getProduct","getProduct","getProduct","add","getProduct"]
+<pre>
+<strong>Input</strong>
+[&quot;ProductOfNumbers&quot;,&quot;add&quot;,&quot;add&quot;,&quot;add&quot;,&quot;add&quot;,&quot;add&quot;,&quot;getProduct&quot;,&quot;getProduct&quot;,&quot;getProduct&quot;,&quot;add&quot;,&quot;getProduct&quot;]
 [[],[3],[0],[2],[5],[4],[2],[3],[4],[8],[2]]
 
 <strong>Output</strong>
@@ -43,4 +44,6 @@ productOfNumbers.getProduct(2); // return 32. The product of the last 2 numbers 
 	<li>At most <code>4 * 10<sup>4</sup></code> calls will be made to <code>add</code> and <code>getProduct</code>.</li>
 	<li>The product of the stream at any point in time will fit in a <strong>32-bit</strong> integer.</li>
 </ul>
-</div>
+
+<p>&nbsp;</p>
+<strong>Follow-up: </strong>Can you implement <strong>both</strong> <code>GetProduct</code> and <code>Add</code> to work in <code>O(1)</code> time complexity instead of <code>O(k)</code> time complexity?
