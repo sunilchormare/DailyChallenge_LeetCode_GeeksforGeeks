@@ -446,6 +446,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3886-sum-of-sortable-integers](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3886-sum-of-sortable-integers) |
 | [3903-smallest-stable-index-i](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3903-smallest-stable-index-i) |
 | [3904-smallest-stable-index-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3904-smallest-stable-index-ii) |
+| [3934-smallest-unique-subarray](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3934-smallest-unique-subarray) |
 | [3942-minimum-operations-to-sort-a-permutation](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3942-minimum-operations-to-sort-a-permutation) |
 ## Dynamic Programming
 |  |
@@ -946,6 +947,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 | [3863-power-grid-maintenance](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3863-power-grid-maintenance) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3872-find-most-frequent-vowel-and-consonant) |
+| [3934-smallest-unique-subarray](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3934-smallest-unique-subarray) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -2111,6 +2113,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [3790-fruits-into-baskets-ii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3790-fruits-into-baskets-ii) |
 | [3791-fruits-into-baskets-iii](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3791-fruits-into-baskets-iii) |
 | [3827-implement-router](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3827-implement-router) |
+| [3934-smallest-unique-subarray](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3934-smallest-unique-subarray) |
 ## Queue
 |  |
 | ------- |
@@ -2293,6 +2296,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0572-subtree-of-another-tree](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0572-subtree-of-another-tree) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [2079-delete-duplicate-folders-in-system](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/2079-delete-duplicate-folders-in-system) |
+| [3934-smallest-unique-subarray](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3934-smallest-unique-subarray) |
 ## Brainteaser
 |  |
 | ------- |
@@ -2375,6 +2379,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
+| [3934-smallest-unique-subarray](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3934-smallest-unique-subarray) |
 ## Union-Find
 |  |
 | ------- |
@@ -2480,4 +2485,8 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0141-linked-list-cycle](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/0141-linked-list-cycle) |
+## Suffix Array
+|  |
+| ------- |
+| [3934-smallest-unique-subarray](https://github.com/sunilchormare/DailyChallenge_LeetCode_GeeksforGeeks/tree/master/3934-smallest-unique-subarray) |
 <!---LeetCode Topics End-->
